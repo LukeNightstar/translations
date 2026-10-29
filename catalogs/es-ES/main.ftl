@@ -80,8 +80,6 @@ setup-loading-always-run-in-background = Ejecute siempre la configuración en se
 chat-timeline-jump-to-bottom = ↓ Saltar al final
 chat-agent-message-label = De un agente
 chat-team-message-label = Mensaje del equipo
-chat-agent-message-from = De
-chat-team-message-from = Mensaje del equipo de
 terminal-starting = Terminal de arranque...
 terminal-show-output = Mostrar salida
 terminal-start-failed = No se pudo iniciar la terminal
@@ -138,6 +136,55 @@ browser-open-chat-or-enable-provider = Abre una pestaña de chat o activa un pro
 browser-back = Atrás
 browser-forward = Adelante
 browser-reload = recargar
+browser-stop = Detener
+browser-home = Inicio
+browser-start-tab-title = Página de inicio
+browser-address-placeholder = Busca servidores o escribe una dirección
+browser-start-running = En ejecución
+browser-start-show-less = Mostrar menos
+browser-start-recent = Visitados recientemente
+browser-start-also-running = También en ejecución
+browser-start-more = { $count } más
+browser-start-stopped = Detenido
+browser-start-starting = Iniciando
+browser-start-clock = { $elapsed }
+browser-start-run-script = Ejecutar script
+browser-start-run-script-named = Ejecutar { $script }
+browser-start-stop-script = Detener { $script }
+browser-start-clear = Borrar
+browser-start-run = Iniciar ejecución
+browser-start-this-worktree = Este árbol de trabajo
+browser-start-pull-request = Pull request
+browser-start-merge-request = Merge request
+browser-start-repository = Repositorio
+browser-nothing-title = { $host } no está en ejecución
+browser-nothing-lede = Esta página se abre aquí cuando se inicia el servidor.
+browser-nothing-starting = Esta página se abre cuando esté lista.
+browser-starting-title = Iniciando { $host }
+browser-stage-starting = Iniciando
+browser-stage-up = Servidor activo
+browser-stage-ready = Página lista
+browser-nothing-retried = { $count ->
+    [1] Comprobado de nuevo. Aún sin respuesta.
+   *[other] Comprobado { $count } veces. Aún sin respuesta.
+}
+browser-loading-title = Cargando { $host }
+browser-loading-lede = El servidor está activo y generando la página.
+browser-failed-title = { $host } no se cargó
+browser-failed-lede = Su servidor está escuchando, pero esta página no se cargó.
+browser-open-over-http = Abrir por http
+browser-unreachable-title = No se puede acceder a { $host }
+browser-unreachable-lede = Comprueba la dirección o tu conexión.
+browser-try-again = Reintentar
+browser-tip-running-lead = ¿Está en ejecución el servidor de desarrollo?
+browser-tip-running-body = Nada ha respondido en el puerto { $port } tras varios intentos. Busca un error en el script de ejecución o en el terminal.
+browser-tip-moved-lead = Puede que se haya movido.
+browser-tip-moved-body = Los servidores de desarrollo suelen usar el siguiente puerto libre cuando { $port } está ocupado. Todo lo que se haya iniciado en tus árboles de trabajo aparece abajo.
+browser-tip-ipv4-lead = Prueba con 127.0.0.1.
+browser-tip-ipv4-body = Algunos servidores solo escuchan en IPv4, mientras que localhost se resuelve primero a IPv6.
+browser-tip-ipv4-open = Abrir { $address }
+browser-tip-knocking-lead = Sigue sin haber nada.
+browser-tip-knocking-body = El puerto { $port } no ha respondido. Busca un error en el terminal del servidor.
 browser-annotate-element = Anotar elemento
 browser-choose-annotation-destination = Elija el destino de la anotación
 browser-current-chats = Chats actuales
@@ -145,6 +192,59 @@ browser-clear-annotations = Borrar anotaciones
 browser-copy-url = Copiado URL
 browser-open-external = Abrir externo
 browser-inspect = inspeccionar
+browser-emulation-dark = Oscuro
+browser-emulation-light = Claro
+browser-emulation-user-agent = Agente de usuario personalizado
+browser-emulation-print = Impresión
+browser-emulation-reduced-motion = Movimiento reducido
+browser-emulation-routes = Solicitudes simuladas: { $count }
+browser-reset-emulation = Borrar los cambios del agente en la página
+browser-color-scheme-view-light = Ver esta página en modo claro
+browser-color-scheme-view-dark = Ver esta página en modo oscuro
+browser-color-scheme-showing-light = Mostrando esta página en modo claro. Haz clic para seguir a la app
+browser-color-scheme-showing-dark = Mostrando esta página en modo oscuro. Haz clic para seguir a la app
+browser-picking-hint = Selecciona un elemento para enviarlo a un chat
+browser-served-stopped = detenido
+browser-served-starting = iniciando
+browser-served-branch = Rama
+browser-served-process = Proceso
+browser-served-port = Puerto
+browser-served-restart = Reiniciar servidor
+browser-served-start = Iniciar servidor
+browser-served-terminal = Mostrar terminal
+browser-app-debugger = Depurador
+browser-app-open = Abrir
+browser-app-split = Abrir en vista dividida
+browser-app-copy = Copiar URL
+browser-app-restart = Reiniciar servidor
+browser-app-terminal = Mostrar terminal
+browser-app-origin-run-server = Iniciado por { $run } con { $server }
+browser-app-origin-run = Iniciado por { $run }
+browser-app-origin-server-folder = { $server } en { $folder }
+browser-app-also-on = También en
+browser-app-moved = { $port } es de { $branch }. El de este árbol de trabajo está en { $own }.
+browser-recent-moved = ahora :{ $port }
+browser-errors-heading = { $count ->
+    [one] { $count } error en esta página
+   *[other] { $count } errores en esta página
+}
+browser-errors-more = y { $count } más
+browser-errors-send = Enviar al chat
+browser-errors-copy = Copiar
+browser-errors-sent-to = Enviado a
+browser-errors-new-chat-with = Nuevo chat de { $provider }
+browser-more-actions = Más
+browser-agent-unknown = Un agente
+browser-agent-reading = leyendo la página
+browser-agent-navigating = navegando
+browser-agent-clicking = haciendo clic
+browser-agent-typing = escribiendo
+browser-agent-scrolling = desplazándose
+browser-agent-capturing = haciendo una captura de pantalla
+browser-agent-running-script = ejecutando un script
+browser-agent-switching-color-scheme = cambiando el esquema de colores
+browser-agent-working = trabajando
+browser-agent-back-to-chat = Volver al chat
 picker-no-results = Sin resultados
 palette-search-files = Buscar archivos en este árbol de trabajo...
 palette-no-matching-files = No hay archivos coincidentes
@@ -189,7 +289,6 @@ action-reset = Reiniciar
 project-pinned = Fijado
 project-no-worktrees-found = No se encontraron árboles de trabajo
 project-loading-merge-options = Cargando opciones de fusión
-update-whats-new = ¿Qué hay en esta actualización?
 sidebar-add-project-to-start = Añade un proyecto para empezar
 sidebar-search-project-worktrees-placeholder = Buscar árboles de trabajo en { $project }
 sidebar-search-hidden-worktrees-placeholder = Buscar árboles de trabajo ocultos en { $project }
@@ -200,6 +299,7 @@ workspace-no-matching-branches = No hay sucursales coincidentes
 workspace-rename-current-branch = Cambiar el nombre de la sucursal actual
 common-recently-used = Usado recientemente
 workspace-all-branches = Todas las sucursales
+workspace-branch-picker-search-placeholder = Buscar ramas
 workspace-loading-branches = Cargando ramas…
 workspace-no-local-branches = Sin sucursales locales
 workspace-open-diff = diferencia abierta
@@ -207,6 +307,12 @@ workspace-open-file = Abrir archivo
 workspace-no-custom-commands = No hay comandos personalizados configurados.
 workspace-no-commands-match = Ningún comando coincide con tu búsqueda.
 workspace-new-command = Nuevo comando
+command-picker-runs-in-chat = Se ejecuta en este chat
+command-picker-runs-in-new-tab = Se ejecuta en una pestaña nueva
+command-picker-always-new-tab = Siempre abre una pestaña nueva
+command-picker-alt-new-tab = ⌘ pestaña nueva
+command-picker-alt-this-chat = ⌘ este chat
+command-picker-edit = Editar en Configuración
 workspace-new-tab = Nueva pestaña
 workspace-empty-view-heading = Elige una herramienta para empezar
 workspace-your-default = Tu opción predeterminada
@@ -229,16 +335,8 @@ add-project-quick-start = Inicio rápido nuevo proyecto
 add-project-tooltip = Agregar proyecto
 clone-location-dialog-title = Ubicación del clon
 clone-repository-action = Repositorio de clones
-clone-repository-url = Repositorio URL
+clone-description = Pega la dirección de un repositorio.
 close-tab-action = Cerrar pestaña
-close-tab-description = Esta pestaña tiene trabajo en progreso. Cerrarlo detendrá al agente.
-close-tab-title = ¿Cerrar “{ $tab_title }”?
-close-tab-keep-launched-agents = Mantenerlos abiertos como pestañas
-close-tab-launched-agents-description = { $count ->
-    [one] Un agente iniciado desde esta pestaña sigue trabajando. Cerrar la pestaña lo detendrá.
-   *[other] { $count } agentes iniciados desde esta pestaña siguen trabajando. Cerrar la pestaña los detendrá.
-}
-common-back-arrow = ← Volver
 common-browse = Navegar
 common-browse-ellipsis = Explorar…
 common-cancel = Cancelar
@@ -247,7 +345,6 @@ common-close = Cerrar
 common-completed = Completado
 common-confirm-save = Confirmar guardar
 common-continue = Continuar
-common-continue-arrow = Continuar →
 common-copy = Copiar
 common-create = crear
 common-delete = Eliminar
@@ -258,7 +355,6 @@ common-dont-show-again = No vuelvas a mostrar esto
 common-experimental = Experimental
 common-fix = Arreglar
 common-less = menos
-common-location = Ubicación
 common-name = Nombre
 common-ok = Ok
 common-okay = Está bien
@@ -320,33 +416,52 @@ notification-undo-dismissal = Deshacer
 notification-view-open = Abierto
 notification-view-ready = Listo
 notification-view-running = corriendo
-onboarding-chat-ui = IU de chat
-onboarding-chat-ui-description = Mensajes renderizados con diferencias en línea y rebajas
-onboarding-chat-view-description = Ambos funcionan con cualquier AI — cámbialos en cualquier momento en Configuración
-onboarding-choose-permissions = Elige cómo piden aprobación los agentes
-onboarding-permissions-description = Se aplica a todos los proveedores compatibles — cámbialo en cualquier momento en Configuración
-onboarding-provider-defaults = Valores predeterminados del proveedor
-onboarding-provider-defaults-description = Iniciar cada agente en el modo que su propia CLI usa por defecto
-onboarding-bypass-full-access-description = Omite las solicitudes de aprobación en repositorios de confianza; los agentes ejecutan herramientas sin preguntar y Codex también se ejecuta sin su sandbox
-onboarding-choose-chat-view = Elige tu vista de chat
-onboarding-choose-default-harness = Elige tu arnés predeterminado: cámbialo en cualquier momento en Configuración
-onboarding-choose-left-sidebar = Elige tu barra lateral izquierda
-onboarding-compact-sidebar-description = Etiquetas de características; obtener detalles de git al pasar el mouse.
-onboarding-detailed-sidebar-description = Filas de ramas; estadísticas de un vistazo.
-onboarding-get-started-arrow = Empezar →
-onboarding-install-harness = Instale un arnés para comenzar
 onboarding-install-link = Instalar ↗
-onboarding-looking-for-harnesses = Buscando arneses instalados
-onboarding-more-harnesses = + { $count } más arneses
-onboarding-new-default = Nuevo valor predeterminado
-onboarding-no-matching-models = No hay modelos coincidentes
-onboarding-search-models = Buscar modelos...
-onboarding-sidebar-description = Cambie de diseño en cualquier momento en Configuración → Apariencia.
+common-back = Atrás
+common-hide = Ocultar
+onboarding-bypass-codex-note = Codex también se ejecuta sin su sandbox.
+onboarding-bypass-trusted-note = Úsalo solo en repositorios de confianza.
+onboarding-chat = Chat
+onboarding-sidebar-title = Elige tu barra lateral
+onboarding-compact-description = Nombres de funciones. Detalles de Git al pasar el cursor.
+onboarding-detailed-description = Filas de ramas con estadísticas a simple vista.
+onboarding-get-started = Empezar
+onboarding-splash-welcome = Te damos la bienvenida, { $name }
+onboarding-permissions-title = Permisos de los agentes
+onboarding-permissions-subtitle = Lo que los agentes pueden hacer sin preguntar.
+onboarding-supervised = Supervisado
+onboarding-supervised-summary = Los agentes siguen las solicitudes de aprobación de su CLI.
+onboarding-full-access-summary = Los agentes ejecutan comandos y editan archivos sin preguntar.
+onboarding-surface-title = ¿Chat o terminal?
+onboarding-surface-subtitle = Cómo se abren las conversaciones nuevas.
+onboarding-chat-summary = Respuestas completas con diffs integrados.
+onboarding-terminal-summary = La propia línea de comandos del agente.
+onboarding-sidebar-subtitle = Cómo se muestran tus worktrees.
+onboarding-finish = Finalizar
+onboarding-set-up-later = Configurar más tarde
+onboarding-skip-for-now = Omitir por ahora
+onboarding-agent-title = Elige tu agente
+onboarding-agents-on-device =
+    { $count ->
+        [one] Uno está listo en este dispositivo.
+       *[other] { $count } están listos en este dispositivo.
+    }
+onboarding-looking-on-device = Buscando agentes en este dispositivo
+onboarding-install-agent = Instala un agente
+onboarding-agent-ready = { $name } está listo
+onboarding-more-agents = Más
+onboarding-fewer-agents = Menos
+onboarding-watching-for-agents = Atentos a nuevos agentes
+onboarding-already-installed = ¿Ya tienes uno instalado?
+onboarding-already-installed-tip = Buscamos agentes en el PATH de tu shell. Si el tuyo está en otro lugar, añade su carpeta al PATH. Haz clic para buscar de nuevo ahora.
+onboarding-preview-prompt = Arregla la prueba de inicio de sesión inestable
+onboarding-preview-reply = Listo. La prueba ahora espera al botón.
+welcome-add-project-subtitle = Añade un proyecto para iniciar tu primer agente.
+welcome-setup-summary = Los chats nuevos usan { $harness } con { $model }.
+welcome-change-in-settings = Cambiar en Configuración
 onboarding-terminal = terminales
-onboarding-terminal-description = Ejecuta la CLI del agente en un panel terminal
 project-modal-display-name = Nombre para mostrar
 project-modal-rename-title = Cambiar nombre del proyecto
-project-modal-rename-worktree-label = Cambiar el nombre de la etiqueta del árbol de trabajo
 project-modal-worktree-label = Etiqueta del árbol de trabajo
 project-risk-add-anyway = Agregar de todos modos
 project-risk-create-anyway = Crear de todos modos
@@ -364,7 +479,6 @@ project-welcome-lets-build = vamos a construir
 project-welcome-tips-intro = Algunos consejos para empezar:
 quick-start-description = { $app_name } creará una nueva carpeta y un repositorio de git para usted.
 quick-start-location-dialog-title = Ubicación del proyecto
-quick-start-template = Plantilla
 quick-start-template-empty = vacio
 quick-start-template-node = Nodo
 quick-start-template-python = pitón
@@ -408,7 +522,6 @@ section-editor-name-conflict = Ya existe una sección con este nombre
 section-editor-new-title = Nueva sección
 section-editor-pinned-description = La sección fijada es siempre manual.
 section-editor-priority = Prioridad
-section-editor-priority-description = Los filtros de mayor prioridad reclaman primero los árboles de trabajo coincidentes. La prioridad no cambia la ubicación de la sección. Las secciones manuales siempre ganan.
 section-editor-type = Tipo de sección
 section-priority-highest = { $rank } · Más alto
 section-priority-highest-only = más alto
@@ -442,6 +555,9 @@ section-value-running = corriendo
 section-value-stopped = Detenido
 section-value-working = trabajando
 toast-remove-from-app = Quitar de { $app_name }
+toast-browser-automation-disabled-title = Un agente intentó usar el navegador
+toast-browser-automation-disabled = La automatización del navegador está desactivada, así que se rechazó el comando del agente. Actívala en Configuración › Experimental para que los agentes puedan leer y controlar tus pestañas del navegador.
+toast-open-experimental-settings = Abrir Configuración
 validation-name-required = El nombre es obligatorio
 welcome-clone-from-url = Clon de URL
 welcome-clone-from-url-description = Clonar un repositorio remoto
@@ -453,8 +569,7 @@ welcome-bitbucket-cli-description = Pull requests y comprobaciones en Bitbucket 
 welcome-open-project = Abrir proyecto
 welcome-open-project-description = Agregar un repositorio existente
 welcome-quick-start = Inicio rápido
-welcome-quick-start-description = Nuevo proyecto a partir de plantilla
-whats-new-release-count = Lanzamientos { $count }
+welcome-quick-start-from-template = Empieza con una plantilla
 whats-new-title = ¿Qué hay de nuevo?
 workspace-add-repositories-ellipsis = Agregar repositorios…
 workspace-ai-quick = Rápido
@@ -463,7 +578,6 @@ workspace-ai-setup = AI Montaje
 workspace-ai-thorough = minucioso
 workspace-ai-thorough-description = Lanza un agente AI para analizar repositorios y escribir archivos de contexto.
 workspace-choose-icon = Elija el icono
-workspace-delete-title = Eliminar espacio de trabajo
 workspace-individual-projects = Proyectos individuales
 workspace-individual-projects-description = Trabaje en repositorios separados con árboles de trabajo independientes.
 workspace-individual-projects-detail = Lo mejor para cambios de repositorio único, trabajos de mantenimiento y tareas no relacionadas.
@@ -489,7 +603,6 @@ worktree-create-in-background = Crear en segundo plano
 worktree-create-refresh-branches = Obtener ramas remotas
 worktree-create-refresh-failed = Error al obtener: { $error }
 worktree-create-return = Crear ↵
-worktree-delete-title = Eliminar árbol de trabajo
 worktree-in-workspace = en el espacio de trabajo
 worktree-no-matching-branches = No hay sucursales coincidentes
 worktree-not-installed = No instalado
@@ -527,6 +640,7 @@ settings-category-notifications-description = Comportamiento de alerta y persona
 settings-category-command-palette-description = Elija qué fuentes aparecen en la paleta de comandos.
 settings-category-privacy-description = Controles de telemetría de uso anónimo.
 settings-category-worktrees-description = Valores predeterminados para las acciones del ciclo de vida del árbol de trabajo.
+settings-category-devices = Dispositivos
 settings-mobile-push-desktop-idle-label = Notificar al teléfono tras inactividad
 settings-mobile-push-desktop-idle-description = Minutos sin actividad del teclado o el ratón en este Mac antes de que las notificaciones vayan a tu teléfono. Lo que gestiones aquí antes nunca se envía. 0 envía al instante.
 settings-branch-inherits-global = Hereda global
@@ -685,6 +799,10 @@ settings-updates-ready = Actualización lista: { $version }
 settings-updates-check-failed = Error en la comprobación de actualización: { $error }
 toast-update-apply-failed-title = No se pudo aplicar la actualización
 toast-update-apply-failed = No se pudo aplicar la actualización: { $error }
+toast-update-previous-launch-failed-title = Update did not finish starting
+toast-update-previous-launch-failed = The last launch of this update closed before its window appeared. If problems continue, see { $url }
+toast-update-rolled-back-title = Update rolled back
+toast-update-rolled-back = The update to { $version } closed before it finished starting, so super.engineering went back to the previous version. The next nightly will be offered automatically.
 settings-updates-downloading-version = Descargando la actualización { $version }...
 settings-updates-installing-version = Instalando la actualización { $version }...
 settings-updates-description = Comprueba e instala nuevas versiones super.engineering.
@@ -693,6 +811,7 @@ settings-updates-channel-description = Nightly es actualmente la única pista de
 settings-updates-current-version-label = Versión actual
 settings-updates-installed = Instalado
 settings-updates-status-label = Estado de actualización
+settings-updates-package-managed = Updates are managed by your package manager
 settings-ai-inherited = heredado
 settings-ai-search-models-placeholder = Buscar modelos...
 settings-ai-action-column = acción
@@ -796,66 +915,6 @@ scripts-setup = Configuración
 scripts-setup-description = Se ejecuta cuando se crea un nuevo árbol de trabajo.
 scripts-teardown = Desmontaje
 scripts-teardown-description = Se ejecuta cuando se elimina un árbol de trabajo.
-welcome-phrase-frictionless-engineering = Ingeniería agente sin fricciones
-welcome-phrase-future = Bienvenido al futuro
-welcome-phrase-zero-resistance = Resistencia cero, potencial infinito
-welcome-phrase-room-temperature = Un superconductor a temperatura ambiente
-welcome-phrase-electrons = Donde los electrones fluyen sin fricción.
-welcome-phrase-cooper-pairs = Cooper parejas bailando a 300K
-welcome-phrase-meissner-effect = El efecto Meissner es hermoso.
-welcome-phrase-flux-quantization = Cuantización de flujo en progreso
-welcome-phrase-resistance-futile = La resistencia es inútil (literalmente)
-welcome-phrase-bcs-theory = La teoría BCS fue solo el comienzo
-welcome-phrase-critical-temperature = Temperatura crítica: temperatura ambiente
-welcome-phrase-first-neural-net = La primera red neuronal se construyó en 1958.
-welcome-phrase-gpt = GPT significa Transformador Generativo Pre-entrenado
-welcome-phrase-attention = Atención es todo lo que necesitas (2017)
-welcome-phrase-alphago = AlphaGo venció a Lee Sedol 4-1 en 2016
-welcome-phrase-eliza = ELIZA (1966) fue el primer chatbot
-welcome-phrase-ai-dartmouth = El término AI fue acuñado en Dartmouth, 1956
-welcome-phrase-perceptron = Un perceptrón tiene exactamente una capa.
-welcome-phrase-backpropagation = La retropropagación se popularizó en 1986.
-welcome-phrase-imagenet = ImageNet tiene 14 millones de imágenes etiquetadas
-welcome-phrase-deep-blue = Deep Blue venció a Kasparov en 1997
-welcome-phrase-gpt2 = Se consideró que GPT-2 era demasiado peligroso para liberarlo
-welcome-phrase-transformers = Los transformadores reemplazaron a los RNN casi de la noche a la mañana
-welcome-phrase-bitter-lesson = La amarga lección: la computación gana
-welcome-phrase-mnist = MNIST es el hola mundo de ML
-welcome-phrase-dropout = El abandono se inventó para evitar el sobreajuste
-welcome-phrase-batch-norm = La norma por lotes hizo que las redes profundas fueran entrenables
-welcome-phrase-resnets = Las conexiones de salto de ResNets cambiaron todo
-welcome-phrase-gans = GAN: dos redes con gabardina
-welcome-phrase-chinese-room = The Chinese Room sostiene que la sintaxis no es semántica
-welcome-phrase-moores-law = Moores Law mantuvo AI escalado en la pista
-welcome-phrase-reinforcement-learning = El aprendizaje por refuerzo aprendió solo a caminar
-welcome-phrase-word2vec = Word2Vec: rey menos hombre más mujer es igual a reina
-welcome-phrase-lstm = Las puertas LSTM resolvieron el gradiente que desaparece
-welcome-phrase-turing-test = La prueba de Turing fue propuesta en 1950.
-welcome-phrase-alphafold = AlphaFold resolvió el plegamiento de proteínas en 2020
-welcome-phrase-self-attention = La autoatención se ejecuta en tiempo O (n al cuadrado)
-welcome-phrase-lora = LoRA afina con el 0,1% de los parámetros
-welcome-phrase-chinchilla = Chinchilla demostró que estábamos subentrenados
-welcome-phrase-mixture-experts = Mezcla de expertos: no todas las neuronas se activan
-welcome-phrase-tokenizers = Los tokenizadores convierten palabras en números
-welcome-phrase-temperature = La temperatura controla la aleatoriedad en el muestreo.
-welcome-phrase-softmax = La función softmax suma uno
-welcome-phrase-convnets = Los convnets se inspiraron en la corteza visual
-welcome-phrase-ai-winters = AI inviernos ocurrieron dos veces: 1974 y 1987
-welcome-phrase-gradient-descent = Descenso en pendiente: simplemente sigue la pendiente hacia abajo.
-welcome-phrase-relu = ReLU: si es negativo, cero. Eso es todo.
-welcome-phrase-embeddings = Las incrustaciones dan significado a la geometría
-welcome-phrase-rlhf = RLHF enseñó modelos a ser útiles
-welcome-phrase-diffusion = Los modelos de difusión aprenden a eliminar el ruido.
-welcome-phrase-alexnet = Una GPU entrenó a AlexNet en 2012
-welcome-phrase-context-windows = Las ventanas contextuales son cada vez más largas
-welcome-phrase-weights = Los pesos son simplemente números muy organizados.
-welcome-phrase-loss-function = La función de pérdida es la única verdad.
-welcome-phrase-synthetic-data = Los datos sintéticos están entrenando a la próxima generación
-welcome-phrase-scaling-laws = Las leyes de escala predicen el rendimiento de la computación
-welcome-phrase-sparse-attention = La escasa atención hace posibles contextos largos
-welcome-phrase-kv-cache = La caché KV intercambia memoria por velocidad
-welcome-phrase-speculative-decoding = Decodificación especulativa: adivina y luego verifica
-welcome-phrase-quantization = Cuantización: menos precisión, mismas vibraciones
 
 quit-active-workspaces = { $count ->
     [one] Un espacio de trabajo tiene tareas en curso. Al salir se detendrán.
@@ -878,7 +937,6 @@ settings-section-layout = Distribución
 settings-section-chat = Chat
 settings-section-files-diffs = Archivos y diffs
 settings-section-usage-cost = Uso y coste
-settings-section-fonts = Tipografías
 settings-section-delivery = Entrega
 settings-section-queue = Cola
 settings-section-per-type-overrides = Anulaciones por tipo
@@ -1005,7 +1063,6 @@ settings-ai-fast-model-description = Modelo utilizado para acciones ligeras.
 settings-ai-thorough-model-description = Modelo utilizado para acciones de revisión y reparación.
 settings-ai-fast = Rápido
 settings-ai-thorough = Exhaustiva
-settings-ai-provider-disabled = Deshabilitado — activarlo en la sección de Proveedores.
 settings-ai-all-buckets-cli-default = Todos los cubos usan el modelo CLI por defecto.
 settings-ai-inheriting-parent-scope = Heredando del ámbito parental.
 settings-ai-customized = Personalizado
@@ -1019,25 +1076,21 @@ settings-ai-refreshing-models = Refrescante...
 settings-ai-refresh-model-caches = Cachés de modelos de actualización
 plan-executing = Ejecución
 plan-executing-plan = Ejecución del Plan
-chat-steered = Dirigido
 chat-fast-mode-with-rate = Modo rápido: 1,5 veces más rápido, usa { $rate } créditos.
 chat-fast-mode = Modo rápido
 chat-fast = Rápido
-chat-argument-hint = Pista de argumento: { $hint }
 chat-queued-until-setup-finishes = En cola hasta que termine la configuración
 chat-queued-position = En cola { $position }
 chat-pasted-text = Texto pegado
 chat-code-review-count = Revisión de código ({ $count })
 chat-system-instructions = Instrucciones del sistema
 action-review = Reseña
-subagent-tool-result-unavailable = Resultado de la herramienta no disponible
 subagent-preparing-transcript = Preparando la transcripción...
 common-read-only = Solo lectura
 subagent-loading-transcript = Cargando transcripción del subagente...
 subagent-transcript-unavailable = Transcripción no disponible
 action-back = Atrás
 subagent-no-transcript = Aún no se ha registrado la transcripción.
-subagent-jump-to-latest = Saltar a lo último
 action-confirm = Confirmar
 changes-no-changes = Sin cambios
 changes-commits = Comités
@@ -1070,6 +1123,8 @@ shared-context-repositories = Repositorios
 shared-context-add-missing-project = Añadir proyecto perdido
 common-running = Carrera
 shared-context-add-run-script = Añadir script de ejecución...
+run-picker-running = En ejecución
+run-picker-running-for = En ejecución desde hace { $elapsed }
 shared-parent-git-repo-count = { $count ->
     [one] 1 repo
    *[other] { $count } repos
@@ -1078,6 +1133,8 @@ shared-parent-git-all-repos = Todos · { $repos }
 shared-parent-git-menu-tooltip = Acciones de Git para los repos secundarios
 shared-parent-git-unavailable-title = No se pudieron abrir estos repos
 shared-context-choose-projects-to-run = Elige proyectos para dirigir
+shared-context-run-count = Ejecuta { $selected } de { $total }
+shared-context-run-none = Ninguno
 workspace-choose-what-to-launch = Elige qué lanzar...
 icon-picker-tab-symbols = Símbolos
 icon-picker-tab-icons = Iconos
@@ -1101,18 +1158,13 @@ review-findings-triage-hint = Marca cada hallazgo como Corregir o Descartar
 chat-assignment = Asignación
 chat-plan = Plan
 approval-allow = Permitir
-approval-allow-for-session = Permitir la sesión
 approval-deny = Negar
-approval-needed = Se necesita aprobación
 approval-needs-access = Necesita acceso a
 approval-show-input = Mostrar entrada completa
 approval-hide-input = Ocultar entrada completa
 input-requested = Se solicita entrada
 action-submit = Enviar
 action-next = Siguiente
-input-needed = Se necesita información
-input-progress = { $current }/{ $total }
-input-progress-auto-resolve = { $current }/{ $total } · puede resolver automáticamente en { $seconds }s
 input-sensitive-answer = Respuesta sensible · Omitido en el resumen de la transcripción
 plan-run-in-new-chat = Ejecutar el chat nuevo
 auth-open-terminal-to-sign-in = Abrir el terminal para iniciar sesión
@@ -1134,7 +1186,6 @@ context-cache-write = Escritura de caché
 context-output = Producción
 context-total-io = Total de E/S
 context-input-effective = Entrada efectiva
-input-submitted = Aportaciones enviadas
 profile-cli-default = CLI por defecto
 review-no-active-comments = No hay comentarios activos en la reseña.
 permission-tools = Herramientas
@@ -1190,14 +1241,16 @@ chat-thinking-in-progress = Pensando…
 chat-thinking-count = Pensando ({ $count })
 chat-thinking-summary = Pensando · { $summary }
 chat-working-for = Trabajando durante
+chat-agent-wait-caption = { $count ->
+    [one] { $model } continúa cuando el agente informe
+   *[other] { $model } continúa cuando los agentes informen
+}
 chat-worked-for = Trabajó durante { $duration }
 chat-worked = Trabajó
 plan-proposed = PLAN PROPUESTO
 plan-changes-requested = SE SOLICITAN CAMBIOS EN EL PLAN
 plan-ready = PLAN LISTO
-input-permission-response = Respuesta de permiso
 approval-approve-action = ¿Aprobar acciones?
-subagent-view-single = Ver subagente
 tool-action-read = Lee
 tool-action-wrote = Escribió
 tool-action-ran = Ran
@@ -1207,6 +1260,10 @@ tool-action-dispatched = Despachado
 tool-action-updated = Actualizado
 tool-action-asked = Preguntó
 tool-action-called = Llamado
+tool-action-messaged = Escribió a
+tool-action-waited-for = Esperó a
+tool-action-resumed = Reanudó
+tool-action-closed = Cerró
 tool-result-lines = { $count ->
     [one] 1 línea
    *[other] { $count } líneas
@@ -1251,6 +1308,10 @@ git-updating = Actualizando...
 git-updated = Actualizado
 git-update-failed = Actualización fallida
 git-update-branch = Rama de actualización
+git-update-branch-from-target = { $count ->
+    [one] Incorporar 1 commit de { $target }
+   *[other] Incorporar { $count } commits de { $target }
+}
 shared-context-select-runnable-projects = Seleccionar proyectos ejecutables
 shared-context-run-selected-projects = Dirigir proyectos seleccionados
 shared-context-stop-selected-projects = Detener proyectos seleccionados
@@ -1266,7 +1327,6 @@ clone-status-canceled = Clon cancelado: { $repository }
 file-dialog-select-profile-folder = Seleccione una carpeta de perfil
 notification-app-up-to-date = { $app_name } está actualizado
 notification-pasting-image = Pegando imagen...
-notification-restarting-for-update = Reiniciando para aplicar actualización...
 notification-status-running = Carrera
 notification-status-working = Funcionamiento
 notification-status-task-complete = Tarea completada
@@ -1353,7 +1413,6 @@ toast-notification = Notificación
 toast-cannot-create-worktree = No se puede crear árbol de trabajo
 toast-create-worktree-failed = Crear árbol de trabajo fallido
 toast-delete-worktree-failed = No se ha conseguido eliminar el árbol de trabajo
-toast-delete-branch-group-failed = No se ha conseguido eliminar el grupo de ramas
 toast-delete-child-worktree-failed = No se pudo eliminar el árbol de trabajo hijo
 toast-add-child-failed = No se añadió un hijo
 toast-pull-failed = Pull fallido
@@ -1364,7 +1423,6 @@ toast-post-cleanup-hook-failed = Fallo del gancho tras la limpieza
 toast-child-repository-not-found = Recuperación infantil '{ $name }' no encontrada
 toast-branch-switch-main-only = La conmutación de ramas solo se soporta en el árbol de trabajo principal
 toast-shared-no-child-repositories = Este espacio de trabajo compartido no tiene repositorios hijos.
-toast-shared-branch-group-not-found = Grupo de sucursal compartida no encontrado.
 toast-selected-worktree-not-found = Árbol de trabajo seleccionado no encontrado.
 toast-project-not-found = Proyecto no encontrado.
 toast-worktree-not-found = Árbol de trabajo no encontrado.
@@ -1404,6 +1462,8 @@ toast-initialize-git-first = Inicializar Git primero
 toast-plain-folders-no-worktrees = Las carpetas lisas no admiten árboles de trabajo.
 toast-git-unavailable = Git no disponible
 toast-git-unavailable-project = Git no está disponible para este proyecto.
+toast-inotify-watch-limit = Límite de vigilancia de archivos alcanzado
+toast-inotify-watch-limit-message = Linux se quedó sin vigilancias de archivos (fs.inotify.max_user_watches), así que algunos cambios pueden aparecer con retraso o no aparecer hasta que aumentes el límite: sudo sysctl fs.inotify.max_user_watches=524288
 toast-project-loading = Carga de proyectos
 toast-try-again-moment = Inténtalo de nuevo en un momento.
 toast-app-cli-required = { $app_name } CLI obligatorio
@@ -1460,6 +1520,10 @@ tool-run-part-dispatched = { $count ->
     [one] Ejecutó 1 tarea de agente
    *[other] Ejecutó { $count } tareas de agente
 }
+tool-run-part-messaged = { $count ->
+    [one] Escribió a 1 agente
+   *[other] Escribió a { $count } agentes
+}
 tool-run-part-updated = { $count ->
     [one] Todos actualizados
    *[other] Todos actualizados { $count } veces
@@ -1477,7 +1541,6 @@ chat-reply-count = { $count } respuestas
 chat-files-changed-count = { $count } archivos modificados
 chat-files-expand-all = Expandir todos los archivos
 chat-files-collapse-all = Contraer todos los archivos
-subagent-view-count = Ver subagentes ({ $count })
 git-uncommitted-change-count = Cambios no comprometidos: { $count }
 git-unpushed-commit-count = Commits no publicados: { $count }
 settings-ai-action-model-pins-set = Conjunto de pasadores específicos para la acción: { $count }
@@ -1546,8 +1609,6 @@ settings-experimental-remote-workspaces-label = Espacios de trabajo remotos
 settings-experimental-remote-workspaces-description = Crea espacios de trabajo que estén en una máquina remota en SSH. Los espacios de trabajo remotos existentes siguen funcionando cuando están deshabilitados.
 settings-experimental-non-git-projects-label = Proyectos no Git
 settings-experimental-non-git-projects-description = Permite añadir carpetas sin Git metadatos. Los proyectos existentes de carpetas simples permanecen visibles si esto está desactivado.
-settings-experimental-agent-orchestration-label = Orquestación de agentes
-settings-experimental-agent-orchestration-description = Pon los comandos de CLI de orquestación de super.engineering a disposición de los agentes. Cada uso sigue requiriendo una solicitud explícita y correspondiente por tu parte.
 settings-experimental-auto-compact-label = Autocompactación Claude Code en límite de ventana de contexto
 settings-experimental-auto-compact-description = Cuando falla un turno de Claude Code porque se ha excedido la ventana de contexto del modelo, ejecuta automáticamente /compact y vuelve a enviar tu último mensaje. Útil para backends que no tienen contexto de 1M (por ejemplo, GLM5.1) donde el CLAUDE_CODE_AUTO_COMPACT_WINDOW de Claude Code no se activa bajo el modo -p.
 settings-experimental-review-label = Reseña
@@ -1589,10 +1650,10 @@ settings-diagnostics-status-label = Estado del diagnóstico
 settings-privacy-telemetry-heading = Telemetría
 settings-privacy-share-label = Compartir datos de uso anónimo
 settings-privacy-share-description = Nos ayuda a entender cómo se utiliza super.engineering y a priorizar mejoras. Ningún dato personal, de proyecto o contenido de archivos sale nunca de tu máquina.
-settings-privacy-what-we-send-description = Un ID aleatorio por instalación, un ID aleatorio de la sesión de la app, una versión de la app, un canal de actualización, macOS versión, marcas de inicio y fin de sesión y duración, y un evento activo diario al iniciar o el primer enfoque/entrada posterior de la app por UTC día. Al desactivar esta opción, la telemetría se detiene sin enviar un evento final de desactivación. El ID de instalación permanece en tu dispositivo y se reutiliza si vuelves a activar la telemetría; el estado de la sesión se elimina.
+settings-privacy-what-we-send-description = Un ID aleatorio por instalación, un ID aleatorio de sesión de la app, la versión de la app, el canal de actualización, el nombre y la versión del sistema operativo, la arquitectura de CPU, las marcas de tiempo de inicio y fin de sesión y su duración, y un evento de actividad diaria al iniciar o en el primer enfoque o entrada posterior de la app por día UTC. Al desactivar esta opción, la telemetría se detiene sin enviar un evento final de desactivación. El ID de instalación permanece en tu dispositivo y se reutiliza si vuelves a activar la telemetría; el estado de la sesión se elimina.
 settings-privacy-what-we-never-send-description = Tu nombre, correo electrónico, nombre de host, directorios de trabajo, nombres de proyectos, rutas de archivos, nombres de ramas, entradas de comandos, contenido del portapapeles o cualquier código. El enriquecimiento GeoIP está desactivado en todos los eventos.
 settings-privacy-ip-data-capture-description = Configuramos $geoip_disable: true en todos los eventos para que PostHog se salte el enriquecimiento de país/ciudad. Nuestro proyecto PostHog también está configurado para descartar las direcciones IP de los clientes antes de almacenarlas — consulta Docs para ver cómo funciona eso en su lado.
-settings-privacy-update-checks-description = Aparte de la telemetría, las versiones de lanzamiento comprueban releases.super.engineering cada hora para actualizaciones de la zona. La primera comprobación exitosa de cada día UTC lleva un marcador anónimo utilizado para contar las instalaciones activas en conjunto. No contiene ningún identificador y no se almacena nada preinstalado en nuestros servidores; La app solo mantiene un marcador local del día (~/.super.engineering/update_ping_day), por lo que envía el marcador una vez al día. No se ve afectado por el interruptor de arriba.
+settings-privacy-update-checks-description = Aparte de la telemetría, las versiones publicadas comprueban cada hora si hay actualizaciones en releases.super.engineering. La primera comprobación correcta de cada día UTC lleva un marcador anónimo que se usa para contar las instalaciones activas de forma agregada. No contiene ningún identificador y no se almacena nada por instalación en nuestros servidores; la app solo guarda un marcador de día local (~/.super.engineering/update_ping_day) para enviar el marcador una vez al día. Cada comprobación también envía la arquitectura de CPU de la app (ARM o Intel), para poder desglosar el recuento por arquitectura. No se ve afectado por el interruptor de arriba.
 settings-privacy-install-id-location = Tu ID de instalación está en ~/.super.engineering/install_id — bórralo en cualquier momento para reiniciarlo.
 settings-privacy-install-id-disclosure = Cómo se genera tu ID de instalación
 settings-privacy-events-disclosure = Cómo se envían los eventos
@@ -1614,7 +1675,6 @@ settings-search-section-open-in-apps = Aplicaciones abiertas
 settings-search-section-storage = Almacenamiento
 settings-search-section-diagnostics = Diagnóstico
 settings-search-section-theme = Tema
-settings-search-section-fonts = Tipografías
 settings-search-section-layout = Distribución
 settings-search-section-chat = Chat
 settings-search-section-files---diffs = Archivos y diffs
@@ -1795,8 +1855,6 @@ settings-notification-queue-on-open-keep = Mantener
 settings-notification-queue-on-open-reset = Restablecer
 settings-notification-queue-next-item-newer = Más reciente
 settings-notification-queue-next-item-older = Más antiguo
-settings-search-entry-notifications-delivery-timeline-notifications-label = Notificaciones de la línea de tiempo
-settings-search-entry-notifications-delivery-timeline-notifications-description = Elige cuántos eventos de notificación conservar. Los valores más altos consumen más memoria y espacio en disco.
 settings-search-entry-notifications-per-type-overrides-task-complete-delivery-label = Entrega completada de la tarea
 settings-search-entry-notifications-per-type-overrides-task-complete-delivery-description = Controles cuando aparecen notificaciones macOS para partidas completadas o con errores.
 settings-search-entry-notifications-per-type-overrides-task-complete-sound-label = Sonido de tarea completada
@@ -1829,8 +1887,8 @@ settings-search-entry-experimental-feature-flags-remote-workspaces-label = Espac
 settings-search-entry-experimental-feature-flags-remote-workspaces-description = Crea espacios de trabajo que estén en una máquina remota a través de SSH. Los espacios de trabajo remotos existentes siguen funcionando cuando están deshabilitados.
 settings-search-entry-experimental-feature-flags-non-git-projects-label = Proyectos no Git
 settings-search-entry-experimental-feature-flags-non-git-projects-description = Permite añadir carpetas sin Git metadatos.
-settings-search-entry-experimental-feature-flags-agent-orchestration-label = Orquestación de agentes
-settings-search-entry-experimental-feature-flags-agent-orchestration-description = Pon los comandos de orquestación a disposición de los agentes. Cada uso sigue requiriendo una solicitud explícita y correspondiente por tu parte.
+settings-search-entry-general-behavior-agent-orchestration-label = Orquestación de agentes
+settings-search-entry-general-behavior-agent-orchestration-description = Pon los comandos de orquestación a disposición de los agentes. Cada uso sigue requiriendo una solicitud explícita y correspondiente por tu parte.
 settings-search-entry-experimental-feature-flags-auto-compact-claude-code-on-context-window-limit-label = Autocompactar Claude Code en el límite de ventana de contexto
 settings-search-entry-experimental-feature-flags-auto-compact-claude-code-on-context-window-limit-description = Ejecuta automáticamente /compact y vuelve a enviar cuando Claude Code supere la ventana de contexto.
 settings-search-entry-experimental-feature-flags-review-label = Reseña
@@ -1959,6 +2017,15 @@ settings-ai-mixed = Mixta
 settings-ai-current-chat = Chat actual
 settings-ai-provider-toggle-description = Muestra este proveedor en el menú de Nueva Pestaña y en la interfaz de chat.
 settings-ai-provider-last-enabled-description = { $description } Al menos un proveedor debe permanecer habilitado.
+settings-ai-provider-status-chat-terminal = Chat y terminal
+settings-ai-provider-status-terminal = Terminal
+settings-ai-provider-status-disabled = Desactivado
+settings-ai-provider-disabled-detail = Activa { $provider } para configurar sus modelos y opciones de inicio.
+settings-ai-provider-section-models = Modelos
+settings-ai-provider-section-chat = Chat
+settings-ai-provider-section-runtime = Ejecución
+settings-ai-provider-profiles-description = Cuentas y directorios de configuración de este proveedor.
+settings-ai-provider-manage-profiles = Gestionar perfiles
 settings-ai-provider-antigravity-description = Habilitar Antigravedad como proveedor de terminales (requiere instalar CLI `agy` Antigravedad).
 settings-ai-provider-hermes-description = Habilitar Hermes como proveedor de terminales (requiere que `hermes` instalado el Hermes Agent).
 settings-ai-provider-qwen-description = Habilitar Qwen Code como proveedor terminal (requiere que el Qwen Code CLI `qwen` instalado).
@@ -2030,31 +2097,22 @@ settings-keybinding-action-toggle-terminal = Terminal de palanca
 action-forward = Adelante
 custom-actions-show-more = + { $count } más
 custom-actions-untitled = Sin título
-subagent-state-running = Carrera
 subagent-state-completed = Completado
 subagent-state-failed = Suspendido
 launched-agent-needs-input = Requiere respuesta
-launched-agent-closed = Cerrado
-launched-agent-idle = Inactivo
-launch-group-agents = { $count ->
-    [one] 1 agente
-   *[other] { $count } agentes
-}
 launch-card-working = { $count } trabajando
 launch-card-needs-input = { $count ->
     [one] 1 necesita una respuesta
    *[other] { $count } necesitan una respuesta
 }
 launch-card-failed = { $count } fallidos
-launch-card-done = { $count } terminados
-subagent-earlier-rows-not-shown = … { $count } filas anteriores no mostradas
 diff-comment-on-file = Comentario en archivo
 workspace-review-request-detect-failed = No pude detectar { $kind }
 workspace-review-request-state-changed = { $kind } estado cambió; La acción ya no está disponible
 workspace-remote-forge-cli-not-authenticated-hint = Consejo: { $cli } en el host no está autenticado — `{ $cli } auth login` allí para crear una { $kind } con el agente.
 workspace-remote-forge-cli-missing-hint = Consejo: instala { $cli } en el host y ejecuta `{ $cli } auth login` para crear un { $kind } con el agente.
 workspace-review-request-url-copied = Copiado { $kind } URL
-workspace-review-request-url-unavailable = No URL disponible ninguna solicitud de revisión
+workspace-review-request-none-yet = Esta rama aún no tiene { $kind }
 worktree-prompt = Prompt
 worktree-branches = Ramas
 worktree-merge-requests = Solicitudes de fusión
@@ -2182,6 +2240,8 @@ launched-agents-summary = { $state ->
 workspace-toggle-terminal = Terminal de palanca
 workspace-choose-open-app = Elige abrir aplicación
 workspace-new-tab-with-provider = Nueva pestaña con el proveedor
+workspace-add-split-pane = Panel dividido
+workspace-add-split-view = Vista dividida
 workspace-choose-app = Elegir app
 theme-copy-from-dark = Copia de Dark
 theme-copy-from-light = Copiado de Light
@@ -2221,6 +2281,7 @@ git-action-checks = Cheques
 git-action-commit-and-push = Compromete y empuja
 git-action-commit = Comprométete
 git-action-push = Empuja
+git-action-pull-and-push = Pull y push
 git-action-pull = Tira
 git-action-resolve = Resolución
 git-action-fix = Arreglar
@@ -2244,6 +2305,7 @@ git-action-creating = Creación
 git-action-committing-and-pushing = Comprometerse y empujar
 git-action-committing = Compromiso
 git-action-pushing = Empujando
+git-action-pulling-and-pushing = Haciendo pull y push
 git-action-resolving = Resolución
 git-action-fixing = Arreglo
 git-action-investigating = Investigación
@@ -2437,12 +2499,6 @@ settings-remote-probe-home = Inicio
 settings-remote-probe-shell = Shell
 settings-remote-probe-temp = Temperatura
 settings-remote-probe-git = Git
-settings-remote-key-install-confirm-title = ¿Instalar una llave SSH dedicada en { $host }?
-settings-remote-key-install-confirm-body = { $app_name } generará una nueva clave en { $key_path } (sin frase de paso), añadirá su clave pública a ~/.ssh/authorized_keys en { $host } (puede que te pidan la contraseña una vez), y añadirá una línea Include a ~/.ssh/config apuntando a un archivo gestionado por la app. Puedes eliminar todo esto más adelante con "Eliminar SSH tecla".
-settings-remote-key-install-confirm-action = Llave de instalación
-settings-remote-key-remove-confirm-title = ¿Eliminar la llave de SSH dedicada de { $host }?
-settings-remote-key-remove-confirm-body = { $app_name } primero eliminará esta clave de ~/.ssh/authorized_keys en { $host }, luego eliminará el par de claves local en { $key_path } y su bloque en ~/.ssh/super.engineering_config. Si la limpieza remota no puede autenticar, la credencial local se conservará para que puedas intentarlo de nuevo con seguridad.
-settings-remote-key-remove-confirm-action = Quitar SSH tecla
 settings-remote-removing-ssh-key = Eliminando...
 settings-remote-remove-ssh-key = Quitar SSH tecla
 settings-remote-invalid-target-config-preview = Introduce un destino de SSH válido para previsualizar su configuración.
@@ -2532,10 +2588,10 @@ settings-left-sidebar-layout-compact = Compacto
 settings-left-sidebar-layout-detailed = Detallado
 settings-preview-sidebar-cards = Mostrar tarjetas de vista previa en la configuración
 settings-preview-hover-position = Fijar la posición del surcorrido flotante
-settings-preview-two-hours-ago = Hace 2h
-settings-preview-one-day-ago = 1d atrás
-settings-preview-two-hours = 2h
-settings-preview-one-day = 1d
+settings-preview-flaky-login = Arreglar la prueba de inicio de sesión inestable
+settings-preview-billing-tables = Renombrar las tablas de facturación
+settings-preview-dark-mode = Añadir un interruptor de modo oscuro
+settings-preview-search-index = Acelerar la indexación de búsqueda
 settings-notifications-system-customized-description = Comportamiento predeterminado de las notificaciones macOS. A continuación, anulaciones personalizadas por tipo.
 settings-notifications-task-complete-overrides-label = Tarea completada
 settings-notifications-task-complete-overrides-description = Controla la entrega y el sonido para las partidas completadas o con errores.
@@ -2653,6 +2709,11 @@ right-panel-show-gitignored-files = Mostrar archivos ignorados en GitIgnored
 right-panel-hide-gitignored-files = Ocultar archivos ignorados en gitignorado
 workspace-hold-command-for-chat-ui = Mantén ⌘ para la interfaz de chat
 workspace-hold-command-for-terminal = Mantén ⌘ para el Terminal
+tool-picker-no-matches = Sin coincidencias
+tool-picker-as-terminal = Terminal
+tool-picker-as-chat = Chat
+tool-picker-open-as-terminal = Abrir como terminal
+tool-picker-open-as-chat = Abrir en el chat
 file-tree-symbolic-link = Vínculo simbólico
 file-tree-symlink-target = Symlink → { $target }
 pr-checks-failed = Las comprobaciones han fallado
@@ -2672,6 +2733,41 @@ pr-checks-pending-count =
         [one] { $count } comprobación pendiente
        *[other] { $count } comprobaciones pendientes
     }
+hover-card-needs-answer = Espera tu respuesta
+hover-card-no-review-request =
+    { $forge ->
+        [gitlab] Sin merge request
+       *[other] Sin pull request
+    }
+hover-card-checks-running = Comprobaciones en curso, { $passed } de { $total }
+hover-card-more-running = { $count } más en ejecución
+hover-card-stopping = Deteniendo
+hover-card-main-checkout = Checkout principal
+hover-card-main-checkouts = Checkouts principales
+hover-card-add-repo = Añadir repositorio
+hover-card-add-repo-count = +{ $count }
+hover-card-find-repo = Buscar un repositorio
+hover-card-checking-repos = Comprobando repositorios
+hover-card-all-merged = Todo fusionado
+hover-card-repos-merged = { $count ->
+    [one] { $count } fusionado
+   *[other] { $count } fusionados
+}
+hover-card-more-repos = { $count } más
+hover-card-run-repos = { $count ->
+    [0] Ejecutar
+   *[other] Ejecutar { $count }
+}
+hover-card-stop-repos = { $count ->
+    [0] Detener
+   *[other] Detener { $count }
+}
+hover-card-run-select-repos = Selecciona repositorios para ejecutar
+hover-card-run-selected-repos = Ejecutar los repositorios seleccionados
+hover-card-stop-selected-repos = Detener los repositorios seleccionados
+hover-card-checking-status = Comprobando estado
+hover-card-nothing-to-commit = Nada que confirmar ni enviar
+hover-card-unpushed-commits = { $count } sin enviar
 icon-picker-emoji-tooltip = Emoji: { $glyph }
 icon-picker-named-icon-tooltip =
     { $name ->
@@ -2695,9 +2791,9 @@ settings-search-entry-appearance-layout-usage-meter-window-description = Elige q
 settings-usage-meter-window-smart = Inteligente
 settings-usage-meter-window-session = Preferir la ventana de sesión
 settings-usage-meter-window-weekly = Preferir la ventana semanal
-usage-meter-tooltip = { $provider } · queda un { $percent } % en la ventana «{ $window }»
 usage-meter-unavailable = Uso no disponible para { $provider }
 usage-meter-signed-out = Sesión no iniciada
+usage-meter-api-key = Tu clave de API funciona como siempre. Pueden aplicarse límites del proveedor.
 usage-meter-stale = Error al actualizar — se muestran los datos en caché
 usage-meter-error = No se pudo cargar el uso
 usage-meter-loading = Cargando uso…
@@ -2709,15 +2805,49 @@ usage-meter-window-daily = Diaria
 usage-meter-window-weekly = Semanal
 usage-meter-window-monthly = Mensual
 usage-meter-window-other = Otra
-usage-meter-other-accounts = Otras cuentas
 usage-meter-all-providers = Todos los proveedores
-usage-meter-refresh = Actualizar
 usage-meter-percent-left = Queda un { $percent } %
 usage-meter-no-account = Ninguna cuenta seleccionada
 usage-meter-now = ahora
 usage-meter-default-account = Predeterminada
+usage-popover-runs-out = Se agota { $time }, se restablece { $reset }
+usage-popover-runs-out-then-credits = Se agota { $time }, luego créditos
+usage-popover-using-credits = Usando créditos
+usage-api-key = Clave de API
+usage-api-key-week = estimado esta semana
+usage-api-key-today = { $amount } hoy
+usage-api-key-counting-since = Contando desde { $day }
+usage-api-key-note = De sesiones en este Mac. Pueden aplicarse límites del proveedor.
+usage-api-key-partial-note = Se omiten los días anteriores: este Mac empezó a registrar qué inicio de sesión usaba cada sesión el { $day }.
+usage-api-key-unavailable = El gasto de { $provider } aún no está disponible
+usage-api-key-unavailable-note = Tu clave de API funciona como siempre. Pueden aplicarse límites del proveedor.
+usage-api-key-billing = Ver facturación del proveedor
+usage-popover-resets-at = Se restablece { $time }
+usage-popover-window-left = { $window } restante
+usage-popover-updating = Actualizando…
+usage-popover-retry = Reintentar
+usage-popover-accounts = Cuentas
+usage-popover-in-use = En uso
+usage-popover-unused = { $count } sin usar
+usage-graph-on-pace = Al ritmo previsto
+usage-graph-in-reserve = { $percent } % en reserva
+usage-graph-behind = { $percent } % de déficit
+usage-graph-runs-out = Se agota { $time }
+usage-graph-lasts = Dura hasta el restablecimiento
+usage-graph-collecting = El gráfico se completa a medida que llegan lecturas
+usage-instrument-gauge = Indicador
+usage-instrument-graph = Gráfico
+usage-popover-no-other-limits = Sin otros límites
+usage-popover-no-data = Aún no hay uso de { $providers }
+usage-popover-more = Más
+usage-popover-less = Menos
 tool-verb-ran = Ejecutó
 tool-verb-running = Ejecutando
+tool-verb-messaging = Escribiendo a
+tool-verb-dispatching = Despachando
+tool-verb-waiting-for = Esperando a
+tool-verb-resuming = Reanudando
+tool-verb-closing = Cerrando
 tool-verb-read = Leyó
 tool-verb-reading = Leyendo
 tool-verb-searched = Buscó
@@ -2785,3 +2915,786 @@ data-directory-notice-home-title = Conserva ambas carpetas de datos
 data-directory-notice-summary = Las configuraciones de repositorio y los scripts existentes siguen funcionando.
 data-directory-notice-config = Configuración del repositorio: usa .super.engineering/config.json para la configuración nueva. El archivo anterior .superconductor/config.json sigue siendo compatible si el nuevo no existe. Las versiones antiguas de la aplicación siguen usando el archivo anterior; los dos archivos no se sincronizan.
 data-directory-notice-scripts = Los scripts permanecen donde están. Si mueves un script, actualiza el comando que lo ejecuta. Los scripts deberían leer las variables SUPER_ENGINEERING_*; los nombres SUPERCONDUCTOR_* se siguen exportando por ahora y se eliminarán en una versión posterior.
+
+chat-agent-steered = { $name } redirigió al agente
+chat-agent-stopped = { $name } lo detuvo
+chat-agent-stopped-after = { $name } detuvo al agente después de { $duration }
+chat-context-compacted = Contexto compactado
+chat-context-compacted-of-window = de { $window }
+chat-context-compacted-tokens = { $before } → { $after } tokens
+chat-context-compacted-tooltip-body = El contexto anterior se resumió para liberar espacio. Los mensajes siguen aquí para ti; el agente lee su resumen en su lugar.
+chat-context-compacted-tooltip-title = El agente ahora trabaja a partir de un resumen
+chat-pill-card-agent = Agente
+chat-pill-card-command = Comando
+chat-pill-card-items = { $count ->
+    [one] 1 elemento
+   *[other] { $count } elementos
+}
+chat-pill-card-lines = { $count ->
+    [one] { $count } línea
+   *[other] { $count } líneas
+}
+chat-pill-card-modified = modificado { $time }
+chat-pill-card-open-agent = Abrir agente
+chat-pill-card-skill = Habilidad
+chat-steer-waiting = Pendiente de lectura
+chat-turn-group-agents-count = { $count ->
+    [one] { $count } agente
+   *[other] { $count } agentes
+}
+chat-turn-group-deleted = { $count ->
+    [one] { $count } eliminado
+   *[other] { $count } eliminados
+}
+chat-turn-group-new = { $count ->
+    [one] { $count } nuevo
+   *[other] { $count } nuevos
+}
+chat-turn-group-recreated = { $count ->
+    [one] { $count } recreado
+   *[other] { $count } recreados
+}
+chat-turn-group-subagents-count = { $count ->
+    [one] 1 subagente
+   *[other] { $count } subagentes
+}
+chat-turn-group-worktrees-count = { $count ->
+    [one] 1 árbol de trabajo
+   *[other] { $count } árboles de trabajo
+}
+chat-waiting-for-answer = Esperando tu respuesta
+chat-waiting-for-approval = Esperando aprobación
+chat-worktree-card-creating = Creando árbol de trabajo…
+chat-worktree-card-deleted = Eliminado
+chat-worktree-card-deleting = Eliminando…
+chat-worktree-card-recreated = Recreado
+chat-worktree-card-recreating = Recreando…
+chat-worktree-card-working = Agente en ejecución
+chat-you-stopped = Detuviste al agente
+chat-you-stopped-after = Detuviste al agente después de { $duration }
+created-worktrees-summary = { $count ->
+    [one] 1 árbol de trabajo creado
+   *[other] { $count } árboles de trabajo creados
+}
+input-answer-hidden = Respuesta oculta
+input-asked = { $count ->
+    [one] Hizo una pregunta
+   *[other] Hizo { $count } preguntas
+}
+input-asked-you = { $count ->
+    [one] Te hizo una pregunta
+   *[other] Te hizo { $count } preguntas
+}
+input-auto-resolves = se resuelve automáticamente en { $seconds } s
+input-question-position = { $current } de { $total }
+input-recommended = Recomendado
+input-send = Enviar
+input-skip = Omitir
+input-skipped = Omitido
+input-something-else = Otra cosa…
+input-type-answer = Escribe tu respuesta…
+launch-card-finished = { $count ->
+    [one] { $count } terminado
+   *[other] { $count } terminados
+}
+launch-card-not-started = { $count ->
+    [one] { $count } sin iniciar
+   *[other] { $count } sin iniciar
+}
+launch-card-stopped = { $count ->
+    [one] { $count } detenido
+   *[other] { $count } detenidos
+}
+launched-agent-activity-browsing = Navegando
+launched-agent-activity-command = Ejecutando un comando
+launched-agent-activity-editing = Edición
+launched-agent-activity-reading = Leyendo archivos
+launched-agent-activity-searching = Buscando
+launched-agent-activity-web-search = Buscando en la web
+launched-agent-activity-writing = Escribiendo un archivo
+launched-agent-answer = Responder
+launched-agent-not-started = Sin iniciar
+settings-orchestrated-worktrees-auto = Auto
+settings-orchestrated-worktrees-auto-description = Abierto mientras un agente esté trabajando allí o te necesite.
+settings-orchestrated-worktrees-collapsed = Contraído
+settings-orchestrated-worktrees-collapsed-description = Siempre contraído hasta que lo abras.
+settings-orchestrated-worktrees-expanded = Expandido
+settings-orchestrated-worktrees-expanded-description = Siempre abierto.
+settings-search-entry-appearance-layout-orchestrated-worktrees-description = Elige cómo se abren en la barra lateral los árboles de trabajo a los que un chat delegó tareas, debajo de ese chat.
+settings-search-entry-appearance-layout-orchestrated-worktrees-label = Árboles de trabajo orquestados
+settings-search-entry-general-behavior-link-previews-description = Obtener el título, el resumen y la imagen de un sitio al pasar el cursor por un enlace. El sitio ve tu dirección IP.
+settings-search-entry-general-behavior-link-previews-label = Mostrar vistas previas de enlaces
+shared-parent-git-pill-label = { $action } en { $targets }
+status-card-branch = Rama
+status-card-checks-passed = { $count ->
+    [one] { $count } superado
+   *[other] { $count } superados
+}
+status-card-clean = Sin cambios
+status-card-commit-count = { $count ->
+    [one] { $count } commit
+   *[other] { $count } commits
+}
+status-card-conflicts-explainer = { $target } modificó líneas que esta rama también modifica.
+status-card-delete-discards = Al eliminar el árbol de trabajo también se descartan estos cambios.
+status-card-file-count = { $count ->
+    [one] { $count } archivo
+   *[other] { $count } archivos
+}
+status-card-merged-into = Fusionado en { $target }
+status-card-review-not-requested = No solicitado
+status-card-unpushed = Sin enviar
+status-card-up-to-date = Actualizado con { $target }
+status-card-worktree = Árbol de trabajo
+subagent-back-tooltip = Volver a { $parent }
+subagent-dock-back = Volver al chat
+subagent-dock-detail = Solo lectura. Informa a { $parent } cuando termina.
+subagent-dock-detail-done = Solo lectura. Ya informó a { $parent }.
+subagent-dock-detail-interrupted = Solo lectura. Se detuvo junto con { $parent }.
+subagent-dock-title = Subagente
+subagent-dock-title-typed = Subagente de tipo { $type }
+subagent-header-of = Subagente de
+subagent-state-interrupted = Detenido
+subagent-state-working = Trabajando
+agent-row-unknown = un subagente
+agent-row-count = { $count ->
+    [one] 1 agente
+   *[other] { $count } agentes
+}
+agent-row-id-tooltip = ID del agente { $id }
+agent-row-show-all = Mostrar todo
+agent-row-unnamed-wait = sus agentes
+subagent-status-done = Terminado en { $time }
+subagent-status-failed = Falló después de { $time }
+subagent-status-interrupted = Se detuvo después de { $time }
+subagent-type-awaiter = Espera
+subagent-type-explore = Explorar
+subagent-type-explorer = Explorador
+subagent-type-fork = Bifurcación
+subagent-type-general = generales
+subagent-type-guide = Guía
+subagent-type-plan = Plan
+subagent-type-status-line = Línea de estado
+workspace-attached-back = Volver a { $tab_title }
+workspace-created-worktrees-header = Árboles de trabajo creados
+workspace-view-html = Ver
+workspace-view-in-browser = Ver en el navegador
+
+file-menu-rename = Cambiar nombre
+update-restart-open = Abrir
+update-restart-answer = Responder
+chat-continue-after-update = Continuar
+update-cli-title = Actualizaciones
+update-cli-action-update = Actualizar
+update-cli-action-retry = Reintentar
+update-cli-action-skip = Omitir
+update-cli-action-details = Detalles
+update-cli-action-copy-output = Copiar salida
+close-tab-more-children = +{ $count } más
+project-modal-rename-feature-label = Renombrar etiqueta de funcionalidad
+section-editor-behavior = Comportamiento
+settings-category-routing = Enrutamiento
+settings-category-terminal = Terminal
+settings-mobile-retry-action = Reintentar
+settings-mobile-rename-action = Cambiar nombre
+settings-mobile-save-name-action = Guardar
+settings-mobile-status-off = Desactivado
+settings-mobile-status-ready = Listo
+settings-mobile-status-unavailable = No disponible
+settings-mobile-status-not-checked = Sin comprobar
+settings-mobile-connection-not-checked = Se comprueba cuando el acceso móvil está activo.
+settings-repository-config-refresh = Actualizar
+settings-repository-config-setup = Preparación
+settings-repository-config-run = Ejecución
+settings-repository-config-teardown = Desmontaje
+settings-ai-agent-session-context-off-label = Desactivado
+settings-search-section-terminal = Terminal
+settings-section-terminal = Terminal
+settings-account-refresh = Actualizar
+settings-account-advanced = Avanzado
+settings-account-save-key = Añadir perfil
+input-drawer-review = Revisar
+model-picker-providers-heading = Proveedor
+composer-model = Modelo
+chat-steer-send-again = Enviar
+chat-notice-details = Detalles
+chat-notice-copy-details = Copiar detalles
+chat-notice-show-more = Mostrar más
+chat-notice-show-less = Mostrar menos
+chat-notice-level-progress = En curso
+chat-notice-level-success = Completado
+chat-notice-level-warning = Advertencia
+chat-notice-level-error = Error
+chat-notice-jobs-finished = { $count } tareas en segundo plano terminadas
+worktree-delete-child-count = { $count ->
+        [one] 1 árbol de trabajo
+       *[other] { $count } árboles de trabajo
+    }
+worktree-delete-has-uncommitted = Cambios sin confirmar
+toast-delete-shared-worktree-failed = No se pudo eliminar el árbol de trabajo
+reasoning-effort-auto-short = Auto
+reasoning-effort-low-short = Bajo
+reasoning-effort-high-short = Alto
+reasoning-effort-max-short = Max
+sidebar-rename-feature-label = Renombrar etiqueta de funcionalidad…
+chat-pill-card-worktree = Árbol de trabajo
+chat-pill-card-running = En ejecución
+chat-mention-section-sessions = Agentes
+chat-mention-section-worktrees = Árboles de trabajo
+chat-mention-section-files = Archivos
+chat-lock-cancel = Cancelar
+action-discard = Descartar
+chat-reloading-pi-resources = Recargando recursos de Pi...
+browser-send-annotations-to-new-chat = Enviar anotaciones a un nuevo chat de { $provider }
+browser-annotation-destination-unavailable = Ese destino de anotaciones ya no está disponible
+browser-annotation-composer-blocked = No se pueden añadir anotaciones con la transcripción de un subagente enfocada
+browser-consent-title = ¿Permitir que los agentes controlen el navegador en «{ $workspace_name }»?
+browser-consent-asked-by-agent = Un agente
+browser-consent-asked-by-worktree = Un agente que trabaja en «{ $caller_label }»
+browser-consent-description = { $asked_by } ha solicitado ejecutar sc browser { $spelling } en la pestaña del navegador de este espacio de trabajo. Al permitirlo, todos sus agentes tendrán permiso permanente para hacer clic, escribir, navegar y ejecutar scripts en cualquier página abierta, incluidas las sesiones iniciadas. Esto abarca este comando act y todos los futuros. La mayoría de los comandos de solo lectura no necesitan aprobación, pero leer valores de cookies sí. El permiso persiste en el espacio de trabajo y puede revocarse en Ajustes en cualquier momento.
+browser-new-chats = Nuevo chat
+palette-no-matching-files-index-incomplete = No hay archivos coincidentes (índice incompleto: este árbol de trabajo supera el límite de análisis de archivos)
+update-ready-title = Actualización lista
+update-ready-restart = Reiniciar
+update-restart-eyebrow = Versión { $version }
+update-restart-title = ¿Reiniciar para actualizar?
+update-restart-body-agents = { $count ->
+        [one] Reinicia cuando termine el agente, o ahora para detenerlo. Tus pestañas se reabrirán en ambos casos.
+       *[other] Reinicia cuando terminen los agentes, o ahora para detenerlos. Tus pestañas se reabrirán en ambos casos.
+    }
+update-restart-body-commands = { $count ->
+        [one] Este comando se detendrá al reiniciar la aplicación. Su terminal se reabrirá después.
+       *[other] Estos comandos se detendrán al reiniciar la aplicación. Sus terminales se reabrirán después.
+    }
+update-restart-body-done = Todo ha terminado. Tus pestañas se reabrirán tras el reinicio.
+update-restart-now = Reiniciar ahora
+update-restart-not-now = Ahora no
+update-restart-when-done = Reiniciar al terminar
+update-restart-restart = Reiniciar
+update-restart-row-running = en ejecución desde hace { $elapsed }
+update-restart-row-running-now = en ejecución
+update-restart-row-needs-input = esperando tu respuesta
+update-wait-pill = { $count ->
+        [one] Después de 1 agente
+       *[other] Después de { $count } agentes
+    }
+update-wait-restarting = Reiniciando
+update-wait-title = { $count ->
+        [one] Reinicio después de 1 agente
+       *[other] Reinicio después de { $count } agentes
+    }
+update-wait-dont-wait = No esperar
+chat-stopped-for-update = Detenido para actualizar a { $version }
+release-notes-section-new = Novedades
+release-notes-section-fixes = Correcciones
+release-notes-section-faster = Más rápido
+release-notes-section-improved = Mejoras
+update-cli-note = Las sesiones activas no se interrumpen. Las nuevas usan la nueva versión.
+update-cli-failed-count = { $count } sin terminar
+update-cli-action-update-all = Actualizar todo
+update-cli-action-skip-all = Omitir todo
+update-cli-action-retry-all = Reintentar todo
+update-cli-action-fix-in-chat = Corregir en el chat
+update-cli-action-run-in-terminal = Ejecutar en Terminal
+update-cli-terminal-local-only = Selecciona un árbol de trabajo local para actualizar esta CLI en un terminal.
+update-cli-failed-permission = Requiere permisos de administrador
+update-cli-failed-timeout = Tiempo agotado tras 5 min
+update-cli-failed-outdated = Sigue en { $version } tras actualizar
+update-cli-manual-hint = Actualización manual
+close-tab-and-stop-action = Cerrar y detener
+close-tab-confirm-title = ¿Cerrar esta pestaña?
+close-tab-stop-launched-agents = { $count ->
+        [one] Detener el agente iniciado
+       *[other] Detener todos los agentes iniciados
+    }
+close-tab-running-description = Su agente sigue trabajando y se detendrá.
+close-tab-working-children = { $count ->
+        [one] Un agente que inició sigue trabajando.
+       *[other] { $count } agentes que inició siguen trabajando.
+    }
+common-dont-ask-again = No volver a preguntar
+project-risk-creates-git = crea .git
+section-editor-focus = Enfoque
+section-editor-focus-description = Mueve aquí temporalmente los árboles de trabajo coincidentes, por delante de las secciones fijadas, manuales y Organizar. Vuelven automáticamente cuando dejan de coincidir.
+section-editor-focus-priority-description = Las secciones Enfoque reclaman primero los árboles de trabajo coincidentes. Si coinciden varias, gana la de mayor prioridad.
+section-editor-organize = Organizar
+section-editor-organize-description = Agrupa árboles de trabajo coincidentes en su ubicación habitual. Las secciones Enfoque y la ubicación manual tienen prioridad.
+section-editor-organize-priority-description = Si coinciden varias secciones Organizar, gana la de mayor prioridad. Enfoque y la ubicación manual siguen teniendo prioridad.
+workspace-update-agents-description = Han cambiado los proyectos del espacio de trabajo. Analiza los repositorios para actualizar AGENTS.md u omite para conservar el archivo actual.
+workspace-update-agents-title = ¿Actualizar las instrucciones del espacio de trabajo?
+settings-sidebar-group-mobile = Móvil
+settings-category-routing-description = Elige proveedor, perfil, modelo, esfuerzo y comportamiento de inicio para las acciones de agentes.
+settings-category-terminal-description = Aspecto, transmisión y comportamiento del historial del terminal.
+settings-category-mobile-description = Enlaza este Mac con la aplicación móvil de super.engineering.
+settings-mobile-access-label = Acceso móvil
+settings-mobile-access-detail-off = El acceso móvil está desactivado. Tu Mac no acepta conexiones de teléfonos.
+settings-mobile-access-detail-starting = Iniciando el acceso móvil…
+settings-mobile-access-detail-ready = El acceso móvil está listo en el puerto { $port }.
+settings-mobile-access-detail-stopping = Desactivando el acceso móvil…
+settings-mobile-setup-action = Configurar acceso móvil
+settings-mobile-disable-action = Desactivar acceso móvil
+settings-mobile-host-name-label = Nombre del ordenador
+settings-mobile-host-name-description = Cómo aparece este Mac en tus teléfonos enlazados. Déjalo vacío para usar su nombre de macOS.
+settings-mobile-host-name-placeholder = Nombre de este Mac
+settings-mobile-device-name-placeholder = Usar el nombre del teléfono
+settings-mobile-testflight-label = Obtener la aplicación móvil
+settings-mobile-testflight-description = Escanea con la cámara del iPhone para instalar la versión de TestFlight antes de enlazar.
+settings-mobile-local-network-label = Red local
+settings-mobile-local-network-unavailable = No se detectó ninguna dirección local utilizable. Conecta ambos dispositivos a la misma red wifi y reintenta.
+settings-mobile-away-label = Fuera de casa
+settings-mobile-tailscale-ready-detail = { $address } · Usa la misma tailnet de Tailscale en el Mac y el teléfono.
+settings-mobile-tailscale-optional-detail = Tailscale es opcional y no se ha detectado. Inicia sesión en la misma tailnet en el Mac y el teléfono para acceder fuera de casa.
+settings-mobile-tailscale-help-action = Descargar Tailscale
+settings-mobile-failure-persist = No se pudieron guardar los ajustes de acceso móvil. Comprueba el acceso al disco y reintenta.
+settings-mobile-failure-port-in-use = El puerto { $port } ya está en uso. Cierra la aplicación que usa el puerto { $port } y reintenta.
+settings-mobile-failure-start = No se pudo iniciar el acceso móvil. Comprueba la red y reintenta.
+settings-mobile-failure-stop = El acceso móvil no pudo desactivarse correctamente y podría seguir disponible. Reintenta.
+settings-mobile-failure-not-ready = El acceso móvil aún no está listo. Espera a que termine la configuración y reintenta.
+settings-mobile-failure-no-reachable-endpoint = No hay direcciones accesibles desde el teléfono. Usa la misma red wifi o inicia sesión en la misma tailnet de Tailscale en ambos dispositivos y reintenta.
+settings-mobile-failure-device-not-found = Este teléfono ya no está enlazado. La lista de dispositivos se actualizará automáticamente.
+settings-mobile-status-starting = Iniciando…
+settings-mobile-status-stopping = Deteniendo…
+settings-mobile-status-failed = Requiere atención
+settings-mobile-status-optional = Opcional
+settings-mobile-pair-label = Enlazar un teléfono
+settings-mobile-pair-description = Genera un código de enlace seguro de un solo uso con las direcciones actuales de la red local y, opcionalmente, Tailscale.
+settings-mobile-pair-action = Generar código de enlace
+settings-mobile-pairing-action = Generando…
+settings-mobile-regenerate-action = Generar nuevo código
+settings-mobile-scan-instruction = Abre super.engineering en el teléfono y escanea este código
+settings-mobile-copy-link = Copiar enlace de emparejamiento
+settings-mobile-expires = Este código caduca a las { $time }.
+settings-mobile-pairing-expired = Este código de enlace ha caducado. Genera uno nuevo y reintenta.
+settings-mobile-pairing-qr-error = No se pudo preparar el código de enlace: { $error }. Reintenta.
+settings-mobile-devices-label = Teléfonos enlazados
+settings-mobile-device-count = { $count ->
+        [one] 1 teléfono enlazado.
+       *[other] { $count } teléfonos enlazados.
+    }
+settings-mobile-no-devices = Todavía no hay teléfonos enlazados con este Mac.
+settings-mobile-devices-observed = Los teléfonos recién enlazados aparecen aquí automáticamente.
+settings-mobile-device-trust-paired = Enlazado
+settings-mobile-device-detail = { $status } · Enlazado: { $paired } · Última conexión: { $last_seen }
+settings-mobile-revoke-action = Revocar
+settings-mobile-revoking-action = Revocando…
+settings-mobile-confirm-revoke-action = Confirmar revocación
+settings-project-icon-paste-clipboard = Pegar imagen del portapapeles
+settings-project-icon-paste-empty = El portapapeles no contiene ninguna imagen
+settings-workspace-automation-section = Automatización del navegador
+settings-workspace-browser-automation-label = Permitir que los agentes controlen el navegador
+settings-workspace-browser-automation-description = Los agentes pueden hacer clic, escribir y ejecutar scripts en la pestaña del navegador de este espacio de trabajo.
+settings-repository-config-source-title = Configuración del repositorio
+settings-repository-config-source-description = Automatización y servidores MCP de solo lectura cargados desde este repositorio. Puedes editar los ajustes personales abajo.
+settings-repository-config-status-missing = No se encontró configuración del repositorio
+settings-repository-config-status-loaded = Cargada
+settings-repository-config-status-invalid = No se pudo cargar la configuración del repositorio
+settings-repository-config-path = Ruta
+settings-repository-config-open = Abrir configuración
+settings-repository-config-commands = Comandos compartidos
+settings-repository-config-mcp-servers = Servidores MCP
+settings-repository-config-id = ID
+settings-repository-config-start-command = Comando de inicio
+settings-repository-config-stop-command = Comando de parada
+settings-repository-config-not-default = No predeterminado
+settings-repository-config-empty = Este archivo no define comandos ni servidores MCP.
+settings-repository-config-cleanup-ignored = Se ignoran los comandos previos y posteriores a la limpieza del repositorio; la limpieza sigue siendo un ajuste personal de la aplicación.
+settings-repository-config-precedence = Los valores de preparación, ejecución y desmontaje del repositorio sustituyen a los personales cuando existen. Los comandos compartidos se añaden a los personales.
+settings-ai-search-providers-placeholder = Buscar proveedores...
+settings-ai-search-profiles-placeholder = Buscar perfiles...
+settings-ai-changes-apply-immediately = Los cambios se aplican de inmediato.
+settings-ai-back-to-models = Volver a los modelos
+settings-ai-customized-here = Personalizado aquí
+settings-ai-use-inherited-settings = Usar ajustes heredados
+settings-ai-use-global-settings = Usar ajustes globales
+settings-ai-use-workspace-settings = Usar ajustes del espacio de trabajo
+settings-ai-use-session-settings = Usar ajustes predeterminados de sesión
+settings-ai-use-fast-settings = Usar ajustes de Rápido
+settings-ai-use-thorough-settings = Usar ajustes de Exhaustiva
+settings-ai-undo-routing = Deshacer el último cambio de enrutamiento
+settings-ai-default-profiles = Perfiles predeterminados
+settings-ai-apply-profile-to-routes = Aplicar a todas las rutas
+settings-ai-provider-default-profile = Perfil predeterminado de { $provider }
+settings-ai-provider-default-profile-description = Para nuevos chats y terminales. Aplicar a todas las rutas sustituye los perfiles personalizados de este proveedor en el ámbito seleccionado.
+settings-ai-routing-start-here = Empieza por el valor predeterminado de sesión. Rápido y Exhaustiva lo siguen hasta que elijas otros ajustes. Personaliza las acciones de abajo solo si hace falta.
+settings-ai-default-impact = { $following } acciones siguen este valor predeterminado · { $customized } tienen ajustes propios. Los ajustes propios se conservan.
+settings-ai-search-thinking-placeholder = Buscar niveles de razonamiento...
+settings-ai-no-model-matches = No hay modelos coincidentes. Prueba un nombre más corto o cambia de proveedor.
+settings-ai-no-provider-matches = No hay proveedores coincidentes. Prueba otro nombre o activa un proveedor en Agentes.
+settings-ai-no-profile-matches = No hay perfiles coincidentes. Prueba otro nombre o gestiona tus perfiles en Perfiles.
+settings-ai-routing-no-models = Aún no hay modelos. Usa el predeterminado del proveedor o actualiza los modelos en Agentes.
+settings-ai-hidden-models-hint = Tus ajustes de visibilidad pueden ocultar algunos modelos.
+settings-ai-provider-hidden-hint = Este proveedor no está activado en este ámbito. Tu ruta guardada no cambia.
+settings-ai-cli-default-explanation = El valor predeterminado de CLI usa la cuenta y configuración del proveedor, sin perfil con nombre.
+settings-ai-open-provider-settings = Abrir ajustes del proveedor
+settings-ai-edit-followed-default = Editar el valor predeterminado seguido
+settings-ai-inherited-from-name = Heredado de { $name }
+settings-ai-follows-fast = Sigue Rápido
+settings-ai-follows-thorough = Sigue Exhaustiva
+settings-ai-automatic-naming-route = Sigue Rápido
+settings-ai-use-automatic-naming = Usar modelo rápido
+settings-ai-profile-used-by = Usado por
+settings-ai-profile-shared-changes = Los cambios de este perfil se aplican a las rutas siguientes y a las acciones que las heredan.
+settings-ai-profile-no-route-uses = Sin asignaciones directas en los ajustes globales, del espacio de trabajo o del proyecto.
+settings-ai-profile-in-use = Enrutamiento usa este perfil. Elige allí un sustituto antes de eliminarlo.
+settings-ai-run-with-column = Ejecutar con
+settings-ai-branch-naming-rule = Regla de nombres
+settings-ai-session-context-section = Contexto de sesión
+settings-ai-agent-session-context-label = Contexto de sesión para agentes
+settings-ai-agent-session-context-description = super.engineering puede añadir contexto a las sesiones para que los agentes encuentren y usen de forma segura la CLI sc de la aplicación.
+settings-ai-agent-session-context-standard-label = Estándar
+settings-ai-agent-session-context-standard-description = Los agentes reciben las instrucciones estándar de la CLI de super.engineering y del enrutamiento de orquestación.
+settings-ai-agent-session-context-off-description = Con esta opción desactivada no se añade contexto ambiental a la sesión. Las acciones explícitas, como revisiones y traspasos de tareas a árboles de trabajo, no cambian; las protecciones de sc siguen vigentes.
+settings-remote-key-install-action = Instalar clave
+settings-remote-key-install-authorize = Autorizarla en { $host }
+settings-remote-key-install-body = { $app_name } creará una clave SSH exclusiva para este espacio de trabajo.
+settings-remote-key-install-create = Crear una clave sin frase de contraseña
+settings-remote-key-install-include = Añadir una línea Include
+settings-remote-key-install-title = ¿Instalar una clave en { $host }?
+settings-remote-key-install-undo-note = Eliminar clave SSH deshace los tres pasos.
+settings-remote-key-remove-action = Eliminar clave
+settings-remote-key-remove-body = Después, el espacio de trabajo se conectará con tus otras claves SSH.
+settings-remote-key-remove-delete = Eliminar la clave local
+settings-remote-key-remove-include = Eliminar la línea Include
+settings-remote-key-remove-revoke = Revocarla en { $host }
+settings-remote-key-remove-title = ¿Eliminar la clave de { $host }?
+settings-experimental-automations-label = Automatizaciones
+settings-experimental-automations-description = Crea automatizaciones programadas y por eventos. Vista previa inicial, aún no probada por completo.
+settings-experimental-browser-automation-label = Automatización del navegador
+settings-experimental-browser-automation-description = Permite comandos de control del navegador a los agentes. Las acciones siguen requiriendo permiso del espacio de trabajo.
+settings-experimental-chat-artifacts-label = Artefactos del chat
+settings-experimental-chat-artifacts-description = Permite que los agentes publiquen páginas HTML que se muestran en directo en el chat. Las páginas se ejecutan sin conexión en un entorno aislado.
+settings-search-section-typography = Tipografía
+settings-search-section-session-context = Contexto de sesión
+settings-search-entry-general-updates-automatic-network-update-checks-label = Comprobaciones automáticas de actualizaciones por red
+settings-search-entry-general-updates-automatic-network-update-checks-description = Comprueba cada hora las versiones de las CLI y cada día el catálogo de precios de conversaciones. Desactiva para usar el catálogo sin conexión incluido.
+settings-search-entry-general-behavior-inactive-browser-timeout-label = Tiempo de espera del navegador inactivo
+settings-search-entry-general-behavior-inactive-browser-timeout-description = Descarga de memoria las pestañas remotas inactivas tras estos minutos. 0 lo desactiva. Las pestañas de desarrollo local y con anotaciones siguen activas.
+settings-search-entry-appearance-theme-default-theme-label = Tema predeterminado
+settings-search-entry-appearance-theme-default-theme-description = El tema de los nuevos espacios de trabajo y el que se aplica al restablecer uno.
+settings-search-entry-appearance-fonts-terminal-streaming-label = Transmisión del terminal
+settings-search-entry-appearance-fonts-terminal-streaming-description = Elige un uso adaptable de recursos o una transmisión más fluida cercana a la frecuencia de la pantalla. Fluida consume más CPU y batería, pero reduce el ritmo si renderizar es costoso.
+settings-terminal-repaint-adaptive = Adaptable (recomendado)
+settings-terminal-repaint-smooth = Fluida
+settings-search-entry-terminal-behavior-scrollback-lines-label = Líneas del historial
+settings-search-entry-terminal-behavior-scrollback-lines-description = Máximo de líneas de salida conservadas en terminales nuevos. 0 desactiva el historial.
+settings-search-entry-appearance-layout-markdown-files-label = Archivos Markdown
+settings-search-entry-appearance-layout-markdown-files-description = Elige si los archivos Markdown se abren en el editor enriquecido o de código fuente.
+settings-markdown-file-open-mode-rich = Enriquecido
+settings-markdown-file-open-mode-source = Código fuente
+settings-search-entry-appearance-layout-full-width-chat-text-label = Texto del chat a todo lo ancho
+settings-search-entry-appearance-layout-full-width-chat-text-description = Usa todo el ancho del panel para mensajes y el editor. En paneles anchos queda un pequeño margen junto a la barra del historial.
+settings-search-entry-appearance-layout-show-conversation-cost-label = Mostrar coste de la conversación
+settings-search-entry-appearance-layout-show-conversation-cost-description = Muestra el ámbito de coste seleccionado en la barra de título del espacio de trabajo.
+settings-search-entry-appearance-layout-conversation-cost-scope-label = Ámbito del coste de conversación
+settings-search-entry-appearance-layout-conversation-cost-scope-description = Elige el coste total destacado en la barra de título. El panel emergente siempre muestra todos los ámbitos y cada pestaña.
+settings-conversation-cost-scope-active = Conversación activa
+settings-conversation-cost-scope-workspace = Espacio de trabajo actual
+conversation-cost-current-worktree = Árbol de trabajo actual
+settings-conversation-cost-scope-all-open = Todas las ventanas abiertas
+settings-conversation-cost-scope-lifetime = Historial completo
+conversation-cost-title = Coste de la conversación
+conversation-cost-tooltip = Coste: { $scope }
+conversation-cost-last-seven-days = Últimos 7 días
+conversation-cost-last-thirty-days = Últimos 30 días
+conversation-cost-last-ninety-days = Últimos 90 días
+conversation-cost-unpriced-summary = { $tokens } tokens sin precio ({ $models })
+conversation-cost-unknown-model = modelo desconocido
+conversation-cost-estimate-note = Valor estimado equivalente de API, no una factura. Cifras de los agentes y estimaciones a tarifas estándar; las suscripciones se valoran igual. El uso sin precio indicado arriba se excluye del total.
+conversation-cost-remote-note = Los espacios remotos solo muestran la conversación actual. El coste de terminales no estará disponible hasta admitir el historial remoto. Los costes son estimaciones, no datos de facturación.
+cost-popover-this-conversation = Esta conversación
+cost-popover-this-worktree = Este árbol de trabajo
+cost-popover-this-workspace = Este espacio de trabajo
+cost-popover-tab-count = { $count ->
+    [one] { $count } pestaña
+   *[other] { $count } pestañas
+}
+cost-popover-range-week = 7 d
+cost-popover-range-month = 30 d
+cost-popover-range-quarter = 90 d
+cost-popover-range-all = Todo
+cost-popover-all-time = Desde siempre
+cost-popover-daily-average = Media diaria
+cost-popover-monthly-average = Media mensual
+cost-popover-today = Hoy
+cost-popover-all-time-undated = Desde siempre, incluido el uso sin fecha
+cost-popover-estimate = Estimado con tarifas de API
+cost-popover-rates-source = Tarifas de models.dev, actualizadas el { $date }.
+settings-search-entry-experimental-feature-flags-workspace-mentions-label = Menciones del espacio de trabajo
+settings-search-entry-experimental-feature-flags-workspace-mentions-description = Menciona scripts, terminales, árboles de trabajo, chats y agentes con @ en el chat.
+settings-search-entry-experimental-feature-flags-automations-label = Automatizaciones
+settings-search-entry-experimental-feature-flags-automations-description = Crea automatizaciones programadas y por eventos. Vista previa inicial, aún no probada por completo.
+settings-search-entry-experimental-feature-flags-browser-automation-label = Automatización del navegador
+settings-search-entry-experimental-feature-flags-browser-automation-description = Permite comandos de control del navegador a los agentes. Las acciones siguen requiriendo permiso del espacio de trabajo.
+settings-search-entry-agents-session-context-session-context-for-agents-label = Contexto de sesión para agentes
+settings-search-entry-agents-session-context-session-context-for-agents-description = Añade contexto de super.engineering a nuevas sesiones de agentes o desactiva la inyección ambiental.
+settings-section-typography = Tipografía
+settings-section-routes = Rutas
+settings-section-git-buttons = Botones Git
+settings-section-other-actions = Otras acciones
+settings-section-session-context = Contexto de sesión
+settings-account-add = Añadir cuenta
+settings-account-more = Más…
+settings-account-subscription = Suscripción
+settings-account-saving-key = Guardando clave de API…
+settings-account-use-api-key = Añadir perfil con clave de API…
+settings-account-existing-profile = Usar perfil existente…
+settings-account-system-default = Valor predeterminado del sistema
+settings-account-reauthenticate = Volver a autenticar
+settings-account-description = Usa tu sesión de CLI o añade una cuenta para acceder con tu suscripción. También se admiten claves de API y perfiles personalizados.
+settings-account-routing = Dónde se usan los perfiles
+settings-account-routing-description = En Enrutamiento, elige Global, Espacio de trabajo o Proyecto, y después un perfil para la sesión predeterminada o acciones concretas. Ese perfil sustituye al predeterminado global definido aquí.
+settings-account-loading = Leyendo cuenta…
+settings-account-email-unavailable = Correo de la cuenta no disponible
+settings-account-api-key-label = Clave de API · facturación aparte
+settings-account-no-saved-login = Sin identidad de cuenta guardada
+settings-account-signing-in = Completa el inicio de sesión en el navegador…
+settings-account-api-key-placeholder = Pega tu clave de API de { $provider }
+settings-account-api-key-description = Crea un perfil con tu clave de API de { $provider }. El uso de API se factura aparte de las suscripciones. La clave se guarda localmente; guardarla no comprueba que funcione.
+settings-account-unsupported = Este proveedor no admite perfiles de cuenta.
+settings-account-storage-error = No se pudo guardar la configuración local de la cuenta.
+settings-account-cli-unavailable = No se pudo iniciar la CLI del proveedor. Comprueba que esté instalada y disponible en PATH.
+settings-account-login-failed = No se completó el inicio de sesión. Reintenta o usa un perfil existente.
+settings-account-timeout = El inicio de sesión tardó demasiado. Reintenta.
+settings-account-cancelled = Inicio de sesión cancelado.
+settings-account-identity-unavailable = Inicio de sesión completado, pero no se pudo leer la cuenta guardada. Reintenta o usa un perfil existente.
+settings-account-invalid-key = Introduce una clave de API no vacía y sin saltos de línea.
+settings-section-mobile-access = Acceso móvil
+settings-section-connection-status = Estado de conexión
+settings-section-pairing = Enlace
+settings-ai-default-routes = Rutas predeterminadas
+settings-ai-default-routes-description = Las acciones heredan estas opciones de proveedor y modelo salvo que personalices una ruta abajo.
+settings-ai-fast-model-route = Modelo rápido
+settings-ai-fast-model-route-description = Para tareas rápidas, como commits y mejoras de indicaciones.
+settings-ai-thorough-model-route = Modelo exhaustivo
+settings-ai-thorough-model-route-description = Para investigaciones, reparaciones y revisiones.
+settings-ai-git-button-routes = Botones Git
+settings-ai-git-button-routes-description = Configura cada botón Git con IA. Enviar, Actualizar rama, Listo para revisión, Listo para fusionar y Eliminar árbol de trabajo se ejecutan directamente, sin ruta de agente.
+settings-ai-other-routes = Otras rutas
+settings-ai-other-routes-description = Configura nombres, mensajes de commit en línea, mejora de indicaciones y respuestas a revisiones. Las rutas de comandos personalizados siguen con cada comando en Comandos.
+settings-ai-follows-session-default = Sigue el valor predeterminado de sesión
+settings-ai-model-routing = Enrutamiento de modelos
+settings-ai-model-routing-description = Elige modelos, perfiles y niveles de razonamiento predeterminados o personalízalos por acción.
+settings-ai-manage-routing = Abrir enrutamiento
+settings-ai-provider-fx-description = Activa chats y terminales de fx (requiere la CLI de fx `fx` instalada).
+workspace-fx-remote-history-unsupported = Los terminales remotos FX aún no admiten historial ni reanudación de sesiones.
+settings-keybinding-action-rename-selected-entry = Renombrar la entrada seleccionada
+settings-keybinding-action-chat-effort-backward = Recorrer el esfuerzo del chat hacia atrás
+worktree-preparing = Preparando árbol de trabajo…
+chat-queued-until-worktree-ready = Se iniciará cuando el árbol de trabajo esté listo
+chat-delivery-unconfirmed = Entrega sin confirmar
+chat-delivery-unconfirmed-retry = Comprueba la conversación antes de reintentar; este mensaje podría haberse entregado ya.
+chat-answer-pending-delivery = Entrega pendiente
+input-recommended-by = Recomendado por { $agent }
+input-drawer-waiting = { $agent } te está esperando
+input-drawer-asks-working = { $agent } pregunta mientras trabaja
+input-drawer-wants-command = { $agent } quiere ejecutar un comando
+input-drawer-wants-tool = { $agent } quiere usar { $tool }
+input-drawer-blocked = { $agent } fue bloqueado
+input-choose-any = Elige las opciones que quieras
+launched-agent-stopped-app-closed = Detenido al cerrar la aplicación
+model-picker-type-to-search-hint = escribe para buscar
+composer-effort = Esfuerzo
+composer-effort-lower = Reducir esfuerzo
+composer-effort-raise = Aumentar esfuerzo
+reasoning-effort-unspecified = Sin especificar
+settings-ai-thinking-unavailable = Este modelo no ofrece niveles de razonamiento configurables.
+chat-message-tokens-not-reported = No comunicado
+chat-time-today = Hoy { $time }
+chat-time-yesterday = Ayer { $time }
+chat-permission-fallback = { $mode } no está disponible para { $model } en esta cuenta.
+chat-permission-fallback-asks = { $provider } preguntará antes de actuar.
+chat-permission-fallback-uses = { $provider } usa { $mode } en su lugar.
+chat-steer-hold-waiting = { $provider } aún no puede aceptar una redirección.
+chat-steer-hold-waiting-detail = Tu mensaje redirigirá al agente cuando sea posible o se enviará al terminar este turno.
+chat-steer-refused = No se pudo redirigir.
+chat-steer-refused-detail = { $provider } devolvió un error. Comprueba la conversación antes de reintentar.
+chat-reconnecting = Reconectando con { $provider }.
+chat-reconnecting-held = Tu mensaje se enviará cuando vuelva la conexión.
+chat-reconnecting-retry = Vuelve a intentarlo en un momento.
+chat-reconnecting-slow = Está tardando más de lo habitual, abriendo una conexión nueva.
+chat-reconnect-failed = No se pudo volver a conectar con { $provider }.
+chat-reconnect-try-again = Reintentar
+chat-steered = Redirigido
+chat-steer-not-read = No leído
+chat-send-failed = No se puede enviar a este chat. Vuelve a intentarlo.
+chat-send-failed-draft-restored = No se puede enviar a este chat. Tu mensaje sigue en el editor.
+chat-open-in-new-tab = Abrir en nueva pestaña
+chat-open-in-split-tab = Abrir en pestaña dividida
+chat-open-in-split-view = Abrir en vista dividida
+chat-fork-new-session = Ramificar en un nuevo chat
+chat-fork-new-worktree = Ramificar en un nuevo árbol de trabajo
+chat-fork-from-here = Ramificar en un nuevo chat
+chat-fork-unavailable = /fork no está disponible para este proveedor.
+chat-fork-no-session = /fork necesita una sesión activa del proveedor. Envía primero un mensaje y reintenta.
+chat-fork-worktree-unsupported = /fork worktree no está disponible para este proveedor.
+chat-fork-worktree-cut-unavailable = Esta conversación no permite ramificar desde este mensaje a un nuevo árbol de trabajo. Hazlo desde el último mensaje o en una nueva sesión de chat.
+chat-fork-failed = No se pudo ramificar esta conversación.
+chat-fork-cut-unavailable = Esta conversación no permite ramificar desde esta respuesta. Hazlo desde la última respuesta.
+chat-fork-missing-conversation = /fork necesita una conversación guardada. Envía primero un mensaje y reintenta.
+file-preview-edit-unavailable-long-line = Edición no disponible para líneas de más de 128 KiB
+notification-codex-thread-archive-started = Archivando hilos de Codex de árboles de trabajo eliminados…
+notification-codex-thread-archive-done = { $count ->
+        [one] Archivado { $count } hilo de Codex de árboles de trabajo eliminados
+       *[other] Archivados { $count } hilos de Codex de árboles de trabajo eliminados
+    }
+notification-codex-thread-archive-failed = Algunos hilos de Codex no se archivaron
+notification-installing-update = Instalando actualización. La aplicación se reiniciará al terminar.
+notification-update-installed = Actualización instalada. Reiniciando
+notification-update-installed-after-typing = Actualización instalada. Se reiniciará al dejar de escribir
+worktree-delete-agent-working = Todavía hay un agente trabajando aquí
+worktree-delete-all-action = Eliminar todo
+worktree-delete-body = Su carpeta se eliminará del disco.
+worktree-delete-body-loses-work = Su carpeta se eliminará del disco junto con el trabajo que no exista en ningún otro lugar.
+worktree-delete-branch-too = Eliminar también la rama
+worktree-delete-branches-too = Eliminar también las ramas
+worktree-delete-child-no-upstream = { $name } no tiene upstream; pueden perderse commits sin enviar
+worktree-delete-child-uncommitted = { $name } tiene cambios sin confirmar
+worktree-delete-child-uninspectable = No se pudo comprobar { $name }: { $error }
+worktree-delete-child-unpushed = { $count ->
+        [one] { $name } tiene 1 commit sin enviar
+       *[other] { $name } tiene { $count } commits sin enviar
+    }
+worktree-delete-confirm-title = ¿Eliminar este árbol de trabajo?
+worktree-delete-no-upstream = Sin upstream; pueden perderse commits sin enviar
+worktree-delete-open-sessions = { $count ->
+        [one] Cierra 1 sesión abierta
+       *[other] Cierra { $count } sesiones abiertas
+    }
+worktree-delete-parent-body = El árbol principal y todos los árboles de trabajo que contiene se eliminarán del disco.
+worktree-delete-parent-confirm-title = ¿Eliminar este árbol de trabajo y sus hijos?
+worktree-delete-parent-uninspectable = No se pudo comprobar la carpeta: { $error }
+worktree-delete-uncommitted = { $count ->
+        [one] 1 cambio sin confirmar
+       *[other] { $count } cambios sin confirmar
+    }
+worktree-delete-uninspectable = No se pudo comprobar: { $error }
+worktree-delete-unpushed = { $count ->
+        [one] 1 commit sin enviar
+       *[other] { $count } commits sin enviar
+    }
+worktree-delete-unrecognized-entries = La carpeta también contiene elementos que la aplicación no creó: { $items }
+toast-retired-codex-models-title = Modelos retirados de Codex eliminados
+toast-retired-codex-models-message = GPT-5.3 Codex, GPT-5.3 Codex Spark, GPT-5.4 y GPT-5.4 Mini ya no están disponibles. Tus selecciones guardadas ahora usan el enrutamiento heredado o los valores del proveedor. Elige sustitutos en Enrutamiento, Automatizaciones y los ajustes de IA del espacio de trabajo.
+toast-shared-worktree-not-found = No se encontró el árbol de trabajo compartido.
+toast-file-picker-failed = No se pudo abrir el selector de archivos: { $error }
+reasoning-effort-minimal-short = Mín
+reasoning-effort-medium-short = Med
+reasoning-effort-extra-high-short = MA
+reasoning-effort-ultra-short = Ult
+theme-set-as-default-tooltip = Establecer como tema predeterminado
+theme-restore-builtin-default = Restaurar el integrado
+sidebar-rename-branch = Renombrar rama…
+palette-command-archive-codex-threads-for-deleted-worktrees = Archivar hilos de Codex de árboles de trabajo eliminados
+workspace-delete-confirm-title = ¿Eliminar «{ $name }»?
+workspace-delete-description = Se eliminarán sus pestañas, sesiones de terminal y disposición guardada. Los proyectos y sus archivos se conservarán.
+workspace-delete-description-with-contents = Se eliminarán sus pestañas, sesiones de terminal, disposición guardada y todo lo siguiente.
+workspace-delete-project-leaves-app = se elimina de la aplicación
+workspace-delete-shared-worktrees = { $count ->
+        [one] Se elimina { $count } árbol de trabajo compartido
+       *[other] Se eliminan { $count } árboles de trabajo compartidos
+    }
+workspace-delete-shared-worktrees-unknown = También se eliminarán sus árboles de trabajo compartidos
+chat-pill-card-open-worktree = Abrir árbol de trabajo
+chat-pill-card-setup-script = Script de preparación
+chat-pill-card-run-script = Script de ejecución
+chat-pill-card-teardown-script = Script de desmontaje
+chat-pill-card-running-for = En ejecución desde hace { $time }
+chat-pill-card-not-running = Sin ejecutar
+chat-pill-card-skill-from = Habilidad de { $source }
+chat-pill-card-click-preview = Haz clic para ver la vista previa
+chat-pill-card-click-show-in-files = Haz clic para mostrar en Archivos
+chat-pill-card-click-open-skill = Haz clic para abrir SKILL.md
+chat-pill-card-click-open-agent = Haz clic para abrir su chat
+chat-pill-card-click-open = Haz clic para abrir
+chat-pill-card-cmd-click-open-in = ⌘-clic para elegir una app
+chat-pill-card-cmd-click-browser = ⌘-clic para abrir en tu navegador
+chat-pill-card-copy-path = Copiar ruta
+chat-pill-card-copy-link = Copiar enlace
+chat-pill-card-edited = Editado en este chat
+chat-pill-card-changed-inside = { $count ->
+    [one] 1 modificado en este chat
+   *[other] { $count } modificados en este chat
+}
+chat-pill-card-missing = No está en este árbol de trabajo
+chat-pill-card-more-sections = { $count ->
+    [one] 1 sección más
+   *[other] { $count } secciones más
+}
+chat-pill-card-expects = Espera { $argument }
+chat-pill-card-agent-done = Terminado en { $time }
+chat-pill-card-agent-failed = Falló tras { $time }
+chat-pill-card-waiting-answer = Esperando tu respuesta
+chat-pill-card-exited = Finalizó con código { $code }, { $time }
+chat-pill-card-uncommitted = { $count } sin commit
+chat-pill-card-failing-checks = { $count ->
+    [one] #{ $number } tiene 1 comprobación fallida: { $names }
+   *[other] #{ $number } tiene { $count } comprobaciones fallidas: { $names }
+}
+chat-mention-section-scripts-terminals = Scripts y terminales
+chat-lock-checking = Buscando el proceso que bloquea este hilo…
+chat-lock-owner = Bloqueado por
+chat-lock-unknown = No se pudo identificar un único proceso local de Codex que bloquee este hilo.
+chat-lock-release = Detener proceso y liberar
+chat-lock-confirm-warning = Detener este proceso interrumpe todas sus conversaciones, incluido el trabajo en otra aplicación.
+chat-lock-confirm = Detener proceso
+chat-lock-releasing = Deteniendo el proceso y comprobando el bloqueo…
+chat-lock-released = El proceso ha liberado este hilo. Puedes volver a enviar tu mensaje.
+chat-lock-release-failed = No se pudo liberar el hilo. Su propietario puede haber cambiado o seguir activo.
+chat-lock-recheck = Comprobar propietario de nuevo
+chat-artifact-loading = Cargando artefacto…
+chat-artifact-unavailable = Este artefacto no está disponible en esta conversación.
+chat-artifact-sandboxed = Página aislada
+chat-artifact-stopped = Detenido · Recarga para ejecutarlo de nuevo
+chat-artifact-release-hint = Interactuando · Esc para salir
+chat-artifact-copy-source = Copiar código fuente
+chat-artifact-reload = Recargar
+chat-artifact-expand = Ampliar
+chat-artifact-collapse = Cerrar (Esc)
+chat-artifact-save-html = Guardar como archivo HTML
+chat-artifact-open-in-browser = Abrir en el navegador
+chat-artifact-open-in-browser-confirm = ¿Abrir este artefacto en tu navegador?
+chat-artifact-open-in-browser-detail = Allí su código se ejecuta fuera del entorno aislado de la app y puede acceder a internet. Ábrelo solo si confías en su origen.
+chat-artifact-open-link = ¿Abrir este enlace en tu navegador?
+chat-artifact-open-link-open = Abrir
+chat-artifact-open-link-cancel = Cancelar
+usage-reset-count = { $count ->
+    [one] restablecimiento de límite
+   *[other] restablecimientos de límite
+}
+usage-reset-next-expires = El próximo caduca en { $duration }
+usage-reset-slide = Desliza para restablecer { $window }
+usage-reset-working = Restableciendo…
+usage-reset-done = Límites restablecidos
+usage-reset-nothing = No hay nada que restablecer ahora
+usage-reset-already = Ese restablecimiento ya se usó
+usage-reset-failed = No se pudo restablecer. Inténtalo más tarde
+usage-reset-busy = Aún se está actualizando. Vuelve a deslizar en un momento
+usage-reset-unavailable = No hay restablecimientos disponibles
+usage-credits = Créditos
+usage-credits-unlimited = Ilimitado
+usage-account-resets = { $count ->
+    [one] 1 restablecimiento
+   *[other] { $count } restablecimientos
+}
+usage-account-credits = { $amount } créditos
+usage-account-ring-window = { $account } { $window }
+usage-account-window-left = { $window } { $percent } %
+usage-graph-account-left = { $account } { $window } restante
+usage-graph-now = Ahora
+usage-accounts-on-gauge = En el indicador
+usage-accounts-sign-in = Iniciar sesión
+usage-accounts-signing-in = Iniciando sesión…
+usage-accounts-single = { $count ->
+    [one] { $providers } tiene una cuenta.
+   *[other] { $providers } tienen una cuenta cada uno.
+}
+usage-account-empty-title = Aún no hay uso en { $account }
+usage-account-empty-body = Las lecturas aparecen tras la primera sesión de este perfil.
+usage-account-signed-out-title = { $account } no ha iniciado sesión
+usage-account-signed-out-body = Inicia sesión desde una nueva pestaña de { $provider } que use este perfil.
+usage-account-back = Volver a { $account }
+usage-graph-legend-you = Tú
+usage-graph-legend-even = Ritmo uniforme
+usage-graph-legend-projection = Proyección
+usage-graph-legend-estimated = Estimado
+usage-graph-estimated = Estimado a partir de la actividad en este Mac

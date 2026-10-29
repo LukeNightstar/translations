@@ -87,8 +87,6 @@ setup-loading-always-run-in-background = [!! Àľŵàÿš ŕüñ šëţüþ ïñ
 chat-timeline-jump-to-bottom = [!! ↓ Ĵüṁþ ţô þôţţôṁ !!]
 chat-agent-message-label = [!! Ƒŕôṁ àñ àĝëñţ !!]
 chat-team-message-label = [!! Ţëàṁ ṁëššàĝë !!]
-chat-agent-message-from = [!! Ƒŕôṁ !!]
-chat-team-message-from = [!! Ţëàṁ ṁëššàĝë ƒŕôṁ !!]
 terminal-starting = [!! Šţàŕţïñĝ ţëŕṁïñàľ... !!]
 terminal-show-output = [!! Šħôŵ ôûţþûţ !!]
 terminal-start-failed = [!! Ƒàïľëđ ţô šţàŕţ ţëŕṁïñàľ !!]
@@ -146,6 +144,55 @@ browser-open-chat-or-enable-provider = [!! Ôþëñ à çħàţ ţàþ ôŕ ëñ
 browser-back = [!! Ɓàçķ !!]
 browser-forward = [!! Ƒôŕŵàŕđ !!]
 browser-reload = [!! Ŕëľôàđ !!]
+browser-stop = [!! Šţôþ !!]
+browser-home = [!! Ħôṁë !!]
+browser-start-tab-title = [!! Šţàŕţ Þàĝë !!]
+browser-address-placeholder = [!! Šëàŕçħ šëŕṽëŕš ôŕ ëñţëŕ àñ àđđŕëšš !!]
+browser-start-running = [!! Ŕüññïñĝ !!]
+browser-start-show-less = [!! Šħôŵ ľëšš !!]
+browser-start-recent = [!! Ŕëçëñţľÿ ṽïšïţëđ !!]
+browser-start-also-running = [!! Àľšô ŕüññïñĝ !!]
+browser-start-more = [!! { $count } ṁôŕë !!]
+browser-start-stopped = [!! Šţôþþëđ !!]
+browser-start-starting = [!! Šţàŕţïñĝ !!]
+browser-start-clock = { $elapsed }
+browser-start-run-script = [!! Ŕüñ šçŕïþţ !!]
+browser-start-run-script-named = [!! Ŕüñ { $script } !!]
+browser-start-stop-script = [!! Šţôþ { $script } !!]
+browser-start-clear = [!! Çľëàŕ !!]
+browser-start-run = [!! Šţàŕţ Ŕüñ !!]
+browser-start-this-worktree = [!! Ţħïš ŵôŕķţŕëë !!]
+browser-start-pull-request = [!! Þüľľ ŕëǫüëšţ !!]
+browser-start-merge-request = [!! Ṁëŕĝë ŕëǫüëšţ !!]
+browser-start-repository = [!! Ŕëþôšïţôŕÿ !!]
+browser-nothing-title = [!! { $host } ïšñ’ţ ŕüññïñĝ !!]
+browser-nothing-lede = [!! Ţħïš þàĝë ôþëñš ħëŕë ŵħëñ ţħë šëŕṽëŕ šţàŕţš. !!]
+browser-nothing-starting = [!! Ţħïš þàĝë ôþëñš ŵħëñ ïţ’š ŕëàđÿ. !!]
+browser-starting-title = [!! Šţàŕţïñĝ { $host } !!]
+browser-stage-starting = [!! Šţàŕţïñĝ !!]
+browser-stage-up = [!! Šëŕṽëŕ üþ !!]
+browser-stage-ready = [!! Þàĝë ŕëàđÿ !!]
+browser-nothing-retried = { $count ->
+    [one] [!! Çħëçķëđ àĝàïñ. Ñô àñšŵëŕ ÿëţ. !!]
+   *[other] [!! Çħëçķëđ { $count } ţïṁëš. Ñô àñšŵëŕ ÿëţ. !!]
+}
+browser-loading-title = [!! Ľôàđïñĝ { $host } !!]
+browser-loading-lede = [!! Ţħë šëŕṽëŕ ïš üþ àñđ ƀüïľđïñĝ ţħë þàĝë. !!]
+browser-failed-title = [!! { $host } đïđñ’ţ ľôàđ !!]
+browser-failed-lede = [!! Ïţš šëŕṽëŕ ïš ľïšţëñïñĝ, ƀüţ ţħïš þàĝë đïđñ’ţ ľôàđ. !!]
+browser-open-over-http = [!! Ôþëñ ôṽëŕ http !!]
+browser-unreachable-title = [!! Çàñ’ţ ŕëàçħ { $host } !!]
+browser-unreachable-lede = [!! Çħëçķ ţħë àđđŕëšš ôŕ ÿôüŕ çôññëçţïôñ. !!]
+browser-try-again = [!! Ţŕÿ àĝàïñ !!]
+browser-tip-running-lead = [!! Ïš ţħë đëṽ šëŕṽëŕ ŕüññïñĝ? !!]
+browser-tip-running-body = [!! Ñôţħïñĝ ħàš àñšŵëŕëđ ôñ þôŕţ { $port } àƒţëŕ à ƒëŵ ţŕïëš. Çħëçķ ţħë ŕüñ šçŕïþţ ôŕ ţëŕṁïñàľ ƒôŕ àñ ëŕŕôŕ. !!]
+browser-tip-moved-lead = [!! Ïţ ṁàÿ ħàṽë ṁôṽëđ. !!]
+browser-tip-moved-body = [!! Đëṽ šëŕṽëŕš ôƒţëñ ţàķë ţħë ñëẋţ ƒŕëë þôŕţ ŵħëñ { $port } ïš ƀüšÿ. Àñÿţħïñĝ ţħàţ šţàŕţëđ ïñ ÿôüŕ ŵôŕķţŕëëš àþþëàŕš ƀëľôŵ. !!]
+browser-tip-ipv4-lead = [!! Ţŕÿ 127.0.0.1. !!]
+browser-tip-ipv4-body = [!! Šôṁë šëŕṽëŕš ľïšţëñ ôñ IPv4 ôñľÿ ŵħïľë localhost ŕëšôľṽëš ţô IPv6 ƒïŕšţ. !!]
+browser-tip-ipv4-open = [!! Ôþëñ { $address } !!]
+browser-tip-knocking-lead = [!! Šţïľľ ñôţħïñĝ. !!]
+browser-tip-knocking-body = [!! Þôŕţ { $port } ħàšñ’ţ àñšŵëŕëđ. Çħëçķ ţħë šëŕṽëŕ’š ţëŕṁïñàľ ƒôŕ àñ ëŕŕôŕ. !!]
 browser-annotate-element = [!! Àññôţàţë ëľëṁëñţ !!]
 browser-choose-annotation-destination = [!! Çħôôšë àññôţàţïôñ đëšţïñàţïôñ !!]
 browser-current-chats = [!! Çüřřëñţ çħàţš !!]
@@ -153,6 +200,62 @@ browser-clear-annotations = [!! Çľëàŕ àññôţàţïôñš !!]
 browser-copy-url = [!! Çôþÿ URL !!]
 browser-open-external = [!! Ôþëñ Ëẋţëŕñàľ !!]
 browser-inspect = [!! Ïñšþëçţ !!]
+browser-emulation-dark = [!! Đàŕķ !!]
+browser-emulation-light = [!! Ŀïĝħţ !!]
+browser-emulation-user-agent = [!! Çüšţôṁ üšëŕ àĝëñţ !!]
+browser-emulation-print = [!! Þŕïñţ !!]
+browser-emulation-reduced-motion = [!! Ŕëđüçëđ ṁôţïôñ !!]
+browser-emulation-routes = { $count ->
+    [one] [!! { $count } ṁôçķëđ ŕëqüëšţ !!]
+   *[other] [!! { $count } ṁôçķëđ ŕëqüëšţš !!]
+}
+browser-reset-emulation = [!! Çľëàŕ ţħë àĝëñţ'š þàĝë ôṽëŕŕïđëš !!]
+browser-color-scheme-view-light = [!! Ṽïëŵ ţħïš þàĝë ïñ ľïĝħţ ṁôđë !!]
+browser-color-scheme-view-dark = [!! Ṽïëŵ ţħïš þàĝë ïñ đàŕķ ṁôđë !!]
+browser-color-scheme-showing-light = [!! Šħôŵïñĝ ţħïš þàĝë ïñ ľïĝħţ ṁôđë. Çľïçķ ţô ƒôľľôŵ ţħë àþþ !!]
+browser-color-scheme-showing-dark = [!! Šħôŵïñĝ ţħïš þàĝë ïñ đàŕķ ṁôđë. Çľïçķ ţô ƒôľľôŵ ţħë àþþ !!]
+browser-picking-hint = [!! Šëľëçţ àñ ëľëṁëñţ ţô šëñđ ţô à çħàţ !!]
+browser-served-stopped = [!! šţôþþëđ !!]
+browser-served-starting = [!! šţàŕţïñĝ !!]
+browser-served-branch = [!! Ɓŕàñçħ !!]
+browser-served-process = [!! Þŕôçëšš !!]
+browser-served-port = [!! Þôŕţ !!]
+browser-served-restart = [!! Ŕëšţàŕţ šëŕṽëŕ !!]
+browser-served-start = [!! Šţàŕţ šëŕṽëŕ !!]
+browser-served-terminal = [!! Šħôŵ ţëŕṁïñàľ !!]
+browser-app-debugger = [!! Đëƀüĝĝëŕ !!]
+browser-app-open = [!! Ôþëñ !!]
+browser-app-split = [!! Ôþëñ ïñ šþľïţ !!]
+browser-app-copy = [!! Çôþÿ ÜŔĽ !!]
+browser-app-restart = [!! Ŕëšţàŕţ šëŕṽëŕ !!]
+browser-app-terminal = [!! Šħôŵ ţëŕṁïñàľ !!]
+browser-app-origin-run-server = [!! Šţàŕţëđ ƀÿ { $run } ŵïţħ { $server } !!]
+browser-app-origin-run = [!! Šţàŕţëđ ƀÿ { $run } !!]
+browser-app-origin-server-folder = [!! { $server } ïñ { $folder } !!]
+browser-app-also-on = [!! Àľšô ôñ !!]
+browser-app-moved = [!! { $port } ïš { $branch }’š. Ţħïš ŵôŕķţŕëë’š ïš ôñ { $own }. !!]
+browser-recent-moved = [!! ñôŵ :{ $port } !!]
+browser-errors-heading = { $count ->
+    [one] [!! 1 ëŕŕôŕ ôñ ţħïš þàĝë !!]
+   *[other] [!! { $count } ëŕŕôŕš ôñ ţħïš þàĝë !!]
+}
+browser-errors-more = [!! àñđ { $count } ṁôŕë !!]
+browser-errors-send = [!! Šëñđ ţô çħàţ !!]
+browser-errors-copy = [!! Çôþÿ !!]
+browser-errors-sent-to = [!! Šëñţ ţô !!]
+browser-errors-new-chat-with = [!! Ñëŵ { $provider } çħàţ !!]
+browser-more-actions = [!! Ṁôŕë !!]
+browser-agent-unknown = [!! Àñ àĝëñţ !!]
+browser-agent-reading = [!! ŕëàđïñĝ ţħë þàĝë !!]
+browser-agent-navigating = [!! ñàṽïĝàţïñĝ !!]
+browser-agent-clicking = [!! çľïçķïñĝ !!]
+browser-agent-typing = [!! ţÿþïñĝ !!]
+browser-agent-scrolling = [!! šçŕôľľïñĝ !!]
+browser-agent-capturing = [!! ţàķïñĝ à šçŕëëñšħôţ !!]
+browser-agent-running-script = [!! ŕüññïñĝ à šçŕïþţ !!]
+browser-agent-switching-color-scheme = [!! šŵïţçħïñĝ ţħë çôľôŕ šçħëṁë !!]
+browser-agent-working = [!! ŵôŕķïñĝ !!]
+browser-agent-back-to-chat = [!! Ɓàçķ ţô çħàţ !!]
 picker-no-results = [!! Ñô ŕëšüľţš !!]
 palette-search-files = [!! Šëàŕçħ ƒïľëš ïñ ţħïš ŵôŕķţŕëë... !!]
 palette-no-matching-files = [!! Ñô ṁàţçħïñĝ ƒïľëš !!]
@@ -197,7 +300,6 @@ action-reset = [!! Ŕëšëţ !!]
 project-pinned = [!! Þïññëđ !!]
 project-no-worktrees-found = [!! Ñô ŵôŕķţŕëëš ƒôüñđ !!]
 project-loading-merge-options = [!! Ŀôàđïñĝ ṁëŕĝë ôþţïôñš !!]
-update-whats-new = [!! Ŵħàţ'š ïñ ţħïš üþđàţë !!]
 sidebar-add-project-to-start = [!! Àđđ à þŕôĵëçţ ţô ĝëţ šţàŕţëđ !!]
 sidebar-search-project-worktrees-placeholder = [!! Šëàŕçĥ ŵôŕķţŕëëš ïñ { $project } !!]
 sidebar-search-hidden-worktrees-placeholder = [!! Šëàŕçĥ ĥïđđëñ ŵôŕķţŕëëš ïñ { $project } !!]
@@ -208,6 +310,7 @@ workspace-no-matching-branches = [!! Ñô ṁàţçħïñĝ þŕàñçħëš !!]
 workspace-rename-current-branch = [!! Ŕëñàṁë çüŕŕëñţ þŕàñçħ !!]
 common-recently-used = [!! Ŕëçëñţľÿ üšëđ !!]
 workspace-all-branches = [!! Àľľ þŕàñçħëš !!]
+workspace-branch-picker-search-placeholder = [!! Šëàŕçħ þŕàñçħëš !!]
 workspace-loading-branches = [!! Ŀôàđïñĝ þŕàñçħëš… !!]
 workspace-no-local-branches = [!! Ñô ľôçàľ þŕàñçħëš !!]
 workspace-open-diff = [!! Ôþëñ đïƒƒ !!]
@@ -215,6 +318,12 @@ workspace-open-file = [!! Ôþëñ ƒïľë !!]
 workspace-no-custom-commands = [!! Ñô çüšţôṁ çôṁṁàñđš çôñƒïĝüŕëđ. !!]
 workspace-no-commands-match = [!! Ñô çôṁṁàñđš ṁàţçħ ÿôüŕ šëàŕçħ. !!]
 workspace-new-command = [!! Ñëŵ çôṁṁàñđ !!]
+command-picker-runs-in-chat = [!! Ŕüñš ïñ ţħïš çħàţ !!]
+command-picker-runs-in-new-tab = [!! Ŕüñš ïñ à ñëŵ ţàƀ !!]
+command-picker-always-new-tab = [!! Àľŵàÿš ôþëñš à ñëŵ ţàƀ !!]
+command-picker-alt-new-tab = [!! ⌘ ñëŵ ţàƀ !!]
+command-picker-alt-this-chat = [!! ⌘ ţħïš çħàţ !!]
+command-picker-edit = [!! Ëđïţ ïñ Šëţţïñĝš !!]
 workspace-new-tab = [!! Ñëŵ ţàþ !!]
 workspace-empty-view-heading = [!! Çħôôšë à ţôôľ ţô gëţ šţàŕţëđ !!]
 workspace-your-default = [!! Ýôüŕ đëƒàüľţ !!]
@@ -237,16 +346,8 @@ add-project-quick-start = [!! Qüïçķ šţàŕţ ñëŵ þŕôĵëçţ !!]
 add-project-tooltip = [!! Àđđ þŕôĵëçţ !!]
 clone-location-dialog-title = [!! Çľôñë Ŀôçàţïôñ !!]
 clone-repository-action = [!! Çľôñë ŕëþôšïţôŕÿ !!]
-clone-repository-url = [!! Ŕëþôšïţôŕÿ URL !!]
+clone-description = [!! Þàšţë à ŕëþôšïţôŕÿ'š àđđŕëšš. !!]
 close-tab-action = [!! Çľôšë Ţàþ !!]
-close-tab-description = [!! Ţħïš ţàþ ħàš ŵôŕķ ïñ þŕôĝŕëšš. Çľôšïñĝ ïţ ŵïľľ šţôþ ţħë àĝëñţ. !!]
-close-tab-title = [!! Çľôšë “{ $tab_title }”? !!]
-close-tab-keep-launched-agents = [!! Ķëëþ ţħëṁ ôþëñ àš ţàþš !!]
-close-tab-launched-agents-description = { $count ->
-    [one] [!! Àñ àĝëñţ ľàüñçħëđ ƒŕôṁ ţħïš ţàþ ïš šţïľľ ŵôŕķïñĝ. Çľôšïñĝ ţħë ţàþ šţôþš ïţ. !!]
-   *[other] [!! { $count } àĝëñţš ľàüñçħëđ ƒŕôṁ ţħïš ţàþ àŕë šţïľľ ŵôŕķïñĝ. Çľôšïñĝ ţħë ţàþ šţôþš ţħëṁ. !!]
-}
-common-back-arrow = [!! ← Ɓàçķ !!]
 common-browse = [!! Ɓŕôŵšë !!]
 common-browse-ellipsis = [!! Ɓŕôŵšë… !!]
 common-cancel = [!! Çàñçëľ !!]
@@ -255,7 +356,6 @@ common-close = [!! Çľôšë !!]
 common-completed = [!! Çôṁþľëţëđ !!]
 common-confirm-save = [!! Çôñƒïŕṁ Šàṽë !!]
 common-continue = [!! Çôñţïñüë !!]
-common-continue-arrow = [!! Çôñţïñüë → !!]
 common-copy = [!! Çôþÿ !!]
 common-create = [!! Çŕëàţë !!]
 common-delete = [!! Đëľëţë !!]
@@ -266,7 +366,6 @@ common-dont-show-again = [!! Đôñ’ţ šħôŵ ţħïš àĝàïñ !!]
 common-experimental = [!! Ëẋþëŕïṁëñţàľ !!]
 common-fix = [!! Ƒïẋ !!]
 common-less = [!! Ŀëšš !!]
-common-location = [!! Ŀôçàţïôñ !!]
 common-name = [!! Ñàṁë !!]
 common-ok = [!! Ôķ !!]
 common-okay = [!! Ôķàÿ !!]
@@ -328,33 +427,52 @@ notification-undo-dismissal = [!! Üñđô !!]
 notification-view-open = [!! Ôþëñ !!]
 notification-view-ready = [!! Ŕëàđÿ !!]
 notification-view-running = [!! Ŕüññïñĝ !!]
-onboarding-chat-ui = [!! Çħàţ ÜÏ !!]
-onboarding-chat-ui-description = [!! Ŕëñđëŕëđ ṁëššàĝëš ŵïţħ ïñľïñë đïƒƒš àñđ ṁàŕķđôŵñ !!]
-onboarding-chat-view-description = [!! Ɓôţħ ŵôŕķ ŵïţħ àñÿ AI — çħàñĝë àñÿţïṁë ïñ Šëţţïñĝš !!]
-onboarding-choose-permissions = [!! Çħôôšë ħôŵ àĝëñţš ŕëqüëšţ àþþŕôṽàľ !!]
-onboarding-permissions-description = [!! Àþþľïëš ţô ëṽëŕÿ šüþþôŕţëđ þŕôṽïđëŕ — çħàñĝë àñÿţïṁë ïñ Šëţţïñĝš !!]
-onboarding-provider-defaults = [!! Þŕôṽïđëŕ đëƒàüľţš !!]
-onboarding-provider-defaults-description = [!! Šţàŕţ ëàçħ àĝëñţ ïñ ţħë ṁôđë ïţš ôŵñ CLI üšëš þÿ đëƒàüľţ !!]
-onboarding-bypass-full-access-description = [!! Šķïþ àþþŕôṽàľ þŕôṁþţš ïñ ţŕüšţëđ ŕëþôšïţôŕïëš; àĝëñţš ŕüñ ţôôľš ŵïţħôüţ àšķïñĝ, àñđ Codex àľšô ŕüñš ŵïţħôüţ ïţš šàñđþôẋ !!]
-onboarding-choose-chat-view = [!! Çħôôšë ÿôüŕ çħàţ ṽïëŵ !!]
-onboarding-choose-default-harness = [!! Çħôôšë ÿôüŕ đëƒàüľţ ħàŕñëšš — çħàñĝë àñÿţïṁë ïñ Šëţţïñĝš !!]
-onboarding-choose-left-sidebar = [!! Çħôôšë ÿôüŕ ľëƒţ šïđëþàŕ !!]
-onboarding-compact-sidebar-description = [!! Ƒëàţüŕë ľàþëľš; ĝïţ đëţàïľš ôñ ħôṽëŕ. !!]
-onboarding-detailed-sidebar-description = [!! Ɓŕàñçħ ŕôŵš; šţàţš àţ à ĝľàñçë. !!]
-onboarding-get-started-arrow = [!! Ĝëţ Šţàŕţëđ → !!]
-onboarding-install-harness = [!! Ïñšţàľľ à ħàŕñëšš ţô ĝëţ šţàŕţëđ !!]
 onboarding-install-link = [!! Ïñšţàľľ ↗ !!]
-onboarding-looking-for-harnesses = [!! Ŀôôķïñĝ ƒôŕ ïñšţàľľëđ ħàŕñëššëš !!]
-onboarding-more-harnesses = [!! + { $count } ṁôŕë ħàŕñëššëš !!]
-onboarding-new-default = [!! Ñëŵ đëƒàüľţ !!]
-onboarding-no-matching-models = [!! Ñô ṁàţçħïñĝ ṁôđëľš !!]
-onboarding-search-models = [!! Šëàŕçħ ṁôđëľš... !!]
-onboarding-sidebar-description = [!! Šŵïţçħ ľàÿôüţš àñÿţïṁë ïñ Šëţţïñĝš → Àþþëàŕàñçë. !!]
+common-back = [!! Bàçķ !!]
+common-hide = [!! Ħïđë !!]
+onboarding-bypass-codex-note = [!! Çôđëẋ àľšô ŕüñš ŵïţħôüţ ïţš šàñđþôẋ. !!]
+onboarding-bypass-trusted-note = [!! Üšë ţħïš ôñľÿ ïñ ŕëþôšïţôŕïëš ÿôü ţŕüšţ. !!]
+onboarding-chat = [!! Çħàţ !!]
+onboarding-sidebar-title = [!! Çħôôšë ÿôüŕ šïđëþàŕ !!]
+onboarding-compact-description = [!! Fëàţüŕë ñàṁëš. Ĝïţ đëţàïľš ôñ ħôṽëŕ. !!]
+onboarding-detailed-description = [!! Bŕàñçħ ŕôŵš ŵïţħ šţàţš àţ à ĝľàñçë. !!]
+onboarding-get-started = [!! Ĝëţ šţàŕţëđ !!]
+onboarding-splash-welcome = [!! Ŵëľçôṁë, { $name } !!]
+onboarding-permissions-title = [!! Àĝëñţ þëŕṁïššïôñš !!]
+onboarding-permissions-subtitle = [!! Ŵħàţ àĝëñţš çàñ đô ŵïţħôüţ àšķïñĝ. !!]
+onboarding-supervised = [!! Šüþëŕṽïšëđ !!]
+onboarding-supervised-summary = [!! Àĝëñţš ƒôľľôŵ ţħëïŕ ÇĿÏ'š àþþŕôṽàľ þŕôṁþţš. !!]
+onboarding-full-access-summary = [!! Àĝëñţš ŕüñ çôṁṁàñđš àñđ ëđïţ ƒïľëš ŵïţħôüţ àšķïñĝ. !!]
+onboarding-surface-title = [!! Çħàţ ôŕ ţëŕṁïñàľ? !!]
+onboarding-surface-subtitle = [!! Ħôŵ ñëŵ çôñṽëŕšàţïôñš ôþëñ. !!]
+onboarding-chat-summary = [!! Ŕïçħ ŕëþľïëš ŵïţħ ïñľïñë đïƒƒš. !!]
+onboarding-terminal-summary = [!! Ţħë àĝëñţ'š ôŵñ çôṁṁàñđ ľïñë. !!]
+onboarding-sidebar-subtitle = [!! Ħôŵ ÿôüŕ ŵôŕķţŕëëš àŕë ľïšţëđ. !!]
+onboarding-finish = [!! Ƒïñïšħ !!]
+onboarding-set-up-later = [!! Šëţ üþ ľàţëŕ !!]
+onboarding-skip-for-now = [!! Šķïþ ƒôŕ ñôŵ !!]
+onboarding-agent-title = [!! Çħôôšë ÿôüŕ àĝëñţ !!]
+onboarding-agents-on-device =
+    { $count ->
+        [one] [!! Ôñë ïš ŕëàđÿ ôñ ţħïš đëṽïçë. !!]
+       *[other] [!! { $count } àŕë ŕëàđÿ ôñ ţħïš đëṽïçë. !!]
+    }
+onboarding-looking-on-device = [!! Ŀôôķïñĝ ƒôŕ àĝëñţš ôñ ţħïš đëṽïçë !!]
+onboarding-install-agent = [!! Ïñšţàľľ àñ àĝëñţ !!]
+onboarding-agent-ready = [!! { $name } ïš ŕëàđÿ !!]
+onboarding-more-agents = [!! Ṁôŕë !!]
+onboarding-fewer-agents = [!! Fëŵëŕ !!]
+onboarding-watching-for-agents = [!! Ŵàţçħïñĝ ƒôŕ àĝëñţš !!]
+onboarding-already-installed = [!! Àľŕëàđÿ ïñšţàľľëđ ôñë? !!]
+onboarding-already-installed-tip = [!! Ŵë ľôôķ ƒôŕ àĝëñţš ôñ ÿôüŕ šħëľľ'š ÞÀŢĦ. Ïƒ ÿôüŕš ïš šôṁëŵħëŕë ëľšë, àđđ ïţš ƒôľđëŕ ţô ÿôüŕ ÞÀŢĦ. Çľïçķ ţô ľôôķ àĝàïñ ñôŵ. !!]
+onboarding-preview-prompt = [!! Fïẋ ţħë ƒľàķÿ ľôĝïñ ţëšţ !!]
+onboarding-preview-reply = [!! Fïẋëđ. Ţħë ţëšţ ñôŵ ŵàïţš ƒôŕ ţħë þüţţôñ. !!]
+welcome-add-project-subtitle = [!! Àđđ à þŕôĵëçţ ţô šţàŕţ ÿôüŕ ƒïŕšţ àĝëñţ. !!]
+welcome-setup-summary = [!! Ñëŵ çħàţš üšë { $harness } ŵïţħ { $model }. !!]
+welcome-change-in-settings = [!! Çħàñĝë ïñ Šëţţïñĝš !!]
 onboarding-terminal = [!! Ţëŕṁïñàľ !!]
-onboarding-terminal-description = [!! Ŕüñ ţħë àĝëñţ'š CLI ïñ à ţëŕṁïñàľ þàñë !!]
 project-modal-display-name = [!! Đïšþľàÿ ñàṁë !!]
 project-modal-rename-title = [!! Ŕëñàṁë Þŕôĵëçţ !!]
-project-modal-rename-worktree-label = [!! Ŕëñàṁë ŵôŕķţŕëë ľàþëľ !!]
 project-modal-worktree-label = [!! Ŵôŕķţŕëë ľàþëľ !!]
 project-risk-add-anyway = [!! Àđđ Àñÿŵàÿ !!]
 project-risk-create-anyway = [!! Çŕëàţë Àñÿŵàÿ !!]
@@ -372,7 +490,6 @@ project-welcome-lets-build = [!! Ŀëţ’š þüïľđ !!]
 project-welcome-tips-intro = [!! À ƒëŵ ţïþš ţô ĝëţ ÿôü šţàŕţëđ: !!]
 quick-start-description = [!! { $app_name } ŵïľľ çŕëàţë à ñëŵ ƒôľđëŕ àñđ ĝïţ ŕëþô ƒôŕ ÿôü. !!]
 quick-start-location-dialog-title = [!! Þŕôĵëçţ Ŀôçàţïôñ !!]
-quick-start-template = [!! Ţëṁþľàţë !!]
 quick-start-template-empty = [!! Ëṁþţÿ !!]
 quick-start-template-node = [!! Ñôđë !!]
 quick-start-template-python = [!! Þÿţħôñ !!]
@@ -416,7 +533,6 @@ section-editor-name-conflict = [!! À šëçţïôñ ŵïţħ ţħïš ñàṁë
 section-editor-new-title = [!! Ñëŵ šëçţïôñ !!]
 section-editor-pinned-description = [!! Ţħë þïññëđ šëçţïôñ ïš àľŵàÿš ṁàñüàľ. !!]
 section-editor-priority = [!! Þŕïôŕïţÿ !!]
-section-editor-priority-description = [!! Ħïĝħëŕ-þŕïôŕïţÿ ƒïľţëŕš çľàïṁ ṁàţçħïñĝ ŵôŕķţŕëëš ƒïŕšţ. Þŕïôŕïţÿ đôëš ñôţ çħàñĝë šëçţïôñ þľàçëṁëñţ. Ṁàñüàľ šëçţïôñš àľŵàÿš ŵïñ. !!]
 section-editor-type = [!! Šëçţïôñ ţÿþë !!]
 section-priority-highest = [!! { $rank } · Ħïĝħëšţ !!]
 section-priority-highest-only = [!! Ħïĝħëšţ !!]
@@ -450,6 +566,9 @@ section-value-running = [!! Ŕüññïñĝ !!]
 section-value-stopped = [!! Šţôþþëđ !!]
 section-value-working = [!! Ŵôŕķïñĝ !!]
 toast-remove-from-app = [!! Ŕëṁôṽë ƒŕôṁ { $app_name } !!]
+toast-browser-automation-disabled-title = [!! Àñ àĝëñţ ţŕïëđ ţô üšë ţħë þŕôŵšëŕ !!]
+toast-browser-automation-disabled = [!! Ɓŕôŵšëŕ àüţôṁàţïôñ ïš ôƒƒ, šô ţħë àĝëñţ'š çôṁṁàñđ ŵàš ŕëƒüšëđ. Ţüŕñ ïţ ôñ ïñ Šëţţïñĝš › Ëẋþëŕïṁëñţàľ ţô ľëţ àĝëñţš ŕëàđ àñđ çôñţŕôľ ÿôüŕ þŕôŵšëŕ ţàþš. !!]
+toast-open-experimental-settings = [!! Ôþëñ Šëţţïñĝš !!]
 validation-name-required = [!! Ñàṁë ïš ŕëqüïŕëđ !!]
 welcome-clone-from-url = [!! Çľôñë ƒŕôṁ URL !!]
 welcome-clone-from-url-description = [!! Çľôñë à ŕëṁôţë ŕëþô !!]
@@ -461,8 +580,7 @@ welcome-bitbucket-cli-description = [!! Þüľľ ŕëqüëšţš àñđ çħëç
 welcome-open-project = [!! Ôþëñ þŕôĵëçţ !!]
 welcome-open-project-description = [!! Àđđ àñ ëẋïšţïñĝ ŕëþô !!]
 welcome-quick-start = [!! Qüïçķ šţàŕţ !!]
-welcome-quick-start-description = [!! Ñëŵ þŕôĵëçţ ƒŕôṁ ţëṁþľàţë !!]
-whats-new-release-count = [!! { $count } ŕëľëàšëš !!]
+welcome-quick-start-from-template = [!! Šţàŕţ ƒŕôṁ à ţëṁþľàţë !!]
 whats-new-title = [!! Ŵħàţ'š Ñëŵ !!]
 workspace-add-repositories-ellipsis = [!! Àđđ Ŕëþôšïţôŕïëš… !!]
 workspace-ai-quick = [!! Qüïçķ !!]
@@ -471,8 +589,6 @@ workspace-ai-setup = [!! AI Šëţüþ !!]
 workspace-ai-thorough = [!! Ţħôŕôüĝħ !!]
 workspace-ai-thorough-description = [!! Ŀàüñçħëš àñ AI àĝëñţ ţô àñàľÿžë ŕëþôš àñđ ŵŕïţë çôñţëẋţ ƒïľëš. !!]
 workspace-choose-icon = [!! Çħôôšë ïçôñ !!]
-workspace-delete-title = [!! Đëľëţë Ŵôŕķšþàçë !!]
-workspace-delete-exclusive-projects = [!! Ïţ ŵïľľ àľšô ŕëṁôṽë ţħëšë þŕôĵëçţš ƒŕôṁ ţħë àþþ: { $projects }. !!]
 workspace-individual-projects = [!! Ïñđïṽïđüàľ Þŕôĵëçţš !!]
 workspace-individual-projects-description = [!! Ŵôŕķ ïñ šëþàŕàţë ŕëþôšïţôŕïëš ŵïţħ ïñđëþëñđëñţ ŵôŕķţŕëëš. !!]
 workspace-individual-projects-detail = [!! Ɓëšţ ƒôŕ šïñĝľë-ŕëþô çħàñĝëš, ṁàïñţëñàñçë ŵôŕķ, àñđ üñŕëľàţëđ ţàšķš. !!]
@@ -498,7 +614,6 @@ worktree-create-in-background = [!! Çŕëàţë ïñ þàçķĝŕôüñđ !!]
 worktree-create-refresh-branches = [!! Ƒëţçħ ŕëṁôţë þŕàñçħëš !!]
 worktree-create-refresh-failed = [!! Ƒëţçħ făïľëđ: { $error } !!]
 worktree-create-return = [!! Çŕëàţë ↵ !!]
-worktree-delete-title = [!! Đëľëţë Ŵôŕķţŕëë !!]
 worktree-in-workspace = [!! Ïñ ŵôŕķšþàçë !!]
 worktree-no-matching-branches = [!! Ñô ṁàţçħïñĝ þŕàñçħëš !!]
 worktree-not-installed = [!! Ñôţ ïñšţàľľëđ !!]
@@ -529,7 +644,7 @@ settings-category-general-description = [!! Çôŕë àþþ þëħàṽïôŕ à
 settings-category-agents-description = [!! Þŕôṽïđëŕ ŕôüţïñĝ, þŕôṁþţ ţëṁþľàţëš, àñđ ëẋëçüţïôñ ŕüľëš þëŕ àĝëñţ àçţïôñ. !!]
 settings-category-profiles-description = [!! Ŀôçàľ CLI þŕôƒïľëš àñđ ĝľôþàľ/ŵôŕķšþàçë/þŕôĵëçţ đëƒàüľţš. !!]
 settings-category-commands-description = [!! Çüšţôṁ çôṁṁàñđš àñđ þŕôṁþţ ţëṁþľàţëš ŵïţħ ĝľôþàľ/ŵôŕķšþàçë/þŕôĵëçţ šçôþïñĝ. !!]
-settings-category-experimental-description = [!! Þŕëṽïëŵ ƒëàţüŕëš, ïñçľüđïñĝ šħàŕëđ çôñţëẋţ ŵôŕķšþàçëš, ñôñ-Git þŕôĵëçţš, àĝëñţ ôŕçħëšţŕàţïôñ, àñđ ħëàđľëšš Ŕëṽïëŵ đïšþàţçħ. !!]
+settings-category-experimental-description = [!! Þŕëṽïëŵ ƒëàţüŕëš, ïñçľüđïñĝ šħàŕëđ çôñţëẋţ ŵôŕķšþàçëš, ñôñ-Git þŕôĵëçţš, àñđ ħëàđľëšš Ŕëṽïëŵ đïšþàţçħ. !!]
 settings-category-keyboard-shortcuts-description = [!! Ɓŕôŵšë, šëàŕçħ, àñđ çüšţôṁïžë ķëÿþôàŕđ šħôŕţçüţš. !!]
 settings-category-appearance-description = [!! Ṽïšüàľ þŕëƒëŕëñçëš àñđ ÜÏ þŕëšëñţàţïôñ. !!]
 settings-category-notifications-description = [!! Àľëŕţ þëħàṽïôŕ àñđ šôüñđ çüšţôṁïžàţïôñ. !!]
@@ -694,6 +809,10 @@ settings-updates-ready = [!! Üþđàţë ŕëàđÿ: { $version } !!]
 settings-updates-check-failed = [!! Üþđàţë çħëçķ ƒàïľëđ: { $error } !!]
 toast-update-apply-failed-title = [!! Çôüľđ ñôţ àþþľÿ üþđàţë !!]
 toast-update-apply-failed = [!! Çôüľđ ñôţ àþþľÿ ţħë üþđàţë: { $error } !!]
+toast-update-previous-launch-failed-title = [!! Üþđàţë đïđ ñôţ ƒïñïšħ šţàŕţïñĝ !!]
+toast-update-previous-launch-failed = [!! Ţħë ľàšţ ľàüñçħ ôƒ ţħïš üþđàţë çľôšëđ þëƒôŕë ïţš ŵïñđôŵ àþþëàŕëđ. Ïƒ þŕôþľëṁš çôñţïñüë, šëë { $url } !!]
+toast-update-rolled-back-title = [!! Üþđàţë ŕôľľëđ þàçķ !!]
+toast-update-rolled-back = [!! Ţħë üþđàţë ţô { $version } çľôšëđ þëƒôŕë ïţ ƒïñïšħëđ šţàŕţïñĝ, šô super.engineering ŵëñţ þàçķ ţô ţħë þŕëṽïôüš ṽëŕšïôñ. Ţħë ñëẋţ ñïĝħţľÿ ŵïľľ þë ôƒƒëŕëđ àüţôṁàţïçàľľÿ. !!]
 settings-updates-downloading-version = [!! Đôŵñľôàđïñĝ üþđàţë { $version }... !!]
 settings-updates-installing-version = [!! Ïñšţàľľïñĝ üþđàţë { $version }... !!]
 settings-updates-description = [!! Çħëçķ ƒôŕ ñëŵ super.engineering ŕëľëàšëš. Đôŵñľôàđš šţàÿ šţàĝëđ üñţïľ ÿôü ŕëšţàŕţ. !!]
@@ -702,6 +821,7 @@ settings-updates-channel-description = [!! Ñïĝħţľÿ ïš çüŕŕëñţľ�
 settings-updates-current-version-label = [!! Çüŕŕëñţ ṽëŕšïôñ !!]
 settings-updates-installed = [!! Ïñšţàľľëđ !!]
 settings-updates-status-label = [!! Üþđàţë šţàţüš !!]
+settings-updates-package-managed = [!! Üþđàţëš àŕë ṁàñàĝëđ þÿ ÿôüŕ þàçķàĝë ṁàñàĝëŕ !!]
 settings-ai-inherited = [!! Ïñħëŕïţëđ !!]
 settings-ai-search-models-placeholder = [!! Šëàŕçħ ṁôđëľš... !!]
 settings-ai-action-column = [!! Àçţïôñ !!]
@@ -805,66 +925,6 @@ scripts-setup = [!! Šëţüþ !!]
 scripts-setup-description = [!! Ŕüñš ŵħëñ à ñëŵ ŵôŕķţŕëë ïš çŕëàţëđ. !!]
 scripts-teardown = [!! Ţëàŕđôŵñ !!]
 scripts-teardown-description = [!! Ŕüñš ŵħëñ à ŵôŕķţŕëë ïš đëľëţëđ. !!]
-welcome-phrase-frictionless-engineering = [!! Ƒŕïçţïôñľëšš àĝëñţïç ëñĝïñëëŕïñĝ !!]
-welcome-phrase-future = [!! Ŵëľçôṁë ţô ţħë ƒüţüŕë !!]
-welcome-phrase-zero-resistance = [!! Žëŕô ŕëšïšţàñçë, ïñƒïñïţë þôţëñţïàľ !!]
-welcome-phrase-room-temperature = [!! À ŕôôṁ-ţëṁþëŕàţüŕë šüþëŕçôñđüçţôŕ !!]
-welcome-phrase-electrons = [!! Ŵħëŕë ëľëçţŕôñš ƒľôŵ ŵïţħôüţ ƒŕïçţïôñ !!]
-welcome-phrase-cooper-pairs = [!! Çôôþëŕ þàïŕš đàñçïñĝ àţ 300Ķ !!]
-welcome-phrase-meissner-effect = [!! Ţħë Ṁëïššñëŕ ëƒƒëçţ ïš þëàüţïƒüľ !!]
-welcome-phrase-flux-quantization = [!! Ƒľüẋ qüàñţïžàţïôñ ïñ þŕôĝŕëšš !!]
-welcome-phrase-resistance-futile = [!! Ŕëšïšţàñçë ïš ƒüţïľë (ľïţëŕàľľÿ) !!]
-welcome-phrase-bcs-theory = [!! ƁÇŠ ţħëôŕÿ ŵàš ĵüšţ ţħë þëĝïññïñĝ !!]
-welcome-phrase-critical-temperature = [!! Çŕïţïçàľ ţëṁþëŕàţüŕë: ŕôôṁ ţëṁþ !!]
-welcome-phrase-first-neural-net = [!! Ţħë ƒïŕšţ ñëüŕàľ ñëţ ŵàš þüïľţ ïñ 1958 !!]
-welcome-phrase-gpt = [!! ĜÞŢ šţàñđš ƒôŕ Ĝëñëŕàţïṽë Þŕë-ţŕàïñëđ Ţŕàñšƒôŕṁëŕ !!]
-welcome-phrase-attention = [!! Àţţëñţïôñ ïš àľľ ÿôü ñëëđ (2017) !!]
-welcome-phrase-alphago = [!! ÀľþħàĜô þëàţ Ŀëë Šëđôľ 4-1 ïñ 2016 !!]
-welcome-phrase-eliza = [!! ËĿÏŽÀ (1966) ŵàš ţħë ƒïŕšţ çħàţþôţ !!]
-welcome-phrase-ai-dartmouth = [!! Ţħë ţëŕṁ AI ŵàš çôïñëđ àţ Đàŕţṁôüţħ, 1956 !!]
-welcome-phrase-perceptron = [!! À þëŕçëþţŕôñ ħàš ëẋàçţľÿ ôñë ľàÿëŕ !!]
-welcome-phrase-backpropagation = [!! Ɓàçķþŕôþàĝàţïôñ ŵàš þôþüľàŕïžëđ ïñ 1986 !!]
-welcome-phrase-imagenet = [!! ÏṁàĝëÑëţ ħàš 14 ṁïľľïôñ ľàþëľëđ ïṁàĝëš !!]
-welcome-phrase-deep-blue = [!! Đëëþ Ɓľüë þëàţ Ķàšþàŕôṽ ïñ 1997 !!]
-welcome-phrase-gpt2 = [!! ĜÞŢ-2 ŵàš đëëṁëđ ţôô đàñĝëŕôüš ţô ŕëľëàšë !!]
-welcome-phrase-transformers = [!! Ţŕàñšƒôŕṁëŕš ŕëþľàçëđ ŔÑÑš àľṁôšţ ôṽëŕñïĝħţ !!]
-welcome-phrase-bitter-lesson = [!! Ţħë þïţţëŕ ľëššôñ: çôṁþüţë ŵïñš !!]
-welcome-phrase-mnist = [!! ṀÑÏŠŢ ïš ţħë ħëľľô ŵôŕľđ ôƒ ṀĿ !!]
-welcome-phrase-dropout = [!! Đŕôþôüţ ŵàš ïñṽëñţëđ ţô þŕëṽëñţ ôṽëŕƒïţţïñĝ !!]
-welcome-phrase-batch-norm = [!! Ɓàţçħ ñôŕṁ ṁàđë đëëþ ñëţŵôŕķš ţŕàïñàþľë !!]
-welcome-phrase-resnets = [!! ŔëšÑëţš šķïþ çôññëçţïôñš çħàñĝëđ ëṽëŕÿţħïñĝ !!]
-welcome-phrase-gans = [!! ĜÀÑš: ţŵô ñëţŵôŕķš ïñ à ţŕëñçħ çôàţ !!]
-welcome-phrase-chinese-room = [!! Ţħë Çħïñëšë Ŕôôṁ àŕĝüëš šÿñţàẋ ïšñţ šëṁàñţïçš !!]
-welcome-phrase-moores-law = [!! Ṁôôŕëš Ŀàŵ ķëþţ AI šçàľïñĝ ôñ ţŕàçķ !!]
-welcome-phrase-reinforcement-learning = [!! Ŕëïñƒôŕçëṁëñţ ľëàŕñïñĝ ţàüĝħţ ïţšëľƒ ţô ŵàľķ !!]
-welcome-phrase-word2vec = [!! Ŵôŕđ2Ṽëç: ķïñĝ ṁïñüš ṁàñ þľüš ŵôṁàñ ëqüàľš qüëëñ !!]
-welcome-phrase-lstm = [!! ĿŠŢṀ ĝàţëš šôľṽëđ ţħë ṽàñïšħïñĝ ĝŕàđïëñţ !!]
-welcome-phrase-turing-test = [!! Ţħë Ţüŕïñĝ ţëšţ ŵàš þŕôþôšëđ ïñ 1950 !!]
-welcome-phrase-alphafold = [!! ÀľþħàƑôľđ šôľṽëđ þŕôţëïñ ƒôľđïñĝ ïñ 2020 !!]
-welcome-phrase-self-attention = [!! Šëľƒ-àţţëñţïôñ ŕüñš ïñ Ô(ñ šqüàŕëđ) ţïṁë !!]
-welcome-phrase-lora = [!! ĿôŔÀ ƒïñë-ţüñëš ŵïţħ 0.1% ôƒ þàŕàṁëţëŕš !!]
-welcome-phrase-chinchilla = [!! Çħïñçħïľľà šħôŵëđ ŵë ŵëŕë üñđëŕţŕàïñëđ !!]
-welcome-phrase-mixture-experts = [!! Ṁïẋţüŕë ôƒ ëẋþëŕţš: ñôţ ëṽëŕÿ ñëüŕôñ ƒïŕëš !!]
-welcome-phrase-tokenizers = [!! Ţôķëñïžëŕš ţüŕñ ŵôŕđš ïñţô ñüṁþëŕš !!]
-welcome-phrase-temperature = [!! Ţëṁþëŕàţüŕë çôñţŕôľš ŕàñđôṁñëšš ïñ šàṁþľïñĝ !!]
-welcome-phrase-softmax = [!! Ţħë šôƒţṁàẋ ƒüñçţïôñ šüṁš ţô ôñë !!]
-welcome-phrase-convnets = [!! Çôñṽñëţš ŵëŕë ïñšþïŕëđ þÿ ţħë ṽïšüàľ çôŕţëẋ !!]
-welcome-phrase-ai-winters = [!! AI ŵïñţëŕš ħàþþëñëđ ţŵïçë: 1974 àñđ 1987 !!]
-welcome-phrase-gradient-descent = [!! Ĝŕàđïëñţ đëšçëñţ: ĵüšţ ƒôľľôŵ ţħë šľôþë đôŵñ !!]
-welcome-phrase-relu = [!! ŔëĿÜ: ïƒ ñëĝàţïṽë, žëŕô. Ţħàţš ïţ. !!]
-welcome-phrase-embeddings = [!! Ëṁþëđđïñĝš þüţ ṁëàñïñĝ ïñţô ĝëôṁëţŕÿ !!]
-welcome-phrase-rlhf = [!! ŔĿĦƑ ţàüĝħţ ṁôđëľš ţô þë ħëľþƒüľ !!]
-welcome-phrase-diffusion = [!! Đïƒƒüšïôñ ṁôđëľš ľëàŕñ ţô đëñôïšë !!]
-welcome-phrase-alexnet = [!! Ôñë ĜÞÜ ţŕàïñëđ ÀľëẋÑëţ ïñ 2012 !!]
-welcome-phrase-context-windows = [!! Çôñţëẋţ ŵïñđôŵš ķëëþ ĝëţţïñĝ ľôñĝëŕ !!]
-welcome-phrase-weights = [!! Ŵëïĝħţš àŕë ĵüšţ ṽëŕÿ ôŕĝàñïžëđ ñüṁþëŕš !!]
-welcome-phrase-loss-function = [!! Ţħë ľôšš ƒüñçţïôñ ïš ţħë ôñľÿ ţŕüţħ !!]
-welcome-phrase-synthetic-data = [!! Šÿñţħëţïç đàţà ïš ţŕàïñïñĝ ţħë ñëẋţ ĝëñëŕàţïôñ !!]
-welcome-phrase-scaling-laws = [!! Šçàľïñĝ ľàŵš þŕëđïçţ þëŕƒôŕṁàñçë ƒŕôṁ çôṁþüţë !!]
-welcome-phrase-sparse-attention = [!! Šþàŕšë àţţëñţïôñ ṁàķëš ľôñĝ çôñţëẋţš þôššïþľë !!]
-welcome-phrase-kv-cache = [!! ĶṼ çàçħë ţŕàđëš ṁëṁôŕÿ ƒôŕ šþëëđ !!]
-welcome-phrase-speculative-decoding = [!! Šþëçüľàţïṽë đëçôđïñĝ: ĝüëšš ţħëñ ṽëŕïƒÿ !!]
-welcome-phrase-quantization = [!! Qüàñţïžàţïôñ: ľëšš þŕëçïšïôñ, šàṁë ṽïþëš !!]
 markdown-collapse = [!! Çôľľàþšë !!]
 markdown-show-more = [!! Šħôŵ ṁôŕë !!]
 chat-markdown-nested-truncated = [!! […ñëšţëđ ṁàŕķđôŵñ ţŕüñçàţëđ] !!]
@@ -1007,7 +1067,6 @@ settings-ai-fast-model-description = [!! Ṁôđëľ üšëđ ƒôŕ ľïĝħţ�
 settings-ai-thorough-model-description = [!! Ṁôđëľ üšëđ ƒôŕ ŕëṽïëŵ àñđ ŕëþàïŕ àçţïôñš. !!]
 settings-ai-fast = [!! Ƒàšţ !!]
 settings-ai-thorough = [!! Ţħôŕôüĝħ !!]
-settings-ai-provider-disabled = [!! Đïšàþľëđ — ëñàþľë ôñ ţħë Þŕôṽïđëŕš šëçţïôñ. !!]
 settings-ai-all-buckets-cli-default = [!! Àľľ þüçķëţš üšë ţħë CLI đëƒàüľţ ṁôđëľ. !!]
 settings-ai-inheriting-parent-scope = [!! Ïñħëŕïţïñĝ ƒŕôṁ þàŕëñţ šçôþë. !!]
 settings-ai-customized = [!! Çüšţôṁïžëđ !!]
@@ -1021,25 +1080,21 @@ settings-ai-refreshing-models = [!! Ŕëƒŕëšħïñĝ... !!]
 settings-ai-refresh-model-caches = [!! Ŕëƒŕëšħ ṁôđëľ çàçħëš !!]
 plan-executing = [!! Ëẋëçüţïñĝ !!]
 plan-executing-plan = [!! Ëẋëçüţïñĝ Þľàñ !!]
-chat-steered = [!! Šţëëŕëđ !!]
 chat-fast-mode-with-rate = [!! Ƒàšţ ṁôđë: 1.5ẋ ƒàšţëŕ, üšëš { $rate } çŕëđïţš. !!]
 chat-fast-mode = [!! Ƒàšţ ṁôđë !!]
 chat-fast = [!! Ƒàšţ !!]
-chat-argument-hint = [!! Àŕĝüṁëñţ ħïñţ: { $hint } !!]
 chat-queued-until-setup-finishes = [!! Qüëüëđ üñţïľ šëţüþ ƒïñïšħëš !!]
 chat-queued-position = [!! Qüëüëđ { $position } !!]
 chat-pasted-text = [!! Þàšţëđ ţëẋţ !!]
 chat-code-review-count = [!! Çôđë ŕëṽïëŵ ({ $count }) !!]
 chat-system-instructions = [!! Šÿšţëṁ ïñšţŕüçţïôñš !!]
 action-review = [!! Ŕëṽïëŵ !!]
-subagent-tool-result-unavailable = [!! Ţôôľ ŕëšüľţ üñàṽàïľàþľë !!]
 subagent-preparing-transcript = [!! Þŕëþàŕïñĝ ţŕàñšçŕïþţ… !!]
 common-read-only = [!! Ŕëàđ-ôñľÿ !!]
 subagent-loading-transcript = [!! Ŀôàđïñĝ šüþàĝëñţ ţŕàñšçŕïþţ… !!]
 subagent-transcript-unavailable = [!! Ţŕàñšçŕïþţ üñàṽàïľàþľë !!]
 action-back = [!! Ɓàçķ !!]
 subagent-no-transcript = [!! Ñô ţŕàñšçŕïþţ ŕëçôŕđëđ ÿëţ. !!]
-subagent-jump-to-latest = [!! Ĵüṁþ ţô ľàţëšţ !!]
 action-confirm = [!! Çôñƒïŕṁ !!]
 changes-no-changes = [!! Ñô çħàñĝëš !!]
 changes-commits = [!! Çôṁṁïţš !!]
@@ -1072,14 +1127,19 @@ shared-context-repositories = [!! Ŕëþôšïţôŕïëš !!]
 shared-context-add-missing-project = [!! Àđđ ṁïššïñĝ þŕôĵëçţ !!]
 common-running = [!! Ŕüññïñĝ !!]
 shared-context-add-run-script = [!! Àđđ ŕüñ šçŕïþţ... !!]
+run-picker-running = [!! Ŕüññïñĝ !!]
+run-picker-running-for = [!! Ŕüññïñĝ ƒôŕ { $elapsed } !!]
 shared-parent-git-repo-count = { $count ->
     [one] [!! 1 ŕëþô !!]
    *[other] [!! { $count } ŕëþôš !!]
 }
 shared-parent-git-all-repos = [!! Àľľ · { $repos } !!]
+shared-parent-git-pill-label = [!! { $action } ïñ { $targets } !!]
 shared-parent-git-menu-tooltip = [!! Gïţ àçţïôñš ƒôŕ çħïľđ ŕëþôš !!]
 shared-parent-git-unavailable-title = [!! Çôüľđñ'ţ ôþëñ ţħëšë ŕëþôš !!]
 shared-context-choose-projects-to-run = [!! Çħôôšë þŕôĵëçţš ţô ŕüñ !!]
+shared-context-run-count = [!! Ŕüñš { $selected } ôƒ { $total } !!]
+shared-context-run-none = [!! Ñôñë !!]
 workspace-choose-what-to-launch = [!! Çħôôšë ŵħàţ ţô ľàüñçħ… !!]
 icon-picker-tab-symbols = [!! Šÿṁþôľš !!]
 icon-picker-tab-icons = [!! Ïçôñš !!]
@@ -1103,19 +1163,31 @@ review-findings-triage-hint = [!! Màŕk ëàçh fïñdïñĝ Šhôüľd fïx ô
 chat-assignment = [!! Àššïĝñṁëñţ !!]
 chat-plan = [!! Þľàñ !!]
 approval-allow = [!! Àľľôŵ !!]
-approval-allow-for-session = [!! Àľľôŵ ƒôŕ Šëššïôñ !!]
 approval-deny = [!! Đëñÿ !!]
-approval-needed = [!! Àþþŕôṽàľ ñëëđëđ !!]
 approval-needs-access = [!! Ñëëđš àççëšš ţô !!]
 approval-show-input = [!! Šħôŵ ƒüľľ ïñþüţ !!]
 approval-hide-input = [!! Ħïđë ƒüľľ ïñþüţ !!]
 input-requested = [!! Ïñþüţ ŕëqüëšţëđ !!]
 action-submit = [!! Šüþṁïţ !!]
 action-next = [!! Ñëẋţ !!]
-input-needed = [!! Ïñþüţ ñëëđëđ !!]
-input-progress = [!! { $current }/{ $total } !!]
-input-progress-auto-resolve = [!! { $current }/{ $total } · ṁàÿ àüţô-ŕëšôľṽë ïñ { $seconds }š !!]
 input-sensitive-answer = [!! Šëñšïţïṽë àñšŵëŕ · ôṁïţţëđ ƒŕôṁ ţħë ţŕàñšçŕïþţ šüṁṁàŕÿ !!]
+input-question-position = [!! { $current } ôƒ { $total } !!]
+input-auto-resolves = [!! ŕëšôľṽëš ôñ ïţš ôŵñ ïñ { $seconds }š !!]
+input-skip = [!! Šķïþ !!]
+input-send = [!! Šüƀṁïţ !!]
+input-answer-hidden = [!! Àñšŵëŕ ħïđđëñ !!]
+input-skipped = [!! Šķïþþëđ !!]
+input-asked = { $count ->
+    [one] [!! Àšķëđ à ʠüëšţïôñ !!]
+   *[other] [!! Àšķëđ { $count } ʠüëšţïôñš !!]
+}
+input-asked-you = { $count ->
+    [one] [!! Àšķëđ ÿôü à ʠüëšţïôñ !!]
+   *[other] [!! Àšķëđ ÿôü { $count } ʠüëšţïôñš !!]
+}
+input-type-answer = [!! Ţÿþë ÿôüŕ àñšŵëŕ… !!]
+input-something-else = [!! Šôṁëţħïñĝ ëľšë… !!]
+input-recommended = [!! Ŕëçôṁṁëñđëđ !!]
 plan-run-in-new-chat = [!! Ŕüñ ïñ ñëŵ çħàţ !!]
 auth-open-terminal-to-sign-in = [!! Ôþëñ ţëŕṁïñàľ ţô šïĝñ ïñ !!]
 custom-actions-empty = [!! Ÿôüŕ çüšţôṁ àçţïôñš ŵïľľ àþþëàŕ ħëŕë. !!]
@@ -1136,7 +1208,6 @@ context-cache-write = [!! Çàçħë ŵŕïţë !!]
 context-output = [!! Ôüţþüţ !!]
 context-total-io = [!! Ţôţàľ Ï/Ô !!]
 context-input-effective = [!! Ïñþüţ ëƒƒëçţïṽë !!]
-input-submitted = [!! Ïñþüţ šüþṁïţţëđ !!]
 profile-cli-default = [!! CLI đëƒàüľţ !!]
 review-no-active-comments = [!! Ñô àçţïṽë ŕëṽïëŵ çôṁṁëñţš. !!]
 permission-tools = [!! Ţôôľš !!]
@@ -1189,17 +1260,33 @@ chat-changes = [!! Çħàñĝëš !!]
 common-working = [!! Ŵôŕķïñĝ… !!]
 chat-thinking = [!! Ṫḧïṅḳïṅġ !!]
 chat-thinking-in-progress = [!! Ṫḧïṅḳïṅġ… !!]
+chat-waiting-for-answer = [!! Ŵàïţïñĝ ƒôŕ ÿôüŕ àñšŵëŕ !!]
+chat-waiting-for-approval = [!! Ŵàïţïñĝ ƒôŕ àþþŕôṽàľ !!]
 chat-thinking-count = [!! Ṫḧïṅḳïṅġ ({ $count }) !!]
 chat-thinking-summary = [!! Ṫḧïṅḳïṅġ · { $summary } !!]
 chat-working-for = [!! Ŵôŕķïñĝ ƒôŕ !!]
+chat-agent-wait-caption =
+    { $count ->
+        [one] [!! { $model } çôñţïñüëš ŵħëñ ïţ ŕëþôŕţš ƀàçķ !!]
+       *[other] [!! { $model } çôñţïñüëš ŵħëñ ţħëÿ ŕëþôŕţ ƀàçķ !!]
+    }
 chat-worked-for = [!! Ŵôŕķëđ ƒôŕ { $duration } !!]
 chat-worked = [!! Ŵôŕķëđ !!]
+chat-you-stopped = [!! Ýôû šţôþþëđ !!]
+chat-you-stopped-after = [!! Ýôû šţôþþëđ àƒţëŕ { $duration } !!]
+chat-agent-stopped = [!! { $name } šţôþþëđ îţ !!]
+chat-agent-stopped-after = [!! { $name } šţôþþëđ àƒţëŕ { $duration } !!]
+chat-agent-steered = [!! { $name } šţëëŕëđ !!]
+chat-steer-waiting = [!! Ŵàïţïñĝ ţô þë ŕëàđ !!]
+chat-context-compacted = [!! Çôñţëẋţ çôṁþàçţëđ !!]
+chat-context-compacted-tokens = [!! { $before } → { $after } ţôķëñš !!]
+chat-context-compacted-tooltip-title = [!! Ţħë àĝëñţ ñôŵ ŵôŕķš ƒŕôṁ à šüṁṁàŕý !!]
+chat-context-compacted-tooltip-body = [!! Ïţš ëàŕĺïëŕ çôñţëẋţ ŵàš šüṁṁàŕïžëđ ţô ṁàķë ŕôôṁ. Ţħë ṁëššàĝëš šţàý ħëŕë ƒôŕ ýôü; ţħë àĝëñţ ŕëàđš ïţš šüṁṁàŕý ïñšţëàđ. !!]
+chat-context-compacted-of-window = [!! ôƒ { $window } !!]
 plan-proposed = [!! ÞĿÀÑ ÞŔÔÞÔŠËĐ !!]
 plan-changes-requested = [!! ÞĿÀÑ ÇĦÀÑĜËŠ ŔËQÜËŠŢËĐ !!]
 plan-ready = [!! ÞĿÀÑ ŔËÀĐŸ !!]
-input-permission-response = [!! Þëŕṁïššïôñ ŕëšþôñšë !!]
 approval-approve-action = [!! Àþþŕôṽë àçţïôñ? !!]
-subagent-view-single = [!! Ṽïëŵ šüþàĝëñţ !!]
 tool-action-read = [!! Ŕëàđ !!]
 tool-action-wrote = [!! Ŵŕôţë !!]
 tool-action-ran = [!! Ŕàñ !!]
@@ -1209,6 +1296,10 @@ tool-action-dispatched = [!! Đïšþàţçħëđ !!]
 tool-action-updated = [!! Üþđàţëđ !!]
 tool-action-asked = [!! Àšķëđ !!]
 tool-action-called = [!! Çàľľëđ !!]
+tool-action-messaged = [!! Ṁëššàĝëđ !!]
+tool-action-waited-for = [!! Ŵàïţëđ ƒôŕ !!]
+tool-action-resumed = [!! Ŕëšüṁëđ !!]
+tool-action-closed = [!! Çľôšëđ !!]
 tool-result-lines = { $count ->
     [one] [!! 1 ľïñë !!]
    *[other] [!! { $count } ľïñëš !!]
@@ -1253,6 +1344,10 @@ git-updating = [!! Üþđàţïñĝ… !!]
 git-updated = [!! Üþđàţëđ !!]
 git-update-failed = [!! Üþđàţë ƒàïľëđ !!]
 git-update-branch = [!! Üþđàţë þŕàñçħ !!]
+git-update-branch-from-target = { $count ->
+    [one] [!! Bŕïñĝ ïñ 1 çôṁṁïţ ƒŕôṁ { $target } !!]
+   *[other] [!! Bŕïñĝ ïñ { $count } çôṁṁïţš ƒŕôṁ { $target } !!]
+}
 shared-context-select-runnable-projects = [!! Šëľëçţ ŕüññàþľë þŕôĵëçţš !!]
 shared-context-run-selected-projects = [!! Ŕüñ šëľëçţëđ þŕôĵëçţš !!]
 shared-context-stop-selected-projects = [!! Šţôþ šëľëçţëđ þŕôĵëçţš !!]
@@ -1268,7 +1363,6 @@ clone-status-canceled = [!! Çľôñë çàñçëľëđ: { $repository } !!]
 file-dialog-select-profile-folder = [!! Šëľëçţ à Þŕôƒïľë Ƒôľđëŕ !!]
 notification-app-up-to-date = [!! { $app_name } ïš üþ ţô đàţë !!]
 notification-pasting-image = [!! Þàšţïñĝ ïṁàĝë… !!]
-notification-restarting-for-update = [!! Ŕëšţàŕţïñĝ ţô àþþľÿ üþđàţë… !!]
 notification-status-running = [!! Ŕüññïñĝ !!]
 notification-status-working = [!! Ŵôŕķïñĝ !!]
 notification-status-task-complete = [!! Ţàšķ çôṁþľëţë !!]
@@ -1355,7 +1449,6 @@ toast-notification = [!! Ñôţïƒïçàţïôñ !!]
 toast-cannot-create-worktree = [!! Çàññôţ çŕëàţë ŵôŕķţŕëë !!]
 toast-create-worktree-failed = [!! Çŕëàţë ŵôŕķţŕëë ƒàïľëđ !!]
 toast-delete-worktree-failed = [!! Ƒàïľëđ ţô đëľëţë ŵôŕķţŕëë !!]
-toast-delete-branch-group-failed = [!! Ƒàïľëđ ţô đëľëţë þŕàñçħ ĝŕôüþ !!]
 toast-delete-child-worktree-failed = [!! Ƒàïľëđ ţô đëľëţë çħïľđ ŵôŕķţŕëë !!]
 toast-add-child-failed = [!! Ƒàïľëđ ţô àđđ çħïľđ !!]
 toast-pull-failed = [!! Þüľľ ƒàïľëđ !!]
@@ -1366,7 +1459,6 @@ toast-post-cleanup-hook-failed = [!! Þôšţ-çľëàñüþ ħôôķ ƒàïľë
 toast-child-repository-not-found = [!! Çħïľđ ŕëþô '{ $name }' ñôţ ƒôüñđ !!]
 toast-branch-switch-main-only = [!! Ɓŕàñçħ šŵïţçħïñĝ ïš ôñľÿ šüþþôŕţëđ ôñ ţħë ṁàïñ ŵôŕķţŕëë !!]
 toast-shared-no-child-repositories = [!! Ţħïš šħàŕëđ ŵôŕķšþàçë ħàš ñô çħïľđ ŕëþôšïţôŕïëš. !!]
-toast-shared-branch-group-not-found = [!! Šħàŕëđ þŕàñçħ ĝŕôüþ ñôţ ƒôüñđ. !!]
 toast-selected-worktree-not-found = [!! Šëľëçţëđ ŵôŕķţŕëë ñôţ ƒôüñđ. !!]
 toast-project-not-found = [!! Þŕôĵëçţ ñôţ ƒôüñđ. !!]
 toast-worktree-not-found = [!! Ŵôŕķţŕëë ñôţ ƒôüñđ. !!]
@@ -1406,6 +1498,8 @@ toast-initialize-git-first = [!! Ïñïţïàľïžë Git ƒïŕšţ !!]
 toast-plain-folders-no-worktrees = [!! Þľàïñ ƒôľđëŕš đô ñôţ šüþþôŕţ ŵôŕķţŕëëš. !!]
 toast-git-unavailable = [!! Git üñàṽàïľàþľë !!]
 toast-git-unavailable-project = [!! Git ïš üñàṽàïľàþľë ƒôŕ ţħïš þŕôĵëçţ. !!]
+toast-inotify-watch-limit = [!! Fïľë ŵàţçħïñĝ ľïṁïţ ŕëàçħëđ !!]
+toast-inotify-watch-limit-message = [!! Ŀïñüẋ ŕàñ ôüţ ôƒ ƒïľë ŵàţçħëš (ƒš.ïñôţïƒÿ.ṁàẋ_üšëŕ_ŵàţçħëš), šô šôṁë çħàñĝëš ṁàÿ àþþëàŕ ľàţë ôŕ ñôţ àţ àľľ üñţïľ ÿôü ŕàïšë ţħë ľïṁïţ: šüđô šÿšçţľ ƒš.ïñôţïƒÿ.ṁàẋ_üšëŕ_ŵàţçħëš=524288 !!]
 toast-project-loading = [!! Þŕôĵëçţ ľôàđïñĝ !!]
 toast-try-again-moment = [!! Ţŕÿ àĝàïñ ïñ à ṁôṁëñţ. !!]
 toast-app-cli-required = [!! { $app_name } CLI ŕëqüïŕëđ !!]
@@ -1462,6 +1556,10 @@ tool-run-part-dispatched = { $count ->
     [one] [!! Ŕàñ 1 àĝëñţ ţàšķ !!]
    *[other] [!! Ŕàñ { $count } àĝëñţ ţàšķš !!]
 }
+tool-run-part-messaged = { $count ->
+    [one] [!! Ṁëššàĝëđ 1 àĝëñţ !!]
+   *[other] [!! Ṁëššàĝëđ { $count } àĝëñţš !!]
+}
 tool-run-part-updated = { $count ->
     [one] [!! Üþđàţëđ ţôđôš !!]
    *[other] [!! Üþđàţëđ ţôđôš { $count } ţïṁëš !!]
@@ -1482,7 +1580,6 @@ chat-files-changed-count = { $count ->
 }
 chat-files-expand-all = [!! Ëẋþàñđ àľľ ƒïľëš !!]
 chat-files-collapse-all = [!! Çôľľàþšë àľľ ƒïľëš !!]
-subagent-view-count = [!! Ṽïëŵ šüþàĝëñţš ({ $count }) !!]
 git-uncommitted-change-count = [!! Üñçôṁṁïţţëđ çħàñĝëš: { $count } !!]
 git-unpushed-commit-count = [!! Üñþüšħëđ çôṁṁïţš: { $count } !!]
 settings-ai-action-model-pins-set = [!! Àçţïôñ-šþëçïƒïç ṁôđëľ þïñš šëţ: { $count } !!]
@@ -1551,8 +1648,6 @@ settings-experimental-remote-workspaces-label = [!! Ŕëṁôţë ŵôŕķšþà
 settings-experimental-remote-workspaces-description = [!! Çŕëàţë ŵôŕķšþàçëš ţħàţ ľïṽë ôñ à ŕëṁôţë ṁàçħïñë ôṽëŕ SSH. Ëẋïšţïñĝ ŕëṁôţë ŵôŕķšþàçëš ķëëþ ŵôŕķïñĝ ŵħëñ đïšàþľëđ. !!]
 settings-experimental-non-git-projects-label = [!! Ñôñ-Git þŕôĵëçţš !!]
 settings-experimental-non-git-projects-description = [!! Àľľôŵ àđđïñĝ ƒôľđëŕš ŵïţħôüţ Git ṁëţàđàţà. Ëẋïšţïñĝ þľàïñ-ƒôľđëŕ þŕôĵëçţš šţàÿ ṽïšïþľë ïƒ ţħïš ïš đïšàþľëđ. !!]
-settings-experimental-agent-orchestration-label = [!! Àĝëñţ ôŕçħëšţŕàţïôñ !!]
-settings-experimental-agent-orchestration-description = [!! Màķë super.engineering ôŕçħëšţŕàţïôñ CLI çôṁṁàñđš àṽàïľàþľë ţô àĝëñţš. Ëàçħ üšë šţïľľ ŕëqüïŕëš àñ ëẋþľïçïţ ṁàţçħïñĝ ŕëqüëšţ ƒŕôṁ ÿôü. !!]
 settings-experimental-auto-compact-label = [!! Àüţô-çôṁþàçţ Claude Code ôñ çôñţëẋţ ŵïñđôŵ ľïṁïţ !!]
 settings-experimental-auto-compact-description = [!! Ŵħëñ à Claude Code ţüŕñ ƒàïľš þëçàüšë ţħë ṁôđëľ'š çôñţëẋţ ŵïñđôŵ ïš ëẋçëëđëđ, àüţôṁàţïçàľľÿ ŕüñ /çôṁþàçţ àñđ ŕëšüþṁïţ ÿôüŕ ľàšţ ṁëššàĝë. Üšëƒüľ ƒôŕ ñôñ-1Ṁ-çôñţëẋţ þàçķëñđš (ë.ĝ. GLM5.1) ŵħëŕë Claude Code'š CLAUDE_CODE_AUTO_COMPACT_WINDOW đôëš ñôţ ƒïŕë üñđëŕ -þ ṁôđë. !!]
 settings-experimental-review-label = [!! Ŕëṽïëŵ !!]
@@ -1594,10 +1689,10 @@ settings-diagnostics-status-label = [!! Đïàĝñôšţïçš šţàţüš !!]
 settings-privacy-telemetry-heading = [!! Ţëľëṁëţŕÿ !!]
 settings-privacy-share-label = [!! Šħàŕë àñôñÿṁôüš üšàĝë đàţà !!]
 settings-privacy-share-description = [!! Ħëľþš üš üñđëŕšţàñđ ħôŵ super.engineering ïš üšëđ àñđ þŕïôŕïţïžë ïṁþŕôṽëṁëñţš. Ñô þëŕšôñàľ đàţà, þŕôĵëçţ đàţà, ôŕ ƒïľë çôñţëñţš ëṽëŕ ľëàṽë ÿôüŕ ṁàçħïñë. !!]
-settings-privacy-what-we-send-description = [!! À ŕàñđôṁ þëŕ-ïñšţàľľ ÏĐ, ŕàñđôṁ àþþ-šëššïôñ ÏĐ, àþþ ṽëŕšïôñ, üþđàţë çħàññëľ, macOS ṽëŕšïôñ, šëššïôñ šţàŕţ/ëñđ ţïṁëšţàṁþš àñđ đüŕàţïôñ, àñđ à đàïľÿ-àçţïṽë ëṽëñţ ôñ ľàüñçħ ôŕ ţħë ƒïŕšţ ľàţëŕ àþþ ƒôçüš/ïñþüţ þëŕ UTC đàÿ. Ţüŕñïñĝ ţħïš ôƒƒ šţôþš ţëľëṁëţŕÿ ŵïţħôüţ à ƒïñàľ ôþţ-ôüţ ëṽëñţ. Ţħë ïñšţàľľ ÏĐ šţàÿš ôñ ÿôüŕ dëṽïçë àñđ ïš ŕëüšëđ ïƒ ÿôü ţüŕñ ţëľëṁëţŕÿ bàçķ ôñ; šëššïôñ šţàţë ïš đëľëţëđ. !!]
+settings-privacy-what-we-send-description = [!! À ŕàñđôṁ þëŕ-ïñšţàľľ ÏĐ, ŕàñđôṁ àþþ-šëššïôñ ÏĐ, àþþ ṽëŕšïôñ, üþđàţë çħàññëľ, ôþëŕàţïñĝ šÿšţëṁ ñàṁë àñđ ṽëŕšïôñ, ÇÞÜ àŕçħïţëçţüŕë, šëššïôñ šţàŕţ/ëñđ ţïṁëšţàṁþš àñđ đüŕàţïôñ, àñđ à đàïľÿ-àçţïṽë ëṽëñţ ôñ ľàüñçħ ôŕ ţħë ƒïŕšţ ľàţëŕ àþþ ƒôçüš/ïñþüţ þëŕ ÜŢÇ đàÿ. Ţüŕñïñĝ ţħïš ôƒƒ šţôþš ţëľëṁëţŕÿ ŵïţħôüţ à ƒïñàľ ôþţ-ôüţ ëṽëñţ. Ţħë ïñšţàľľ ÏĐ šţàÿš ôñ ÿôüŕ đëṽïçë àñđ ïš ŕëüšëđ ïƒ ÿôü ţüŕñ ţëľëṁëţŕÿ þàçķ ôñ; šëššïôñ šţàţë ïš đëľëţëđ. !!]
 settings-privacy-what-we-never-send-description = [!! Ÿôüŕ ñàṁë, ëṁàïľ, ħôšţñàṁë, ŵôŕķïñĝ đïŕëçţôŕïëš, þŕôĵëçţ ñàṁëš, ƒïľë þàţħš, þŕàñçħ ñàṁëš, çôṁṁàñđ ïñþüţš, çľïþþôàŕđ çôñţëñţš, ôŕ àñÿ çôđë. ĜëôÏÞ ëñŕïçħṁëñţ ïš đïšàþľëđ ôñ ëṽëŕÿ ëṽëñţ. !!]
-settings-privacy-ip-data-capture-description = [!! Ŵë šëţ { $geoip_disable }: ţŕüë ôñ ëṽëŕÿ ëṽëñţ šô ÞôšţĦôĝ šķïþš çôüñţŕÿ/çïţÿ ëñŕïçħṁëñţ. Ôüŕ ÞôšţĦôĝ þŕôĵëçţ ïš àľšô çôñƒïĝüŕëđ ţô đïšçàŕđ çľïëñţ ÏÞ àđđŕëššëš þëƒôŕë šţôŕàĝë — šëë Đôçš ƒôŕ ħôŵ ţħàţ ŵôŕķš ôñ ţħëïŕ šïđë. !!]
-settings-privacy-update-checks-description = [!! Šëþàŕàţë ƒŕôṁ ţëľëṁëţŕÿ, ŕëľëàšë þüïľđš çħëçķ ŕëľëàšëš.šüþëŕçôñđüçţôŕ.šô ħôüŕľÿ ƒôŕ üþđàţëš. Ţħë ƒïŕšţ šüççëššƒüľ çħëçķ ôƒ ëàçħ UTC đàÿ çàŕŕïëš àñ àñôñÿṁôüš ṁàŕķëŕ üšëđ ţô çôüñţ àçţïṽë ïñšţàľľš ïñ àĝĝŕëĝàţë. Ïţ çôñţàïñš ñô ïđëñţïƒïëŕ àñđ ñôţħïñĝ þëŕ-ïñšţàľľ ïš šţôŕëđ ôñ ôüŕ šëŕṽëŕš; ţħë àþþ ķëëþš ôñľÿ à ľôçàľ đàÿ ṁàŕķëŕ (~/.šüþëŕçôñđüçţôŕ/üþđàţë_þïñĝ_đàÿ) šô ïţ šëñđš ţħë ṁàŕķëŕ ôñçë þëŕ đàÿ. Ñôţ àƒƒëçţëđ þÿ ţħë ţôĝĝľë àþôṽë. !!]
+settings-privacy-ip-data-capture-description = [!! Ŵë šëţ $geoip_disable: ţŕüë ôñ ëṽëŕÿ ëṽëñţ šô PostHog šķïþš çôüñţŕÿ/çïţÿ ëñŕïçħṁëñţ. Ôüŕ PostHog þŕôĵëçţ ïš àľšô çôñƒïĝüŕëđ ţô đïšçàŕđ çľïëñţ ÏÞ àđđŕëššëš þëƒôŕë šţôŕàĝë — šëë Đôçš ƒôŕ ħôŵ ţħàţ ŵôŕķš ôñ ţħëïŕ šïđë. !!]
+settings-privacy-update-checks-description = [!! Šëþàŕàţë ƒŕôṁ ţëľëṁëţŕÿ, ŕëľëàšë þüïľđš çħëçķ ŕëľëàšëš.šüþëŕ.ëñĝïñëëŕïñĝ ħôüŕľÿ ƒôŕ üþđàţëš. Ţħë ƒïŕšţ šüççëššƒüľ çħëçķ ôƒ ëàçħ ÜŢÇ đàÿ çàŕŕïëš àñ àñôñÿṁôüš ṁàŕķëŕ üšëđ ţô çôüñţ àçţïṽë ïñšţàľľš ïñ àĝĝŕëĝàţë. Ïţ çôñţàïñš ñô ïđëñţïƒïëŕ àñđ ñôţħïñĝ þëŕ-ïñšţàľľ ïš šţôŕëđ ôñ ôüŕ šëŕṽëŕš; ţħë àþþ ķëëþš ôñľÿ à ľôçàľ đàÿ ṁàŕķëŕ (~/.šüþëŕ.ëñĝïñëëŕïñĝ/üþđàţë_þïñĝ_đàÿ) šô ïţ šëñđš ţħë ṁàŕķëŕ ôñçë þëŕ đàÿ. Ëṽëŕÿ çħëçķ àľšô šëñđš ţħë àþþ'š ÇÞÜ àŕçħïţëçţüŕë (ÀŔṀ ôŕ Ïñţëľ), šô ţħë çôüñţ çàñ þë šþľïţ þÿ àŕçħïţëçţüŕë. Ñôţ àƒƒëçţëđ þÿ ţħë ţôĝĝľë àþôṽë. !!]
 settings-privacy-install-id-location = [!! Ÿôüŕ ïñšţàľľ ÏĐ ľïṽëš àţ ~/.šüþëŕçôñđüçţôŕ/ïñšţàľľ_ïđ — đëľëţë ïţ àñÿ ţïṁë ţô ŕëšëţ. !!]
 settings-privacy-install-id-disclosure = [!! Ħôŵ ÿôüŕ ïñšţàľľ ÏĐ ïš ĝëñëŕàţëđ !!]
 settings-privacy-events-disclosure = [!! Ħôŵ ëṽëñţš àŕë šëñţ !!]
@@ -1805,8 +1900,6 @@ settings-notification-queue-on-open-keep = [!! Ķëëþ !!]
 settings-notification-queue-on-open-reset = [!! Ŕëšëţ !!]
 settings-notification-queue-next-item-newer = [!! Ñëŵëŕ !!]
 settings-notification-queue-next-item-older = [!! Ôľđëŕ !!]
-settings-search-entry-notifications-delivery-timeline-notifications-label = [!! Ţïṁëľïñë ñôţïƒïçàţïôñš !!]
-settings-search-entry-notifications-delivery-timeline-notifications-description = [!! Çħôôšë ħôŵ ṁàñÿ ñôţïƒïçàţïôñ ëṽëñţš ţô ŕëţàïñ. Ħïĝħëŕ ṽàľüëš üšë ṁôŕë ṁëṁôŕÿ àñđ đïšķ šþàçë. !!]
 settings-search-entry-notifications-per-type-overrides-task-complete-delivery-label = [!! Ţàšķ çôṁþľëţë đëľïṽëŕÿ !!]
 settings-search-entry-notifications-per-type-overrides-task-complete-delivery-description = [!! Çôñţŕôľš ŵħëñ macOS ñôţïƒïçàţïôñš àþþëàŕ ƒôŕ çôṁþľëţëđ ôŕ ëŕŕôŕëđ ŕüñš. !!]
 settings-search-entry-notifications-per-type-overrides-task-complete-sound-label = [!! Ţàšķ çôṁþľëţë šôüñđ !!]
@@ -1839,8 +1932,8 @@ settings-search-entry-experimental-feature-flags-remote-workspaces-label = [!! �
 settings-search-entry-experimental-feature-flags-remote-workspaces-description = [!! Çŕëàţë ŵôŕķšþàçëš ţħàţ ľïṽë ôñ à ŕëṁôţë ṁàçħïñë ôṽëŕ SSH. Ëẋïšţïñĝ ŕëṁôţë ŵôŕķšþàçëš ķëëþ ŵôŕķïñĝ ŵħëñ đïšàþľëđ. !!]
 settings-search-entry-experimental-feature-flags-non-git-projects-label = [!! Ñôñ-Git þŕôĵëçţš !!]
 settings-search-entry-experimental-feature-flags-non-git-projects-description = [!! Àľľôŵ àđđïñĝ ƒôľđëŕš ŵïţħôüţ Git ṁëţàđàţà. !!]
-settings-search-entry-experimental-feature-flags-agent-orchestration-label = [!! Àĝëñţ ôŕçħëšţŕàţïôñ !!]
-settings-search-entry-experimental-feature-flags-agent-orchestration-description = [!! Màķë ôŕçħëšţŕàţïôñ çôṁṁàñđš àṽàïľàþľë ţô àĝëñţš. Ëàçħ üšë šţïľľ ŕëqüïŕëš àñ ëẋþľïçïţ ṁàţçħïñĝ ŕëqüëšţ ƒŕôṁ ÿôü. !!]
+settings-search-entry-general-behavior-agent-orchestration-label = [!! Àĝëñţ ôŕçħëšţŕàţïôñ !!]
+settings-search-entry-general-behavior-agent-orchestration-description = [!! Màķë ôŕçħëšţŕàţïôñ çôṁṁàñđš àṽàïľàþľë ţô àĝëñţš. Ëàçħ üšë šţïľľ ŕëqüïŕëš àñ ëẋþľïçïţ ṁàţçħïñĝ ŕëqüëšţ ƒŕôṁ ÿôü. !!]
 settings-search-entry-experimental-feature-flags-auto-compact-claude-code-on-context-window-limit-label = [!! Àüţô-çôṁþàçţ Claude Code ôñ çôñţëẋţ ŵïñđôŵ ľïṁïţ !!]
 settings-search-entry-experimental-feature-flags-auto-compact-claude-code-on-context-window-limit-description = [!! Àüţôṁàţïçàľľÿ ŕüñ /çôṁþàçţ àñđ ŕëšüþṁïţ ŵħëñ Claude Code ëẋçëëđš ţħë çôñţëẋţ ŵïñđôŵ. !!]
 settings-search-entry-experimental-feature-flags-review-label = [!! Ŕëṽïëŵ !!]
@@ -1969,6 +2062,15 @@ settings-ai-mixed = [!! Ṁïẋëđ !!]
 settings-ai-current-chat = [!! Çüŕŕëñţ çħàţ !!]
 settings-ai-provider-toggle-description = [!! Šħôŵ ţħïš þŕôṽïđëŕ ïñ ţħë Ñëŵ Ţàþ ṁëñü àñđ Çħàţ ÜÏ. !!]
 settings-ai-provider-last-enabled-description = [!! { $description } Àţ ľëàšţ ôñë þŕôṽïđëŕ ṁüšţ ŕëṁàïñ ëñàþľëđ. !!]
+settings-ai-provider-status-chat-terminal = [!! Çħàţ àñđ ţëŕṁïñàľ !!]
+settings-ai-provider-status-terminal = [!! Ţëŕṁïñàľ !!]
+settings-ai-provider-status-disabled = [!! Đïšàþľëđ !!]
+settings-ai-provider-disabled-detail = [!! Ţüŕñ ôñ { $provider } ţô çôñƒïĝüŕë ïţš ṁôđëľš àñđ ľàüñçħ ôþţïôñš. !!]
+settings-ai-provider-section-models = [!! Ṁôđëľš !!]
+settings-ai-provider-section-chat = [!! Çħàţ !!]
+settings-ai-provider-section-runtime = [!! Ŕüñţïṁë !!]
+settings-ai-provider-profiles-description = [!! Àççôüñţš àñđ çôñƒïĝ ħôṁëš ƒôŕ ţħïš þŕôṽïđëŕ. !!]
+settings-ai-provider-manage-profiles = [!! Ṁàñàĝë þŕôƒïľëš !!]
 settings-ai-provider-antigravity-description = [!! Ëñàþľë Àñţïĝŕàṽïţÿ àš à ţëŕṁïñàľ þŕôṽïđëŕ (ŕëqüïŕëš Àñţïĝŕàṽïţÿ CLI `agy` ïñšţàľľëđ). !!]
 settings-ai-provider-hermes-description = [!! Ëñàþľë Ħëŕṁëš àš à ţëŕṁïñàľ þŕôṽïđëŕ (ŕëqüïŕëš Ħëŕṁëš Àĝëñţ `hermes` ïñšţàľľëđ). !!]
 settings-ai-provider-qwen-description = [!! Ëñàþľë Qŵëñ Çôđë àš à ţëŕṁïñàľ þŕôṽïđëŕ (ŕëqüïŕëš Qŵëñ Çôđë CLI `qwen` ïñšţàľľëđ). !!]
@@ -2040,31 +2142,74 @@ settings-keybinding-action-toggle-terminal = [!! Ţôĝĝľë Ţëŕṁïñàľ 
 action-forward = [!! Ƒôŕŵàŕđ !!]
 custom-actions-show-more = [!! + { $count } ṁôŕë !!]
 custom-actions-untitled = [!! Üñţïţľëđ !!]
-subagent-state-running = [!! Ŕüññïñĝ !!]
 subagent-state-completed = [!! Çôṁþľëţëđ !!]
 subagent-state-failed = [!! Ƒàïľëđ !!]
-launched-agent-needs-input = [!! Ñëëđš ïñþüţ !!]
-launched-agent-closed = [!! Çľöšëđ !!]
-launched-agent-idle = [!! Ïđľë !!]
-launch-group-agents = { $count ->
-    [one] [!! 1 åğëñţ !!]
-   *[other] [!! { $count } åğëñţš !!]
+subagent-state-interrupted = [!! Šţöþþéđ !!]
+subagent-state-working = [!! Ŵôŕķïñĝ !!]
+agent-row-unknown = [!! à šüƀàĝëñţ !!]
+agent-row-count = { $count ->
+    [one] [!! 1 àĝëñţ !!]
+   *[other] [!! { $count } àĝëñţš !!]
 }
+agent-row-id-tooltip = [!! Àĝëñţ ÏĐ { $id } !!]
+agent-row-show-all = [!! Šħôŵ àľľ !!]
+agent-row-unnamed-wait = [!! ïţš àĝëñţš !!]
+subagent-type-general = [!! Ĝéñéŕåļ !!]
+subagent-type-explore = [!! Éẋþļöŕé !!]
+subagent-type-plan = [!! Þļåñ !!]
+subagent-type-explorer = [!! Éẋþļöŕéŕ !!]
+subagent-type-awaiter = [!! Åŵåïţéŕ !!]
+subagent-type-status-line = [!! Šţåţüš ļïñé !!]
+subagent-type-guide = [!! Ĝüïđé !!]
+subagent-type-fork = [!! Ƒöŕķ !!]
+launched-agent-needs-input = [!! Ñëëđš ïñþüţ !!]
+launched-agent-not-started = [!! Ñöţ šţåŕţéđ !!]
+subagent-dock-title = [!! Šüþåĝéñţ !!]
+subagent-dock-title-typed = [!! { $type } šüþåĝéñţ !!]
+subagent-dock-detail = [!! Ŕéåđ-öñļý. Ŕéþöŕţš þåçķ ţö { $parent } ŵĥéñ ïţ ƒïñïšĥéš. !!]
+subagent-dock-back = [!! Ɓåçķ ţö çĥåţ !!]
+subagent-dock-detail-done = [!! Ŕéåđ-öñļý. Ŕéþöŕţéđ þåçķ ţö { $parent }. !!]
+subagent-dock-detail-interrupted = [!! Ŕéåđ-öñļý. Šţöþþéđ ŵïţĥ { $parent }. !!]
+subagent-header-of = [!! Šüþàĝëñţ öƒ !!]
+subagent-status-done = [!! Đöñë ïñ { $time } !!]
+subagent-status-failed = [!! Ƒåïļëđ åƒţëŕ { $time } !!]
+subagent-status-interrupted = [!! Šţöþþéđ åƒţéŕ { $time } !!]
+subagent-back-tooltip = [!! Ɓåçķ ţö { $parent } !!]
+chat-worktree-card-creating = [!! Çŕéåţîñğ ŵöŕķţŕéé… !!]
+chat-worktree-card-working = [!! Åğéñţ ŕûññîñğ !!]
+chat-worktree-card-deleted = [!! Déľéţéđ !!]
+chat-worktree-card-deleting = [!! Déľéţîñğ… !!]
+chat-worktree-card-recreating = [!! Ŕéçŕéåţîñğ… !!]
+chat-worktree-card-recreated = [!! Ŕéçŕéåţéđ !!]
+chat-turn-group-agents-count = { $count ->
+    [one] [!! 1 àĝëñţ !!]
+   *[other] [!! { $count } àĝëñţš !!]
+}
+chat-turn-group-subagents-count = { $count ->
+    [one] [!! 1 šüþàĝëñţ !!]
+   *[other] [!! { $count } šüþàĝëñţš !!]
+}
+chat-turn-group-worktrees-count = { $count ->
+    [one] [!! 1 ŵôŕķţŕëë !!]
+   *[other] [!! { $count } ŵôŕķţŕëëš !!]
+}
+chat-turn-group-new = [!! { $count } ñéŵ !!]
+chat-turn-group-deleted = [!! { $count } đéľéţéđ !!]
+chat-turn-group-recreated = [!! { $count } ŕéçŕéåţéđ !!]
 launch-card-working = [!! { $count } ŕûññîñğ !!]
 launch-card-needs-input = { $count ->
     [one] [!! 1 ñëëđš îñþûţ !!]
    *[other] [!! { $count } ñëëđ îñþûţ !!]
 }
 launch-card-failed = [!! { $count } ƒåîľëđ !!]
-launch-card-done = [!! { $count } đöñë !!]
-subagent-earlier-rows-not-shown = [!! … { $count } ëàŕľïëŕ ŕôŵš ñôţ šħôŵñ !!]
+launch-card-not-started = [!! { $count } ñöţ šţåŕţéđ !!]
 diff-comment-on-file = [!! Çôṁṁëñţ ôñ ƒïľë !!]
 workspace-review-request-detect-failed = [!! Çôüľđ ñôţ đëţëçţ { $kind } !!]
 workspace-review-request-state-changed = [!! { $kind } šţàţë çħàñĝëđ; àçţïôñ ïš ñô ľôñĝëŕ àṽàïľàþľë !!]
 workspace-remote-forge-cli-not-authenticated-hint = [!! Ţïþ: { $cli } ôñ ţħë ħôšţ ïšñ'ţ àüţħëñţïçàţëđ — ŕüñ `{ $cli } auth login` ţħëŕë ţô çŕëàţë à { $kind } ŵïţħ ţħë àĝëñţ. !!]
 workspace-remote-forge-cli-missing-hint = [!! Ţïþ: ïñšţàľľ { $cli } ôñ ţħë ħôšţ àñđ ŕüñ `{ $cli } auth login` ţô çŕëàţë à { $kind } ŵïţħ ţħë àĝëñţ. !!]
 workspace-review-request-url-copied = [!! Çôþïëđ { $kind } URL !!]
-workspace-review-request-url-unavailable = [!! Ñô ŕëṽïëŵ ŕëqüëšţ URL àṽàïľàþľë !!]
+workspace-review-request-none-yet = [!! Ţĥïš þŕàñçĥ ĥàš ñô { $kind } ýëţ !!]
 worktree-prompt = [!! Þŕôṁþţ !!]
 worktree-branches = [!! Ɓŕàñçħëš !!]
 worktree-merge-requests = [!! Ṁëŕĝë ŕëqüëšţš !!]
@@ -2168,8 +2313,14 @@ run-stop-script = [!! Šţôþ ŕüñ šçŕïþţ !!]
 run-rerun-workspace = [!! Ŕë-ŕüñ ŵôŕķšþàçë !!]
 workspace-close-tab = [!! Çľôšë ţàþ !!]
 workspace-launched-agents-header = [!! Ľàüñçħëđ àĝëñţš !!]
+workspace-created-worktrees-header = [!! Çŕëàţëđ ŵôŕķţŕëëš !!]
+created-worktrees-summary = { $count ->
+    [one] [!! 1 çŕëàţëđ ŵôŕķţŕëë !!]
+   *[other] [!! { $count } çŕëàţëđ ŵôŕķţŕëëš !!]
+}
 workspace-launched-by = [!! Ľàüñçħëđ þý { $tab_title } !!]
 workspace-open-launched-tab = [!! Ôþëñ àš ţàþ !!]
+workspace-attached-back = [!! Ɓåçķ ţö { $tab_title } !!]
 notification-launched-agent-title = [!! { $title } · ƒŕôṁ { $parent } !!]
 launched-agents-summary = { $state ->
     [permission] { $count ->
@@ -2192,6 +2343,8 @@ launched-agents-summary = { $state ->
 workspace-toggle-terminal = [!! Ţôĝĝľë Ţëŕṁïñàľ !!]
 workspace-choose-open-app = [!! Çħôôšë ôþëñ àþþ !!]
 workspace-new-tab-with-provider = [!! Ñëŵ ţàþ ŵïţħ þŕôṽïđëŕ !!]
+workspace-add-split-pane = [!! Šþľïţ þàñë !!]
+workspace-add-split-view = [!! Šþľïţ ṽïëŵ !!]
 workspace-choose-app = [!! Çħôôšë àþþ !!]
 theme-copy-from-dark = [!! Çôþÿ ƒŕôṁ Đàŕķ !!]
 theme-copy-from-light = [!! Çôþÿ ƒŕôṁ Ŀïĝħţ !!]
@@ -2231,6 +2384,7 @@ git-action-checks = [!! Çħëçķš !!]
 git-action-commit-and-push = [!! Çôṁṁïţ àñđ þüšħ !!]
 git-action-commit = [!! Çôṁṁïţ !!]
 git-action-push = [!! Þüšħ !!]
+git-action-pull-and-push = [!! Þüľľ àñđ þüšħ !!]
 git-action-pull = [!! Þüľľ !!]
 git-action-resolve = [!! Ŕëšôľṽë !!]
 git-action-fix = [!! Ƒïẋ !!]
@@ -2254,6 +2408,7 @@ git-action-creating = [!! Çŕëàţïñĝ !!]
 git-action-committing-and-pushing = [!! Çôṁṁïţţïñĝ àñđ þüšħïñĝ !!]
 git-action-committing = [!! Çôṁṁïţţïñĝ !!]
 git-action-pushing = [!! Þüšħïñĝ !!]
+git-action-pulling-and-pushing = [!! Þüľľïñĝ àñđ þüšħïñĝ !!]
 git-action-resolving = [!! Ŕëšôľṽïñĝ !!]
 git-action-fixing = [!! Ƒïẋïñĝ !!]
 git-action-investigating = [!! Ïñṽëšţïĝàţïñĝ !!]
@@ -2447,12 +2602,6 @@ settings-remote-probe-home = [!! Ħôṁë !!]
 settings-remote-probe-shell = [!! Šħëľľ !!]
 settings-remote-probe-temp = [!! Ţëṁþ !!]
 settings-remote-probe-git = [!! Git !!]
-settings-remote-key-install-confirm-title = [!! Ïñšţàľľ à đëđïçàţëđ SSH ķëÿ ôñ { $host }? !!]
-settings-remote-key-install-confirm-body = [!! { $app_name } ŵïľľ: ĝëñëŕàţë à ñëŵ ķëÿ àţ { $key_path } (ñô þàššþħŕàšë), àđđ ïţš þüþľïç ķëÿ ţô ~/.ššħ/àüţħôŕïžëđ_ķëÿš ôñ { $host } (ÿôü ṁàÿ þë àšķëđ ƒôŕ ÿôüŕ þàššŵôŕđ ôñçë), àñđ àđđ ôñë Ïñçľüđë ľïñë ţô ~/.ššħ/çôñƒïĝ þôïñţïñĝ àţ àñ àþþ-ṁàñàĝëđ ƒïľë. Ÿôü çàñ ŕëṁôṽë àľľ ôƒ ţħïš ľàţëŕ ŵïţħ “Ŕëṁôṽë SSH ķëÿ.” !!]
-settings-remote-key-install-confirm-action = [!! Ïñšţàľľ ķëÿ !!]
-settings-remote-key-remove-confirm-title = [!! Ŕëṁôṽë đëđïçàţëđ SSH ķëÿ ƒŕôṁ { $host }? !!]
-settings-remote-key-remove-confirm-body = [!! { $app_name } ŵïľľ ƒïŕšţ ŕëṁôṽë ţħïš ķëÿ ƒŕôṁ ~/.ššħ/àüţħôŕïžëđ_ķëÿš ôñ { $host }, ţħëñ đëľëţë ţħë ľôçàľ ķëÿþàïŕ àţ { $key_path } àñđ ïţš þľôçķ ïñ ~/.ššħ/šüþëŕçôñđüçţôŕ_çôñƒïĝ. Ïƒ ŕëṁôţë çľëàñüþ çàññôţ àüţħëñţïçàţë, ţħë ľôçàľ çŕëđëñţïàľ ŵïľľ þë þŕëšëŕṽëđ šô ÿôü çàñ ŕëţŕÿ šàƒëľÿ. !!]
-settings-remote-key-remove-confirm-action = [!! Ŕëṁôṽë SSH ķëÿ !!]
 settings-remote-removing-ssh-key = [!! Ŕëṁôṽïñĝ… !!]
 settings-remote-remove-ssh-key = [!! Ŕëṁôṽë SSH ķëÿ !!]
 settings-remote-invalid-target-config-preview = [!! Ëñţëŕ à ṽàľïđ SSH ţàŕĝëţ ţô þŕëṽïëŵ ïţš çôñƒïĝüŕàţïôñ. !!]
@@ -2542,10 +2691,10 @@ settings-left-sidebar-layout-compact = [!! Çôṁþàçţ !!]
 settings-left-sidebar-layout-detailed = [!! Đëţàïľëđ !!]
 settings-preview-sidebar-cards = [!! Šħôŵ þŕëṽïëŵ çàŕđš ïñ šëţţïñĝš !!]
 settings-preview-hover-position = [!! Ƒïẋ ħôṽëŕ þôþôṽëŕ þôšïţïôñ !!]
-settings-preview-two-hours-ago = [!! 2ħ àĝô !!]
-settings-preview-one-day-ago = [!! 1đ àĝô !!]
-settings-preview-two-hours = [!! 2ħ !!]
-settings-preview-one-day = [!! 1đ !!]
+settings-preview-flaky-login = [!! Fïẋ ţħë ƒľàķÿ ľôĝïñ ţëšţ !!]
+settings-preview-billing-tables = [!! Ŕëñàṁë ţħë þïľľïñĝ ţàþľëš !!]
+settings-preview-dark-mode = [!! Àđđ à đàŕķ ṁôđë ţôĝĝľë !!]
+settings-preview-search-index = [!! Šþëëđ üþ šëàŕçħ ïñđëẋïñĝ !!]
 settings-notifications-system-customized-description = [!! Đëƒàüľţ þëħàṽïôŕ ƒôŕ macOS ñôţïƒïçàţïôñš. Çüšţôṁ þëŕ-ţÿþë ôṽëŕŕïđëš þëľôŵ. !!]
 settings-notifications-task-complete-overrides-label = [!! Ţàšķ çôṁþľëţë !!]
 settings-notifications-task-complete-overrides-description = [!! Çôñţŕôľš đëľïṽëŕÿ àñđ šôüñđ ƒôŕ çôṁþľëţëđ ôŕ ëŕŕôŕëđ ŕüñš. !!]
@@ -2663,6 +2812,11 @@ right-panel-show-gitignored-files = [!! Šħôŵ ĝïţïĝñôŕëđ ƒïľëš
 right-panel-hide-gitignored-files = [!! Ħïđë ĝïţïĝñôŕëđ ƒïľëš !!]
 workspace-hold-command-for-chat-ui = [!! Ħôľđ ⌘ ƒôŕ Çħàţ ÜÏ !!]
 workspace-hold-command-for-terminal = [!! Ħôľđ ⌘ ƒôŕ Ţëŕṁïñàľ !!]
+tool-picker-no-matches = [!! Ñô ṁàţçħëš !!]
+tool-picker-as-terminal = [!! Ţëŕṁïñàľ !!]
+tool-picker-as-chat = [!! Çħàţ !!]
+tool-picker-open-as-terminal = [!! Ôþëñ àš ţëŕṁïñàľ !!]
+tool-picker-open-as-chat = [!! Ôþëñ ïñ çħàţ !!]
 file-tree-symbolic-link = [!! Šÿṁþôľïç ľïñķ !!]
 file-tree-symlink-target = [!! Šÿṁľïñķ → { $target } !!]
 pr-checks-failed = [Ƈħḗƈķş ƒȧīŀḗḓ]
@@ -2682,6 +2836,38 @@ pr-checks-pending-count =
         [one] [!! { $count } ƈħḗƈķ ƥḗƞḓīƞɠ !!]
        *[other] [!! { $count } ƈħḗƈķş ƥḗƞḓīƞɠ !!]
     }
+hover-card-needs-answer = [!! Ñëëđš ÿôüŕ àñšŵëŕ !!]
+hover-card-no-review-request =
+    { $forge ->
+        [gitlab] [!! Ñô ṁëŕĝë ŕëǫüëšţ !!]
+       *[other] [!! Ñô þüľľ ŕëǫüëšţ !!]
+    }
+hover-card-checks-running = [!! Çħëçķš ŕüññïñĝ, { $passed } ôƒ { $total } !!]
+hover-card-more-running = [!! { $count } ṁôŕë ŕüññïñĝ !!]
+hover-card-stopping = [!! Šţôþþïñĝ !!]
+hover-card-main-checkout = [!! Ṁàïñ çħëçķôüţ !!]
+hover-card-main-checkouts = [!! Ṁàïñ çħëçķôüţš !!]
+hover-card-add-repo = [!! Àđđ ŕëþô !!]
+hover-card-add-repo-count = +{ $count }
+hover-card-find-repo = [!! Ƒïñđ à ŕëþô !!]
+hover-card-checking-repos = [!! Çħëçķïñĝ ŕëþôš !!]
+hover-card-all-merged = [!! Àľľ ṁëŕĝëđ !!]
+hover-card-repos-merged = [!! { $count } ṁëŕĝëđ !!]
+hover-card-more-repos = [!! { $count } ṁôŕë !!]
+hover-card-run-repos = { $count ->
+    [0] [!! Ŕüñ !!]
+   *[other] [!! Ŕüñ { $count } !!]
+}
+hover-card-stop-repos = { $count ->
+    [0] [!! Šţôþ !!]
+   *[other] [!! Šţôþ { $count } !!]
+}
+hover-card-run-select-repos = [!! Šëľëçţ ŕëþôš ţô ŕüñ !!]
+hover-card-run-selected-repos = [!! Ŕüñ ţħë šëľëçţëđ ŕëþôš !!]
+hover-card-stop-selected-repos = [!! Šţôþ ţħë šëľëçţëđ ŕëþôš !!]
+hover-card-checking-status = [!! Çħëçķïñĝ šţàţüš !!]
+hover-card-nothing-to-commit = [!! Ñôţħïñĝ ţô çôṁṁïţ ôŕ þüšħ !!]
+hover-card-unpushed-commits = [!! { $count } üñþüšħëđ !!]
 icon-picker-emoji-tooltip = [Ḗḿǿĵī: { $glyph }]
 icon-picker-named-icon-tooltip =
     { $name ->
@@ -2705,9 +2891,9 @@ settings-search-entry-appearance-layout-usage-meter-window-description = [!! Ç�
 settings-usage-meter-window-smart = [!! Šṁàŕţ !!]
 settings-usage-meter-window-session = [!! Þŕëƒëŕ šëššïôñ !!]
 settings-usage-meter-window-weekly = [!! Þŕëƒëŕ ŵëëķľÿ !!]
-usage-meter-tooltip = [!! { $provider } · { $percent }% ľëƒţ ţħïš { $window } ŵïñđôŵ !!]
 usage-meter-unavailable = [!! Üšàĝë ñôţ àṽàïľàþľë ƒôŕ { $provider } !!]
 usage-meter-signed-out = [!! Ñôţ šïĝñëđ ïñ !!]
+usage-meter-api-key = [!! Ÿôüŕ ÀÞÏ ķëÿ ŵôŕķš àš üšüàľ. Þŕôṽïđëŕ ľïṁïţš ṁàÿ àþþľÿ. !!]
 usage-meter-stale = [!! Ŕëƒŕëšħ ƒàïľëđ — šħôŵïñĝ çàçħëđ đàţà !!]
 usage-meter-error = [!! Çôüľđñ'ţ ľôàđ üšàĝë !!]
 usage-meter-loading = [!! Ľôàđïñĝ üšàĝë… !!]
@@ -2719,15 +2905,49 @@ usage-meter-window-daily = [!! Đàïľÿ !!]
 usage-meter-window-weekly = [!! Ŵëëķľÿ !!]
 usage-meter-window-monthly = [!! Môñţħľÿ !!]
 usage-meter-window-other = [!! Ôţħëŕ !!]
-usage-meter-other-accounts = [!! Ôţħëŕ àççôüñţš !!]
 usage-meter-all-providers = [!! Àľľ þŕôṽïđëŕš !!]
-usage-meter-refresh = [!! Ŕëƒŕëšħ !!]
 usage-meter-percent-left = [!! { $percent }% ľëƒţ !!]
 usage-meter-no-account = [!! Ñô àççôüñţ šëľëçţëđ !!]
 usage-meter-now = [!! ñôŵ !!]
 usage-meter-default-account = [!! Đëƒàüľţ !!]
+usage-popover-runs-out = [!! Ŕüñš ôüţ { $time }, ŕëšëţš { $reset } !!]
+usage-popover-runs-out-then-credits = [!! Ŕüñš ôüţ { $time }, ţħëñ çŕëđïţš !!]
+usage-popover-using-credits = [!! Üšïñĝ çŕëđïţš !!]
+usage-api-key = [!! ÀÞÏ ķëÿ !!]
+usage-api-key-week = [!! ëšţïṁàţëđ ţħïš ŵëëķ !!]
+usage-api-key-today = [!! { $amount } ţôđàÿ !!]
+usage-api-key-counting-since = [!! Çôüñţïñĝ šïñçë { $day } !!]
+usage-api-key-note = [!! Ƒŕôṁ šëššïôñš ôñ ţħïš Ṁàç. Þŕôṽïđëŕ ľïṁïţš ṁàÿ àþþľÿ. !!]
+usage-api-key-partial-note = [!! Ëàŕľïëŕ đàÿš àŕë ľëƒţ ôüţ: ţħïš Ṁàç šţàŕţëđ ŕëçôŕđïñĝ ŵħïçħ šïĝñ-ïñ ëàçħ šëššïôñ üšëđ ôñ { $day }. !!]
+usage-api-key-unavailable = [!! Šþëñđïñĝ ïšñ’ţ àṽàïľàƀľë ƒôŕ { $provider } ÿëţ !!]
+usage-api-key-unavailable-note = [!! Ÿôüŕ ÀÞÏ ķëÿ ŵôŕķš àš üšüàľ. Þŕôṽïđëŕ ľïṁïţš ṁàÿ àþþľÿ. !!]
+usage-api-key-billing = [!! Ṽïëŵ þŕôṽïđëŕ ƀïľľïñĝ !!]
+usage-popover-resets-at = [!! Ŕëšëţš { $time } !!]
+usage-popover-window-left = [!! { $window } ľëƒţ !!]
+usage-popover-updating = [!! Üþđàţïñĝ… !!]
+usage-popover-retry = [!! Ţŕÿ àĝàïñ !!]
+usage-popover-accounts = [!! Àççôüñţš !!]
+usage-popover-in-use = [!! Ïñ üšë !!]
+usage-popover-unused = [!! { $count } üñüšëđ !!]
+usage-graph-on-pace = [!! Ôñ þàçë !!]
+usage-graph-in-reserve = [!! { $percent }% ïñ ŕëšëŕṽë !!]
+usage-graph-behind = [!! { $percent }% ƀëħïñđ þàçë !!]
+usage-graph-runs-out = [!! Ŕüñš ôüţ { $time } !!]
+usage-graph-lasts = [!! Ľàšţš üñţïľ ŕëšëţ !!]
+usage-graph-collecting = [!! Ţħë ĝŕàþħ ƒïľľš ïñ àš ŕëàđïñĝš àŕŕïṽë !!]
+usage-instrument-gauge = [!! Ĝàüĝë !!]
+usage-instrument-graph = [!! Ĝŕàþħ !!]
+usage-popover-no-other-limits = [!! Ñô ôţħëŕ ľïṁïţš !!]
+usage-popover-no-data = [!! Ñô üšàĝë ÿëţ ƒŕôṁ { $providers } !!]
+usage-popover-more = [!! Ṁôŕë !!]
+usage-popover-less = [!! Ľëšš !!]
 tool-verb-ran = [!! Ŕàñ !!]
 tool-verb-running = [!! Ŕüññïñĝ !!]
+tool-verb-messaging = [!! Ṁëššàĝïñĝ !!]
+tool-verb-dispatching = [!! Đïšþàţçħïñĝ !!]
+tool-verb-waiting-for = [!! Ŵàïţïñĝ ƒôŕ !!]
+tool-verb-resuming = [!! Ŕëšüṁïñĝ !!]
+tool-verb-closing = [!! Çľôšïñĝ !!]
 tool-verb-read = [!! Ŕëàđ !!]
 tool-verb-reading = [!! Ŕëàđïñĝ !!]
 tool-verb-searched = [!! Šëàŕçħëđ !!]
@@ -2799,3 +3019,1124 @@ data-directory-notice-home-title = [!! Keep both home folders !!]
 data-directory-notice-summary = [!! Existing repository configs and scripts keep working. !!]
 data-directory-notice-config = [!! Repository config: use .super.engineering/config.json for new configuration. Legacy .superconductor/config.json remains supported when the new file is absent. Older app builds still use the legacy file; the two files are not synchronized. !!]
 data-directory-notice-scripts = [!! Script files stay where they are. If you move a script, update the command that runs it. Scripts should read SUPER_ENGINEERING_* variables; the SUPERCONDUCTOR_* names are still exported for now and will be removed in a later release. !!]
+
+chat-pill-card-agent = [!! Àgëñt !!]
+chat-pill-card-command = [!! Çômmàñd !!]
+chat-pill-card-items =
+    { $count ->
+        [one] [!! 1 ïtëm !!]
+       *[other] [!! { $count } ïtëmš !!]
+    }
+chat-pill-card-lines =
+    { $count ->
+        [one] [!! 1 lïñë !!]
+       *[other] [!! { $count } lïñëš !!]
+    }
+chat-pill-card-modified = [!! môdïfïëd { $time } !!]
+chat-pill-card-open-agent = [!! Ôpëñ àgëñt !!]
+chat-pill-card-skill = [!! Škïll !!]
+launch-card-finished = [!! { $count } fïñïšhëd !!]
+launch-card-stopped = [!! { $count } štôppëd !!]
+launched-agent-activity-browsing = [!! Brôwšïñg !!]
+launched-agent-activity-command = [!! Rüññïñg à çômmàñd !!]
+launched-agent-activity-editing = [!! Ëdïtïñg !!]
+launched-agent-activity-reading = [!! Rëàdïñg fïlëš !!]
+launched-agent-activity-searching = [!! Šëàrçhïñg !!]
+launched-agent-activity-web-search = [!! Šëàrçhïñg thë wëb !!]
+launched-agent-activity-writing = [!! Wrïtïñg à fïlë !!]
+launched-agent-answer = [!! Àñšwër !!]
+settings-orchestrated-worktrees-auto = [!! Àütô !!]
+settings-orchestrated-worktrees-auto-description = [!! Ôpëñ whïlë àñ àgëñt thërë ïš wôrkïñg ôr ñëëdš ÿôü. !!]
+settings-orchestrated-worktrees-collapsed = [!! Çôllàpšëd !!]
+settings-orchestrated-worktrees-collapsed-description = [!! Àlwàÿš fôldëd üñtïl ÿôü ôpëñ ôñë. !!]
+settings-orchestrated-worktrees-expanded = [!! Ëxpàñdëd !!]
+settings-orchestrated-worktrees-expanded-description = [!! Àlwàÿš ôpëñ. !!]
+settings-search-entry-appearance-layout-orchestrated-worktrees-description = [!! Çhôôšë hôw wôrktrëëš à çhàt šëñt wôrk tô ôpëñ üñdër ït ïñ thë šïdëbàr. !!]
+settings-search-entry-appearance-layout-orchestrated-worktrees-label = [!! Ôrçhëštràtëd wôrktrëëš !!]
+settings-search-entry-general-behavior-link-previews-description = [!! Fëtçh à wëbšïtë'š tïtlë, šümmàrÿ àñd ïmàgë whëñ ÿôü hôvër à lïñk. Thë šïtë šëëš ÿôür ÏP àddrëšš. !!]
+settings-search-entry-general-behavior-link-previews-label = [!! Šhôw lïñk prëvïëwš !!]
+status-card-branch = [!! Bràñçh !!]
+status-card-checks-passed = [!! { $count } pàššëd !!]
+status-card-clean = [!! Çlëàñ !!]
+status-card-commit-count =
+    { $count ->
+        [one] [!! { $count } çômmït !!]
+       *[other] [!! { $count } çômmïtš !!]
+    }
+status-card-conflicts-explainer = [!! { $target } çhàñgëd lïñëš thïš bràñçh àlšô çhàñgëš. !!]
+status-card-delete-discards = [!! Dëlëtë dïšçàrdš thëšë wïth thë wôrktrëë. !!]
+status-card-file-count =
+    { $count ->
+        [one] [!! { $count } fïlë !!]
+       *[other] [!! { $count } fïlëš !!]
+    }
+status-card-merged-into = [!! Mërgëd ïñtô { $target } !!]
+status-card-review-not-requested = [!! Ñôt rëqüëštëd !!]
+status-card-unpushed = [!! Üñpüšhëd !!]
+status-card-up-to-date = [!! Üp tô dàtë wïth { $target } !!]
+status-card-worktree = [!! Wôrktrëë !!]
+workspace-view-html = [!! Vïëw !!]
+workspace-view-in-browser = [!! Vïëw ïñ brôwšër !!]
+
+action-discard = [!! Đïšçàŕđ !!]
+
+file-menu-rename = [!! Ŕëñàṁë !!]
+
+browser-send-annotations-to-new-chat = [!! Šëñđ àññôţàţïôñš ţô à ñëŵ { $provider } çħàţ !!]
+
+browser-annotation-destination-unavailable = [!! Ţħàţ àññôţàţïôñ đëšţïñàţïôñ ïš ñô ľôñĝëŕ àṽàïľàþľë !!]
+
+browser-annotation-composer-blocked = [!! Çàñ'ţ àđđ àññôţàţïôñš ŵħïľë à šüþàĝëñţ ţŕàñšçŕïþţ ïš ƒôçüšëđ !!]
+
+browser-consent-title = [!! Ŀëţ àĝëñţš çôñţŕôľ ţħë þŕôŵšëŕ ïñ “{ $workspace_name }”? !!]
+
+browser-consent-asked-by-agent = [!! Àñ àĝëñţ !!]
+
+browser-consent-asked-by-worktree = [!! Àñ àĝëñţ ŵôŕķïñĝ ïñ “{ $caller_label }” !!]
+
+browser-consent-description = [!! { $asked_by } àšķëđ ţô ŕüñ sc browser { $spelling } ïñ ţħïš ŵôŕķšþàçë'š þŕôŵšëŕ ţàþ. Àľľôŵïñĝ ĝŕàñţš ëṽëŕÿ àĝëñţ ïñ ţħïš ŵôŕķšþàçë šţàñđïñĝ þëŕṁïššïôñ — ƒôŕ ţħïš àñđ ëṽëŕÿ ƒüţüŕë act çôṁṁàñđ, ñôţ ĵüšţ ţħïš ôñë — ţô çľïçķ, ţÿþë, ñàṽïĝàţë, àñđ ŕüñ šçŕïþţš ôñ ŵħàţëṽëŕ þàĝë ïš ôþëñ, ïñçľüđïñĝ šïĝñëđ-ïñ šëššïôñš. Ṁôšţ ŕëàđ-ôñľÿ çôṁṁàñđš đô ñôţ ñëëđ àþþŕôṽàľ, þüţ ŕëàđïñĝ çôôķïë ṽàľüëš đôëš. Ţħïš þëŕšïšţš ƒôŕ ţħë ŵôŕķšþàçë àñđ çàñ þë ŕëṽôķëđ àñÿţïṁë ïñ Šëţţïñĝš. !!]
+
+browser-new-chats = [!! Ñëŵ çħàţ !!]
+
+palette-no-matching-files-index-incomplete = [!! Ñô ṁàţçħïñĝ ƒïľëš (ïñđëẋ ïñçôṁþľëţë: ţħïš ŵôŕķţŕëë ëẋçëëđš ţħë ƒïľë šçàñ ľïṁïţ) !!]
+
+update-ready-title = [!! Üþđàţë ŕëàđÿ !!]
+
+update-ready-restart = [!! Ŕëšţàŕţ !!]
+
+update-restart-eyebrow = [!! Ṽëŕšïôñ { $version } !!]
+
+update-restart-title = [!! Ŕëšţàŕţ ţô üþđàţë? !!]
+
+update-restart-body-agents =
+    { $count ->
+        [one] [!! Ŕëšţàŕţ ŵħëñ ţħë àĝëñţ ƒïñïšħëš, ôŕ ñôŵ ţô šţôþ ïţ. Ÿôüŕ ţàþš ŕëôþëñ ëïţħëŕ ŵàÿ. !!]
+       *[other] [!! Ŕëšţàŕţ ŵħëñ ţħë àĝëñţš ƒïñïšħ, ôŕ ñôŵ ţô šţôþ ţħëṁ. Ÿôüŕ ţàþš ŕëôþëñ ëïţħëŕ ŵàÿ. !!]
+    }
+
+update-restart-body-commands =
+    { $count ->
+        [one] [!! Ţħïš çôṁṁàñđ šţôþš ŵħëñ ţħë àþþ ŕëšţàŕţš. Ïţš ţëŕṁïñàľ ŕëôþëñš àƒţëŕ. !!]
+       *[other] [!! Ţħëšë çôṁṁàñđš šţôþ ŵħëñ ţħë àþþ ŕëšţàŕţš. Ţħëïŕ ţëŕṁïñàľš ŕëôþëñ àƒţëŕ. !!]
+    }
+
+update-restart-body-done = [!! Ëṽëŕÿţħïñĝ ƒïñïšħëđ. Ÿôüŕ ţàþš ŕëôþëñ àƒţëŕ ţħë ŕëšţàŕţ. !!]
+
+update-restart-now = [!! Ŕëšţàŕţ Ñôŵ !!]
+
+update-restart-not-now = [!! Ñôţ Ñôŵ !!]
+
+update-restart-when-done = [!! Ŕëšţàŕţ Ŵħëñ Đôñë !!]
+
+update-restart-restart = [!! Ŕëšţàŕţ !!]
+
+update-restart-row-running = [!! ŕüññïñĝ ƒôŕ { $elapsed } !!]
+
+update-restart-row-running-now = [!! ŕüññïñĝ !!]
+
+update-restart-row-needs-input = [!! ŵàïţïñĝ ƒôŕ ÿôüŕ àñšŵëŕ !!]
+
+update-restart-open = [!! Ôþëñ !!]
+
+update-restart-answer = [!! Àñšŵëŕ !!]
+
+update-wait-pill =
+    { $count ->
+        [one] [!! Àƒţëŕ 1 àĝëñţ !!]
+       *[other] [!! Àƒţëŕ { $count } àĝëñţš !!]
+    }
+
+update-wait-restarting = [!! Ŕëšţàŕţïñĝ !!]
+
+update-wait-title =
+    { $count ->
+        [one] [!! Ŕëšţàŕţïñĝ àƒţëŕ 1 àĝëñţ !!]
+       *[other] [!! Ŕëšţàŕţïñĝ àƒţëŕ { $count } àĝëñţš !!]
+    }
+
+update-wait-dont-wait = [!! Đôñ'ţ ŵàïţ !!]
+
+chat-stopped-for-update = [!! Šţôþþëđ ƒôŕ ţħë üþđàţë ţô { $version } !!]
+
+chat-continue-after-update = [!! Çôñţïñüë !!]
+
+release-notes-section-new = [!! Ñëŵ !!]
+
+release-notes-section-fixes = [!! Fïẋëđ !!]
+
+release-notes-section-faster = [!! Fàšţëŕ !!]
+
+release-notes-section-improved = [!! Ïṁþŕôṽëđ !!]
+
+update-cli-title = [!! Üþđàţëš !!]
+
+update-cli-note = [!! Ŕüññïñĝ šëššïôñš àŕëñ'ţ ïñţëŕŕüþţëđ. Ñëŵ šëššïôñš üšë ţħë ñëŵ ṽëŕšïôñ. !!]
+
+update-cli-failed-count = [!! { $count } đïđñ'ţ ƒïñïšħ !!]
+
+update-cli-action-update = [!! Üþđàţë !!]
+
+update-cli-action-update-all = [!! Üþđàţë àľľ !!]
+
+update-cli-action-retry = [!! Ŕëţŕÿ !!]
+
+update-cli-action-skip = [!! Šķïþ !!]
+
+update-cli-action-skip-all = [!! Šķïþ àľľ !!]
+
+update-cli-action-retry-all = [!! Ŕëţŕÿ àľľ !!]
+
+update-cli-action-fix-in-chat = [!! Fïẋ ïñ çħàţ !!]
+
+update-cli-action-run-in-terminal = [!! Ŕüñ ïñ Ţëŕṁïñàľ !!]
+
+update-cli-terminal-local-only = [!! Šëľëçţ à ľôçàľ ŵôŕķţŕëë ţô üþđàţë ţħïš CLI ïñ à ţëŕṁïñàľ. !!]
+
+update-cli-action-details = [!! Đëţàïľš !!]
+
+update-cli-action-copy-output = [!! Çôþÿ ôüţþüţ !!]
+
+update-cli-failed-permission = [!! Ñëëđš àđṁïñ þëŕṁïššïôñ !!]
+
+update-cli-failed-timeout = [!! Ţïṁëđ ôüţ àƒţëŕ 5 ṁïñ !!]
+
+update-cli-failed-outdated = [!! Šţïľľ { $version } àƒţëŕ üþđàţïñĝ !!]
+
+update-cli-manual-hint = [!! Ṁàñüàľ üþđàţë !!]
+
+close-tab-and-stop-action = [!! Çľôšë àñđ Šţôþ !!]
+
+close-tab-confirm-title = [!! Çľôšë ţħïš ţàþ? !!]
+
+close-tab-more-children = [!! +{ $count } ṁôŕë !!]
+
+close-tab-stop-launched-agents =
+    { $count ->
+        [one] [!! Šţôþ ţħë ľàüñçħëđ àĝëñţ !!]
+       *[other] [!! Šţôþ àľľ ľàüñçħëđ àĝëñţš !!]
+    }
+
+close-tab-running-description = [!! Ïţš àĝëñţ ïš šţïľľ ŵôŕķïñĝ àñđ ŵïľľ šţôþ. !!]
+
+close-tab-working-children =
+    { $count ->
+        [one] [!! Àñ àĝëñţ ïţ ľàüñçħëđ ïš šţïľľ ŵôŕķïñĝ. !!]
+       *[other] [!! { $count } àĝëñţš ïţ ľàüñçħëđ àŕë šţïľľ ŵôŕķïñĝ. !!]
+    }
+
+common-dont-ask-again = [!! Đôñ’ţ àšķ àĝàïñ !!]
+
+project-modal-rename-feature-label = [!! Ŕëñàṁë ƒëàţüŕë ľàþëľ !!]
+
+project-risk-creates-git = [!! çŕëàţëš .git !!]
+
+section-editor-behavior = [!! Bëħàṽïôŕ !!]
+
+section-editor-focus = [!! Fôçüš !!]
+
+section-editor-focus-description = [!! Ţëṁþôŕàŕïľÿ ṁôṽëš ṁàţçħïñĝ ŵôŕķţŕëëš ħëŕë, àħëàđ ôƒ þïññëđ, ṁàñüàľ, àñđ Ôŕĝàñïžë šëçţïôñš. Ţħëÿ ŕëţüŕñ àüţôṁàţïçàľľÿ ŵħëñ ţħëÿ šţôþ ṁàţçħïñĝ. !!]
+
+section-editor-focus-priority-description = [!! Fôçüš šëçţïôñš çľàïṁ ṁàţçħïñĝ ŵôŕķţŕëëš ƒïŕšţ. Ŵħëñ ṁüľţïþľë Fôçüš šëçţïôñš ṁàţçħ, ţħë ħïĝħëŕ-þŕïôŕïţÿ šëçţïôñ ŵïñš. !!]
+
+section-editor-organize = [!! Ôŕĝàñïžë !!]
+
+section-editor-organize-description = [!! Ĝŕôüþš ṁàţçħïñĝ ŵôŕķţŕëëš üšïñĝ ñôŕṁàľ þľàçëṁëñţ. Fôçüš šëçţïôñš àñđ ṁàñüàľ þľàçëṁëñţ ţàķë þŕëçëđëñçë. !!]
+
+section-editor-organize-priority-description = [!! Ŵħëñ ṁüľţïþľë Ôŕĝàñïžë šëçţïôñš ṁàţçħ, ţħë ħïĝħëŕ-þŕïôŕïţÿ šëçţïôñ ŵïñš. Fôçüš àñđ ṁàñüàľ þľàçëṁëñţ šţïľľ ţàķë þŕëçëđëñçë. !!]
+
+workspace-update-agents-description = [!! Ŵôŕķšþàçë þŕôĵëçţš çħàñĝëđ. Àñàľÿžë ŕëþôšïţôŕïëš ţô üþđàţë AGENTS.md, ôŕ šķïþ ţô ķëëþ ţħë çüŕŕëñţ ƒïľë. !!]
+
+workspace-update-agents-title = [!! Üþđàţë ŵôŕķšþàçë ĝüïđàñçë? !!]
+
+settings-sidebar-group-mobile = [!! Ṁôþïľë !!]
+
+settings-category-routing = [!! Ŕôüţïñĝ !!]
+
+settings-category-devices = [!! Đëṽïçëš !!]
+
+settings-category-routing-description = [!! Çħôôšë ţħë þŕôṽïđëŕ, þŕôƒïľë, ṁôđëľ, ëƒƒôŕţ, àñđ ľàüñçħ þëħàṽïôŕ ƒôŕ àĝëñţ àçţïôñš. !!]
+
+settings-category-mobile-description = [!! Þàïŕ ţħïš Mac ŵïţħ ţħë super.engineering ṁôþïľë àþþ. !!]
+
+settings-mobile-access-label = [!! Ṁôþïľë àççëšš !!]
+
+settings-mobile-access-detail-off = [!! Ṁôþïľë àççëšš ïš ôƒƒ. Ÿôüŕ Mac ïš ñôţ àççëþţïñĝ þħôñë çôññëçţïôñš. !!]
+
+settings-mobile-access-detail-starting = [!! Šţàŕţïñĝ ṁôþïľë àççëšš… !!]
+
+settings-mobile-access-detail-ready = [!! Ṁôþïľë àççëšš ïš ŕëàđÿ ôñ þôŕţ { $port }. !!]
+
+settings-mobile-access-detail-stopping = [!! Ţüŕñïñĝ ôƒƒ ṁôþïľë àççëšš… !!]
+
+settings-mobile-setup-action = [!! Šëţ üþ ṁôþïľë !!]
+
+settings-mobile-disable-action = [!! Ţüŕñ ôƒƒ ṁôþïľë àççëšš !!]
+
+settings-mobile-retry-action = [!! Ŕëţŕÿ !!]
+
+settings-mobile-host-name-label = [!! Çôṁþüţëŕ ñàṁë !!]
+
+settings-mobile-host-name-description = [!! Ħôŵ ţħïš Mac àþþëàŕš ôñ ÿôüŕ þàïŕëđ þħôñëš. Ŀëàṽë þľàñķ ţô üšë ïţš macOS ñàṁë. !!]
+
+settings-mobile-host-name-placeholder = [!! Ţħïš Mac'š ñàṁë !!]
+
+settings-mobile-rename-action = [!! Ŕëñàṁë !!]
+
+settings-mobile-save-name-action = [!! Šàṽë !!]
+
+settings-mobile-device-name-placeholder = [!! Üšë ţħë þħôñë'š ñàṁë !!]
+
+settings-mobile-testflight-label = [!! Ĝëţ ţħë ṁôþïľë àþþ !!]
+
+settings-mobile-testflight-description = [!! Šçàñ ŵïţħ ÿôüŕ iPhone çàṁëŕà ţô ïñšţàľľ ţħë TestFlight þüïľđ þëƒôŕë þàïŕïñĝ. !!]
+
+settings-mobile-local-network-label = [!! Ŀôçàľ ñëţŵôŕķ !!]
+
+settings-mobile-local-network-unavailable = [!! Ñô üšàþľë ľôçàľ àđđŕëšš đëţëçţëđ. Çôññëçţ þôţħ đëṽïçëš ţô ţħë šàṁë Wi-Fi àñđ ŕëţŕÿ. !!]
+
+settings-mobile-away-label = [!! Àŵàÿ ƒŕôṁ ħôṁë !!]
+
+settings-mobile-tailscale-ready-detail = [!! { $address } · Üšë ţħë šàṁë Tailscale tailnet ôñ ÿôüŕ Mac àñđ þħôñë. !!]
+
+settings-mobile-tailscale-optional-detail = [!! Tailscale ïš ôþţïôñàľ àñđ ŵàš ñôţ đëţëçţëđ. Šïĝñ ïñţô ţħë šàṁë tailnet ôñ ÿôüŕ Mac àñđ þħôñë ƒôŕ àççëšš àŵàÿ ƒŕôṁ ħôṁë. !!]
+
+settings-mobile-tailscale-help-action = [!! Đôŵñľôàđ Tailscale !!]
+
+settings-mobile-failure-persist = [!! Ṁôþïľë àççëšš šëţţïñĝš çôüľđ ñôţ þë šàṽëđ. Çħëçķ đïšķ àççëšš àñđ ŕëţŕÿ. !!]
+
+settings-mobile-failure-port-in-use = [!! Þôŕţ { $port } ïš àľŕëàđÿ ïñ üšë. Çľôšë ţħë àþþ üšïñĝ þôŕţ { $port }, ţħëñ ŕëţŕÿ. !!]
+
+settings-mobile-failure-start = [!! Ṁôþïľë àççëšš çôüľđ ñôţ šţàŕţ. Çħëçķ ÿôüŕ ñëţŵôŕķ, ţħëñ ŕëţŕÿ. !!]
+
+settings-mobile-failure-stop = [!! Ṁôþïľë àççëšš çôüľđ ñôţ ţüŕñ ôƒƒ çľëàñľÿ. Ïţ ṁàÿ šţïľľ þë àṽàïľàþľë; ŕëţŕÿ. !!]
+
+settings-mobile-failure-not-ready = [!! Ṁôþïľë àççëšš ïš ñôţ ŕëàđÿ ÿëţ. Ŵàïţ ƒôŕ šëţüþ ţô ƒïñïšħ, ţħëñ ŕëţŕÿ. !!]
+
+settings-mobile-failure-no-reachable-endpoint = [!! Ñô þħôñë-ŕëàçħàþľë àđđŕëšš ïš àṽàïľàþľë. Üšë ţħë šàṁë Wi-Fi, ôŕ ôþţïôñàľľÿ šïĝñ ïñţô ţħë šàṁë Tailscale tailnet ôñ þôţħ đëṽïçëš, ţħëñ ŕëţŕÿ. !!]
+
+settings-mobile-failure-device-not-found = [!! Ţħïš þħôñë ïš ñô ľôñĝëŕ þàïŕëđ. Ţħë đëṽïçë ľïšţ ŵïľľ üþđàţë àüţôṁàţïçàľľÿ. !!]
+
+settings-mobile-status-off = [!! Ôƒƒ !!]
+
+settings-mobile-status-starting = [!! Šţàŕţïñĝ… !!]
+
+settings-mobile-status-ready = [!! Ŕëàđÿ !!]
+
+settings-mobile-status-stopping = [!! Šţôþþïñĝ… !!]
+
+settings-mobile-status-failed = [!! Ñëëđš àţţëñţïôñ !!]
+
+settings-mobile-status-optional = [!! Ôþţïôñàľ !!]
+
+settings-mobile-status-unavailable = [!! Üñàṽàïľàþľë !!]
+settings-mobile-status-not-checked = [!! Ñôţ çħëçķëđ !!]
+settings-mobile-connection-not-checked = [!! Çħëçķëđ ôñçë ṁôþïľë àççëšš ïš ŕüññïñĝ. !!]
+
+settings-mobile-pair-label = [!! Þàïŕ à þħôñë !!]
+
+settings-mobile-pair-description = [!! Ĝëñëŕàţë à šëçüŕë, šïñĝľë-üšë þàïŕïñĝ çôđë üšïñĝ ţħë çüŕŕëñţ ľôçàľ-ñëţŵôŕķ àñđ ôþţïôñàľ Tailscale àđđŕëššëš. !!]
+
+settings-mobile-pair-action = [!! Ĝëñëŕàţë þàïŕïñĝ çôđë !!]
+
+settings-mobile-pairing-action = [!! Ĝëñëŕàţïñĝ… !!]
+
+settings-mobile-regenerate-action = [!! Ĝëñëŕàţë ñëŵ çôđë !!]
+
+settings-mobile-scan-instruction = [!! Ôþëñ super.engineering ôñ ÿôüŕ þħôñë àñđ šçàñ ţħïš çôđë !!]
+
+settings-mobile-copy-link = [!! Çôþÿ þàïŕïñĝ ľïñķ !!]
+
+settings-mobile-expires = [!! Ţħïš çôđë ëẋþïŕëš àţ { $time }. !!]
+
+settings-mobile-pairing-expired = [!! Ţħïš þàïŕïñĝ çôđë ëẋþïŕëđ. Ĝëñëŕàţë à ñëŵ çôđë àñđ ŕëţŕÿ. !!]
+
+settings-mobile-pairing-qr-error = [!! Çôüľđ ñôţ þŕëþàŕë ţħë þàïŕïñĝ çôđë: { $error }. Ŕëţŕÿ. !!]
+
+settings-mobile-devices-label = [!! Þàïŕëđ þħôñëš !!]
+
+settings-mobile-device-count =
+    { $count ->
+        [one] [!! 1 þàïŕëđ þħôñë. !!]
+       *[other] [!! { $count } þàïŕëđ þħôñëš. !!]
+    }
+
+settings-mobile-no-devices = [!! Ñô þħôñëš ħàṽë þàïŕëđ ŵïţħ ţħïš Mac ÿëţ. !!]
+
+settings-mobile-devices-observed = [!! Ñëŵľÿ þàïŕëđ þħôñëš àþþëàŕ ħëŕë àüţôṁàţïçàľľÿ. !!]
+
+settings-mobile-device-trust-paired = [!! Þàïŕëđ !!]
+
+settings-mobile-device-detail = [!! { $status } · Þàïŕëđ { $paired } · Ŀàšţ šëëñ { $last_seen } !!]
+
+settings-mobile-revoke-action = [!! Ŕëṽôķë !!]
+
+settings-mobile-revoking-action = [!! Ŕëṽôķïñĝ… !!]
+
+settings-mobile-confirm-revoke-action = [!! Çôñƒïŕṁ ŕëṽôķë !!]
+
+settings-project-icon-paste-clipboard = [!! Þàšţë ïṁàĝë ƒŕôṁ çľïþþôàŕđ !!]
+
+settings-project-icon-paste-empty = [!! Çľïþþôàŕđ đôëš ñôţ çôñţàïñ àñ ïṁàĝë !!]
+
+settings-workspace-automation-section = [!! Bŕôŵšëŕ Àüţôṁàţïôñ !!]
+
+settings-workspace-browser-automation-label = [!! Àľľôŵ àĝëñţš ţô çôñţŕôľ ţħë þŕôŵšëŕ !!]
+
+settings-workspace-browser-automation-description = [!! Àĝëñţš çàñ çľïçķ, ţÿþë, àñđ ŕüñ šçŕïþţš ïñ ţħïš ŵôŕķšþàçë'š þŕôŵšëŕ ţàþ. !!]
+
+settings-repository-config-source-title = [!! Ŕëþôšïţôŕÿ çôñƒïĝ !!]
+
+settings-repository-config-source-description = [!! Ŕëàđ-ôñľÿ àüţôṁàţïôñ àñđ MCP šëŕṽëŕš ľôàđëđ ƒŕôṁ ţħïš ŕëþôšïţôŕÿ. Þëŕšôñàľ šëţţïñĝš ŕëṁàïñ ëđïţàþľë þëľôŵ. !!]
+
+settings-repository-config-status-missing = [!! Ñô ŕëþôšïţôŕÿ çôñƒïĝ ƒôüñđ !!]
+
+settings-repository-config-status-loaded = [!! Ŀôàđëđ !!]
+
+settings-repository-config-status-invalid = [!! Çôüľđ ñôţ ľôàđ ŕëþôšïţôŕÿ çôñƒïĝ !!]
+
+settings-repository-config-path = [!! Þàţħ !!]
+
+settings-repository-config-open = [!! Ôþëñ çôñƒïĝ !!]
+
+settings-repository-config-refresh = [!! Ŕëƒŕëšħ !!]
+
+settings-repository-config-setup = [!! Šëţüþ !!]
+
+settings-repository-config-run = [!! Ŕüñ !!]
+
+settings-repository-config-teardown = [!! Ţëàŕđôŵñ !!]
+
+settings-repository-config-commands = [!! Šħàŕëđ çôṁṁàñđš !!]
+
+settings-repository-config-mcp-servers = [!! MCP šëŕṽëŕš !!]
+
+settings-repository-config-id = [!! ÏĐ !!]
+
+settings-repository-config-start-command = [!! Šţàŕţ çôṁṁàñđ !!]
+
+settings-repository-config-stop-command = [!! Šţôþ çôṁṁàñđ !!]
+
+settings-repository-config-not-default = [!! Ñôţ đëƒàüľţ !!]
+
+settings-repository-config-empty = [!! Ñô çôṁṁàñđš ôŕ MCP šëŕṽëŕš àŕë đëƒïñëđ ïñ ţħïš ƒïľë. !!]
+
+settings-repository-config-cleanup-ignored = [!! Ŕëþôšïţôŕÿ þŕë-çľëàñüþ àñđ þôšţ-çľëàñüþ çôṁṁàñđš àŕë ïĝñôŕëđ; çľëàñüþ ŕëṁàïñš þëŕšôñàľ àþþ šëţţïñĝš. !!]
+
+settings-repository-config-precedence = [!! Ŕëþôšïţôŕÿ šëţüþ, ŕüñ, àñđ ţëàŕđôŵñ ôṽëŕŕïđë þëŕšôñàľ ṽàľüëš ŵħëñ þŕëšëñţ. Šħàŕëđ çôṁṁàñđš àŕë àđđëđ ţô þëŕšôñàľ çôṁṁàñđš. !!]
+
+settings-ai-search-providers-placeholder = [!! Šëàŕçħ þŕôṽïđëŕš... !!]
+
+settings-ai-search-profiles-placeholder = [!! Šëàŕçħ þŕôƒïľëš... !!]
+
+settings-ai-changes-apply-immediately = [!! Çħàñĝëš àþþľÿ ïṁṁëđïàţëľÿ. !!]
+
+settings-ai-back-to-models = [!! Bàçķ ţô ṁôđëľš !!]
+
+settings-ai-customized-here = [!! Çüšţôṁïžëđ ħëŕë !!]
+
+settings-ai-use-inherited-settings = [!! Üšë ïñħëŕïţëđ šëţţïñĝš !!]
+
+settings-ai-use-global-settings = [!! Üšë Ĝľôþàľ šëţţïñĝš !!]
+
+settings-ai-use-workspace-settings = [!! Üšë Ŵôŕķšþàçë šëţţïñĝš !!]
+
+settings-ai-use-session-settings = [!! Üšë Šëššïôñ đëƒàüľţ šëţţïñĝš !!]
+
+settings-ai-use-fast-settings = [!! Üšë Fàšţ šëţţïñĝš !!]
+
+settings-ai-use-thorough-settings = [!! Üšë Ţħôŕôüĝħ šëţţïñĝš !!]
+
+settings-ai-undo-routing = [!! Üñđô ľàšţ ŕôüţïñĝ çħàñĝë !!]
+
+settings-ai-default-profiles = [!! Đëƒàüľţ þŕôƒïľëš !!]
+
+settings-ai-apply-profile-to-routes = [!! Àþþľÿ ţô àľľ ŕôüţëš !!]
+
+settings-ai-provider-default-profile = [!! { $provider } đëƒàüľţ þŕôƒïľë !!]
+
+settings-ai-provider-default-profile-description = [!! Üšëđ ƒôŕ ñëŵ çħàţš àñđ ţëŕṁïñàľš. Àþþľÿ ţô àľľ ŕôüţëš ŕëþľàçëš þŕôƒïľë ôṽëŕŕïđëš ƒôŕ ţħïš þŕôṽïđëŕ ïñ ţħë šëľëçţëđ šçôþë. !!]
+
+settings-ai-routing-start-here = [!! Šţàŕţ ŵïţħ Šëššïôñ đëƒàüľţ. Fàšţ àñđ Ţħôŕôüĝħ ƒôľľôŵ ïţ üñţïľ ÿôü çħôôšë đïƒƒëŕëñţ šëţţïñĝš. Çüšţôṁïžë ïñđïṽïđüàľ àçţïôñš þëľôŵ ôñľÿ ŵħëñ ñëëđëđ. !!]
+
+settings-ai-default-impact = [!! { $following } àçţïôñš ƒôľľôŵ ţħïš đëƒàüľţ · { $customized } ħàṽë ôṽëŕŕïđëš. Ôṽëŕŕïđëš šţàÿ ïñ þľàçë. !!]
+
+settings-ai-search-thinking-placeholder = [!! Šëàŕçħ ţħïñķïñĝ ľëṽëľš... !!]
+
+settings-ai-no-model-matches = [!! Ñô ṁàţçħïñĝ ṁôđëľš. Ţŕÿ à šħôŕţëŕ ñàṁë ôŕ çħàñĝë þŕôṽïđëŕ. !!]
+
+settings-ai-no-provider-matches = [!! Ñô ṁàţçħïñĝ þŕôṽïđëŕš. Ţŕÿ àñôţħëŕ ñàṁë ôŕ ëñàþľë à þŕôṽïđëŕ ïñ Àĝëñţš. !!]
+
+settings-ai-no-profile-matches = [!! Ñô ṁàţçħïñĝ þŕôƒïľëš. Ţŕÿ àñôţħëŕ ñàṁë ôŕ ṁàñàĝë ÿôüŕ þŕôƒïľëš ïñ Þŕôƒïľëš. !!]
+
+settings-ai-routing-no-models = [!! Ñô ṁôđëľš àŕë ľïšţëđ ÿëţ. Ÿôü çàñ üšë ţħë þŕôṽïđëŕ đëƒàüľţ ôŕ ŕëƒŕëšħ ṁôđëľš ïñ Àĝëñţš. !!]
+
+settings-ai-hidden-models-hint = [!! Šôṁë ṁôđëľš ṁàÿ þë ħïđđëñ þÿ ÿôüŕ ṁôđëľ ṽïšïþïľïţÿ šëţţïñĝš. !!]
+
+settings-ai-provider-hidden-hint = [!! Ţħïš þŕôṽïđëŕ ïš ñôţ ëñàþľëđ ïñ ţħïš šçôþë. Ÿôüŕ šàṽëđ ŕôüţë ïš üñçħàñĝëđ. !!]
+
+settings-ai-cli-default-explanation = [!! CLI đëƒàüľţ üšëš ţħë þŕôṽïđëŕ’š ôŵñ àççôüñţ àñđ çôñƒïĝüŕàţïôñ, ŵïţħôüţ à ñàṁëđ þŕôƒïľë. !!]
+
+settings-ai-open-provider-settings = [!! Ôþëñ þŕôṽïđëŕ šëţţïñĝš !!]
+
+settings-ai-edit-followed-default = [!! Ëđïţ ƒôľľôŵëđ đëƒàüľţ !!]
+
+settings-ai-inherited-from-name = [!! Ïñħëŕïţëđ ƒŕôṁ { $name } !!]
+
+settings-ai-follows-fast = [!! Fôľľôŵïñĝ Fàšţ !!]
+
+settings-ai-follows-thorough = [!! Fôľľôŵïñĝ Ţħôŕôüĝħ !!]
+
+settings-ai-automatic-naming-route = [!! Fôľľôŵïñĝ Fàšţ !!]
+
+settings-ai-use-automatic-naming = [!! Üšë Fàšţ ṁôđëľ !!]
+
+settings-ai-profile-used-by = [!! Üšëđ þÿ !!]
+
+settings-ai-profile-shared-changes = [!! Çħàñĝëš ţô ţħïš þŕôƒïľë àþþľÿ ţô ţħë ŕôüţëš þëľôŵ àñđ àçţïôñš ţħàţ ïñħëŕïţ ţħëṁ. !!]
+
+settings-ai-profile-no-route-uses = [!! Ñô đïŕëçţ àššïĝñṁëñţš ïñ Ĝľôþàľ, Ŵôŕķšþàçë, ôŕ Þŕôĵëçţ šëţţïñĝš. !!]
+
+settings-ai-profile-in-use = [!! Ţħïš þŕôƒïľë ïš üšëđ þÿ Ŕôüţïñĝ. Çħôôšë à ŕëþľàçëṁëñţ ïñ Ŕôüţïñĝ þëƒôŕë ŕëṁôṽïñĝ ïţ. !!]
+
+settings-ai-run-with-column = [!! Ŕüñ ŵïţħ !!]
+
+settings-ai-branch-naming-rule = [!! Ñàṁïñĝ ŕüľë !!]
+
+settings-ai-session-context-section = [!! Šëššïôñ çôñţëẋţ !!]
+
+settings-ai-agent-session-context-label = [!! Šëššïôñ çôñţëẋţ ƒôŕ àĝëñţš !!]
+
+settings-ai-agent-session-context-description = [!! super.engineering çàñ àđđ çôñţëẋţ ţô àĝëñţ šëššïôñš šô àĝëñţš çàñ ƒïñđ àñđ šàƒëľÿ üšë ţħë àþþ'š šç CLI. !!]
+
+settings-ai-agent-session-context-standard-label = [!! Šţàñđàŕđ !!]
+
+settings-ai-agent-session-context-standard-description = [!! Àĝëñţš ŕëçëïṽë ţħë šţàñđàŕđ super.engineering CLI àñđ ôŕçħëšţŕàţïôñ ŕôüţïñĝ ïñšţŕüçţïôñš. !!]
+
+settings-ai-agent-session-context-off-label = [!! Ôƒƒ !!]
+
+settings-ai-agent-session-context-off-description = [!! Ñô àṁþïëñţ šëššïôñ çôñţëẋţ ïš àđđëđ ŵħïľë Ôƒƒ ïš àçţïṽë. Ëẋþľïçïţ àçţïôñš šüçħ àš ŕëṽïëŵš àñđ ŵôŕķţŕëë ţàšķ ħàñđôƒƒš àŕë üñàƒƒëçţëđ, àñđ šç çôṁṁàñđ ĝüàŕđŕàïľš šţïľľ àþþľÿ. !!]
+
+settings-remote-key-install-action = [!! Ïñšţàľľ Ķëÿ !!]
+
+settings-remote-key-install-authorize = [!! Àüţħôŕïžë ïţ ôñ { $host } !!]
+
+settings-remote-key-install-body = [!! { $app_name } ŵïľľ ṁàķë à đëđïçàţëđ SSH ķëÿ ƒôŕ ţħïš ŵôŕķšþàçë. !!]
+
+settings-remote-key-install-create = [!! Çŕëàţë à ķëÿ, ñô þàššþħŕàšë !!]
+
+settings-remote-key-install-include = [!! Àđđ ôñë Include ľïñë !!]
+
+settings-remote-key-install-title = [!! Ïñšţàľľ à ķëÿ ôñ { $host }? !!]
+
+settings-remote-key-install-undo-note = [!! Ŕëṁôṽë SSH ķëÿ üñđôëš àľľ ţħŕëë. !!]
+
+settings-remote-key-remove-action = [!! Ŕëṁôṽë Ķëÿ !!]
+
+settings-remote-key-remove-body = [!! Ţħë ŵôŕķšþàçë çôññëçţš ŵïţħ ÿôüŕ ôţħëŕ SSH ķëÿš àƒţëŕŵàŕđš. !!]
+
+settings-remote-key-remove-delete = [!! Đëľëţë ţħë ľôçàľ ķëÿ !!]
+
+settings-remote-key-remove-include = [!! Ŕëṁôṽë ţħë Include ľïñë !!]
+
+settings-remote-key-remove-revoke = [!! Ŕëṽôķë ïţ ôñ { $host } !!]
+
+settings-remote-key-remove-title = [!! Ŕëṁôṽë ţħë ķëÿ ƒŕôṁ { $host }? !!]
+
+settings-experimental-automations-label = [!! Àüţôṁàţïôñš !!]
+
+settings-experimental-automations-description = [!! Çŕëàţë šçħëđüľëđ àñđ ëṽëñţ-đŕïṽëñ àüţôṁàţïôñš. Ëàŕľÿ þŕëṽïëŵ, ñôţ ƒüľľÿ ţëšţëđ ÿëţ. !!]
+
+settings-experimental-browser-automation-label = [!! Bŕôŵšëŕ àüţôṁàţïôñ !!]
+
+settings-experimental-browser-automation-description = [!! Àľľôŵ àĝëñţš ţô üšë þŕôŵšëŕ çôñţŕôľ çôṁṁàñđš. Bŕôŵšëŕ àçţïôñš šţïľľ ŕëʠüïŕë ŵôŕķšþàçë þëŕṁïššïôñ. !!]
+settings-experimental-chat-artifacts-label = [!! Çħàţ àŕţïƒàçţš !!]
+settings-experimental-chat-artifacts-description = [!! Ŀëţ àĝëñţš þüþľïšħ HŢṀĿ þàĝëš ţħàţ ŕëñđëŕ ľïṽë ïñ ţħë çħàţ. Þàĝëš ŕüñ ôƒƒľïñë ïñ à šàñđþôẋ. !!]
+
+settings-search-section-session-context = [!! Šëššïôñ çôñţëẋţ !!]
+
+settings-search-entry-general-updates-automatic-network-update-checks-label = [!! Àüţôṁàţïç ñëţŵôŕķ üþđàţë çħëçķš !!]
+
+settings-search-entry-general-updates-automatic-network-update-checks-description = [!! Çħëçķš þŕôṽïđëŕ CLI ŕëľëàšëš ħôüŕľÿ àñđ ţħë çôñṽëŕšàţïôñ þŕïçïñĝ çàţàľôĝ đàïľÿ. Đïšàþľë ţô üšë ţħë þüñđľëđ ôƒƒľïñë çàţàľôĝ. !!]
+
+settings-search-entry-general-behavior-inactive-browser-timeout-label = [!! Ïñàçţïṽë þŕôŵšëŕ ţïṁëôüţ !!]
+
+settings-search-entry-general-behavior-inactive-browser-timeout-description = [!! Üñľôàđ ïñàçţïṽë ŕëṁôţë þŕôŵšëŕ ţàþš àƒţëŕ ţħïš ṁàñÿ ṁïñüţëš. Šëţ ţô 0 ţô đïšàþľë. Ŀôçàľ đëṽëľôþṁëñţ àñđ àññôţàţëđ ţàþš šţàÿ àçţïṽë. !!]
+
+settings-search-entry-appearance-theme-default-theme-label = [!! Đëƒàüľţ ţħëṁë !!]
+
+settings-search-entry-appearance-theme-default-theme-description = [!! Ţħë ţħëṁë ñëŵ ŵôŕķšþàçëš üšë, àñđ ţħàţ Ŕëšëţ ŕëţüŕñš à ŵôŕķšþàçë ţô. !!]
+
+settings-search-entry-appearance-layout-markdown-files-label = [!! Markdown ƒïľëš !!]
+
+settings-search-entry-appearance-layout-markdown-files-description = [!! Çħôôšë ŵħëţħëŕ Markdown ƒïľëš ôþëñ ïñ ţħë ŕïçħ ëđïţôŕ ôŕ šôüŕçë ëđïţôŕ. !!]
+
+settings-markdown-file-open-mode-rich = [!! Ŕïçħ !!]
+
+settings-markdown-file-open-mode-source = [!! Šôüŕçë !!]
+
+settings-search-entry-appearance-layout-full-width-chat-text-label = [!! Füľľ-ŵïđţħ çħàţ ţëẋţ !!]
+
+settings-search-entry-appearance-layout-full-width-chat-text-description = [!! Üšë ţħë ƒüľľ çħàţ þàñë ŵïđţħ ƒôŕ ṁëššàĝëš àñđ ţħë çôṁþôšëŕ. À šṁàľľ šïđë ĝüţţëŕ šţàÿš çľëàŕ ôƒ ţħë ħïšţôŕÿ ŕàïľ ôñ ŵïđë þàñëš. !!]
+
+settings-search-entry-appearance-layout-show-conversation-cost-label = [!! Šħôŵ çôñṽëŕšàţïôñ çôšţ !!]
+
+settings-search-entry-appearance-layout-show-conversation-cost-description = [!! Šħôŵ ţħë šëľëçţëđ çôñṽëŕšàţïôñ çôšţ šçôþë ïñ ţħë ŵôŕķšþàçë ţïţľëþàŕ. !!]
+
+settings-search-entry-appearance-layout-conversation-cost-scope-label = [!! Çôñṽëŕšàţïôñ çôšţ šçôþë !!]
+
+settings-search-entry-appearance-layout-conversation-cost-scope-description = [!! Çħôôšë ŵħïçħ çôšţ ţôţàľ ïš ëṁþħàšïžëđ ïñ ţħë ŵôŕķšþàçë ţïţľëþàŕ. Ţħë þôþôṽëŕ àľŵàÿš šħôŵš ëṽëŕÿ šçôþë àñđ ëàçħ ţàþ. !!]
+
+settings-conversation-cost-scope-active = [!! Àçţïṽë çôñṽëŕšàţïôñ !!]
+
+settings-conversation-cost-scope-workspace = [!! Çüŕŕëñţ ŵôŕķšþàçë !!]
+
+conversation-cost-current-worktree = [!! Çüŕŕëñţ ŵôŕķţŕëë !!]
+
+settings-conversation-cost-scope-all-open = [!! Àľľ ôþëñ ŵïñđôŵš !!]
+
+settings-conversation-cost-scope-lifetime = [!! Ŀïƒëţïṁë ħïšţôŕÿ !!]
+
+conversation-cost-title = [!! Çôñṽëŕšàţïôñ çôšţ !!]
+
+conversation-cost-tooltip = [!! { $scope } çôšţ !!]
+
+
+conversation-cost-last-seven-days = [!! Ŀàšţ 7 đàÿš !!]
+
+conversation-cost-last-thirty-days = [!! Ŀàšţ 30 đàÿš !!]
+
+conversation-cost-last-ninety-days = [!! Ŀàšţ 90 đàÿš !!]
+
+
+conversation-cost-unpriced-summary = [!! { $tokens } ţôķëñš üñþŕïçëđ ({ $models }) !!]
+
+conversation-cost-unknown-model = [!! üñķñôŵñ ṁôđëľ !!]
+
+
+conversation-cost-estimate-note = [!! Ëšţïṁàţëđ API-ëʠüïṽàľëñţ ṽàľüë, ñôţ à þïľľ. Àĝëñţ-ŕëþôŕţëđ ƒïĝüŕëš àñđ šţàñđàŕđ-ŕàţë ëšţïṁàţëš; šüþšçŕïþţïôñ üšàĝë ïš ṽàľüëđ àţ ţħë šàṁë ŕàţëš. Àñÿ üñþŕïçëđ üšàĝë šħôŵñ àþôṽë ïš ëẋçľüđëđ ƒŕôṁ ţħë ţôţàľ. !!]
+
+conversation-cost-remote-note = [!! Ŕëṁôţë ŵôŕķšþàçëš šħôŵ ôñľÿ ţħë çüŕŕëñţ çôñṽëŕšàţïôñ. Ţëŕṁïñàľ-šëššïôñ çôšţ ïš üñàṽàïľàþľë üñţïľ ŕëṁôţë ħïšţôŕÿ ïš šüþþôŕţëđ. Çôšţš àŕë ëšţïṁàţëš, ñôţ þïľľïñĝ đàţà. !!]
+cost-popover-this-conversation = [!! Ţħïš çôñṽëŕšàţïôñ !!]
+cost-popover-this-worktree = [!! Ţħïš ŵôŕķţŕëë !!]
+cost-popover-this-workspace = [!! Ţħïš ŵôŕķšþàçë !!]
+cost-popover-tab-count = { $count ->
+    [one] [!! { $count } ţàƀ !!]
+   *[other] [!! { $count } ţàƀš !!]
+}
+cost-popover-range-week = [!! 7Đ !!]
+cost-popover-range-month = [!! 30Đ !!]
+cost-popover-range-quarter = [!! 90Đ !!]
+cost-popover-range-all = [!! Àľľ !!]
+cost-popover-all-time = [!! Àľľ ţïṁë !!]
+cost-popover-daily-average = [!! Đàïľÿ àṽëŕàĝë !!]
+cost-popover-monthly-average = [!! Ṁôñţħľÿ àṽëŕàĝë !!]
+cost-popover-today = [!! Ţôđàÿ !!]
+cost-popover-all-time-undated = [!! Àľľ ţïṁë, ïñçľüđïñĝ üñđàţëđ üšàĝë !!]
+cost-popover-estimate = [!! Ëšţïṁàţëđ àţ ÀÞÏ ŕàţëš !!]
+cost-popover-rates-source = [!! Ŕàţëš ƒŕôṁ models.dev, üþđàţëđ { $date }. !!]
+
+settings-search-entry-experimental-feature-flags-workspace-mentions-label = [!! Ŵôŕķšþàçë ṁëñţïôñš !!]
+
+settings-search-entry-experimental-feature-flags-workspace-mentions-description = [!! Ṁëñţïôñ šçŕïþţš, ţëŕṁïñàľš, ŵôŕķţŕëëš, çħàţš, àñđ àĝëñţš ŵïţħ @ ïñ çħàţ. !!]
+
+settings-search-entry-experimental-feature-flags-automations-label = [!! Àüţôṁàţïôñš !!]
+
+settings-search-entry-experimental-feature-flags-automations-description = [!! Çŕëàţë šçħëđüľëđ àñđ ëṽëñţ-đŕïṽëñ àüţôṁàţïôñš. Ëàŕľÿ þŕëṽïëŵ, ñôţ ƒüľľÿ ţëšţëđ ÿëţ. !!]
+
+settings-search-entry-experimental-feature-flags-browser-automation-label = [!! Bŕôŵšëŕ àüţôṁàţïôñ !!]
+
+settings-search-entry-experimental-feature-flags-browser-automation-description = [!! Àľľôŵ àĝëñţš ţô üšë þŕôŵšëŕ çôñţŕôľ çôṁṁàñđš. Bŕôŵšëŕ àçţïôñš šţïľľ ŕëʠüïŕë ŵôŕķšþàçë þëŕṁïššïôñ. !!]
+
+settings-search-entry-agents-session-context-session-context-for-agents-label = [!! Šëššïôñ çôñţëẋţ ƒôŕ àĝëñţš !!]
+
+settings-search-entry-agents-session-context-session-context-for-agents-description = [!! Àđđ super.engineering çôñţëẋţ ţô ñëŵ àĝëñţ šëššïôñš, ôŕ ţüŕñ àṁþïëñţ ïñĵëçţïôñ ôƒƒ. !!]
+
+settings-section-routes = [!! Ŕôüţëš !!]
+
+settings-section-git-buttons = [!! Git þüţţôñš !!]
+
+settings-section-other-actions = [!! Ôţħëŕ àçţïôñš !!]
+
+settings-section-session-context = [!! Šëššïôñ çôñţëẋţ !!]
+
+settings-account-add = [!! Àđđ àççôüñţ !!]
+
+settings-account-more = [!! Ṁôŕë… !!]
+
+settings-account-subscription = [!! Šüþšçŕïþţïôñ !!]
+
+settings-account-saving-key = [!! Šàṽïñĝ API ķëÿ… !!]
+
+settings-account-use-api-key = [!! Àđđ API-ķëÿ þŕôƒïľë… !!]
+
+settings-account-existing-profile = [!! Üšë ëẋïšţïñĝ þŕôƒïľë… !!]
+
+settings-account-refresh = [!! Ŕëƒŕëšħ !!]
+
+settings-account-system-default = [!! Šÿšţëṁ đëƒàüľţ !!]
+
+settings-account-advanced = [!! Àđṽàñçëđ !!]
+
+settings-account-reauthenticate = [!! Ŕë-àüţħëñţïçàţë !!]
+
+settings-account-description = [!! Üšë ÿôüŕ ëẋïšţïñĝ CLI ľôĝïñ, ôŕ àđđ àñ àççôüñţ ţô šïĝñ ïñ ŵïţħ ÿôüŕ šüþšçŕïþţïôñ. API ķëÿš àñđ çüšţôṁ þŕôƒïľëš àŕë àľšô šüþþôŕţëđ. !!]
+
+settings-account-routing = [!! Ŵħëŕë þŕôƒïľëš àŕë üšëđ !!]
+
+settings-account-routing-description = [!! Ïñ Ŕôüţïñĝ, çħôôšë Ĝľôþàľ, Ŵôŕķšþàçë, ôŕ Þŕôĵëçţ, ţħëñ šëľëçţ à þŕôƒïľë ƒôŕ Šëššïôñ đëƒàüľţ ôŕ ïñđïṽïđüàľ àçţïôñš. À þŕôƒïľë šëľëçţëđ ïñ Ŕôüţïñĝ ôṽëŕŕïđëš ţħë ĝľôþàľ đëƒàüľţ šëţ ħëŕë. !!]
+
+settings-account-loading = [!! Ŕëàđïñĝ àççôüñţ… !!]
+
+settings-account-email-unavailable = [!! Àççôüñţ ëṁàïľ üñàṽàïľàþľë !!]
+
+settings-account-api-key-label = [!! API ķëÿ · þïľľëđ šëþàŕàţëľÿ !!]
+
+settings-account-no-saved-login = [!! Ñô šàṽëđ àççôüñţ ïđëñţïţÿ !!]
+
+settings-account-signing-in = [!! Çôṁþľëţë šïĝñ-ïñ ïñ ÿôüŕ þŕôŵšëŕ… !!]
+
+settings-account-api-key-placeholder = [!! Þàšţë ÿôüŕ { $provider } API ķëÿ !!]
+
+settings-account-api-key-description = [!! Çŕëàţë à þŕôƒïľë üšïñĝ ÿôüŕ ôŵñ { $provider } API ķëÿ. API üšàĝë ïš þïľľëđ šëþàŕàţëľÿ ƒŕôṁ šüþšçŕïþţïôñš. Ţħë ķëÿ ïš šţôŕëđ ľôçàľľÿ; šàṽïñĝ ïţ đôëš ñôţ ṽëŕïƒÿ ţħàţ ïţ ŵôŕķš. !!]
+
+settings-account-save-key = [!! Àđđ þŕôƒïľë !!]
+
+settings-account-unsupported = [!! Ţħïš þŕôṽïđëŕ đôëš ñôţ šüþþôŕţ àççôüñţ þŕôƒïľëš. !!]
+
+settings-account-storage-error = [!! Çôüľđ ñôţ šàṽë ţħë àççôüñţ’š ľôçàľ çôñƒïĝüŕàţïôñ. !!]
+
+settings-account-cli-unavailable = [!! Çôüľđ ñôţ šţàŕţ ţħë þŕôṽïđëŕ CLI. Çħëçķ ţħàţ ïţ ïš ïñšţàľľëđ àñđ àṽàïľàþľë ïñ ÿôüŕ PATH. !!]
+
+settings-account-login-failed = [!! Šïĝñ-ïñ đïđ ñôţ çôṁþľëţë. Ţŕÿ àĝàïñ, ôŕ üšë àñ ëẋïšţïñĝ þŕôƒïľë. !!]
+
+settings-account-timeout = [!! Šïĝñ-ïñ ţôôķ ţôô ľôñĝ. Þľëàšë ţŕÿ àĝàïñ. !!]
+
+settings-account-cancelled = [!! Šïĝñ-ïñ çàñçëľľëđ. !!]
+
+settings-account-identity-unavailable = [!! Šïĝñ-ïñ ƒïñïšħëđ, þüţ ţħë šàṽëđ àççôüñţ çôüľđ ñôţ þë ŕëàđ. Ţŕÿ àĝàïñ, ôŕ üšë àñ ëẋïšţïñĝ þŕôƒïľë. !!]
+
+settings-account-invalid-key = [!! Ëñţëŕ à ñôñ-ëṁþţÿ API ķëÿ ŵïţħôüţ ľïñë þŕëàķš. !!]
+
+settings-section-mobile-access = [!! Ṁôþïľë àççëšš !!]
+
+settings-section-connection-status = [!! Çôññëçţïôñ šţàţüš !!]
+
+settings-section-pairing = [!! Þàïŕïñĝ !!]
+
+settings-ai-default-routes = [!! Đëƒàüľţ ŕôüţëš !!]
+
+settings-ai-default-routes-description = [!! Àçţïôñš ïñħëŕïţ ţħëšë þŕôṽïđëŕ àñđ ṁôđëľ çħôïçëš üñľëšš ÿôü çüšţôṁïžë à ŕôüţë þëľôŵ. !!]
+
+settings-ai-fast-model-route = [!! Fàšţ ṁôđëľ !!]
+
+settings-ai-fast-model-route-description = [!! Fôŕ ʠüïçķ ţàšķš, šüçħ àš çôṁṁïţš àñđ þŕôṁþţ ïṁþŕôṽëṁëñţš. !!]
+
+settings-ai-thorough-model-route = [!! Ţħôŕôüĝħ ṁôđëľ !!]
+
+settings-ai-thorough-model-route-description = [!! Fôŕ ïñṽëšţïĝàţïôñ, ŕëþàïŕš, àñđ ŕëṽïëŵš. !!]
+
+settings-ai-git-button-routes = [!! Git þüţţôñš !!]
+
+settings-ai-git-button-routes-description = [!! Çôñƒïĝüŕë ëṽëŕÿ ÀÏ-þôŵëŕëđ Git þüţţôñ. Þüšħ, Üþđàţë þŕàñçħ, Ŕëàđÿ ƒôŕ ŕëṽïëŵ, Ŕëàđÿ ţô ṁëŕĝë, àñđ Đëľëţë ŵôŕķţŕëë ŕüñ đïŕëçţľÿ ŵïţħôüţ àñ àĝëñţ ŕôüţë. !!]
+
+settings-ai-other-routes = [!! Ôţħëŕ ŕôüţëš !!]
+
+settings-ai-other-routes-description = [!! Çôñƒïĝüŕë ñàṁïñĝ, ïñľïñë çôṁṁïţ ṁëššàĝëš, þŕôṁþţ ëñħàñçëṁëñţ, àñđ ŕëṽïëŵ ŕëþľïëš. Çüšţôṁ çôṁṁàñđ ŕôüţëš šţàÿ ŵïţħ ëàçħ çôṁṁàñđ ïñ Çôṁṁàñđš. !!]
+
+settings-ai-follows-session-default = [!! Fôľľôŵïñĝ Šëššïôñ đëƒàüľţ !!]
+
+
+
+settings-ai-model-routing = [!! Ṁôđëľ ŕôüţïñĝ !!]
+
+settings-ai-model-routing-description = [!! Çħôôšë đëƒàüľţ ṁôđëľš, þŕôƒïľëš, àñđ ţħïñķïñĝ ľëṽëľš, ôŕ çüšţôṁïžë ţħëṁ ƒôŕ šþëçïƒïç àçţïôñš. !!]
+
+settings-ai-manage-routing = [!! Ôþëñ ŕôüţïñĝ !!]
+
+settings-ai-provider-fx-description = [!! Ëñàþľë fx çħàţ àñđ ţëŕṁïñàľ šüþþôŕţ (ŕëʠüïŕëš fx CLI `fx` ïñšţàľľëđ). !!]
+
+workspace-fx-remote-history-unsupported = [!! FX ŕëṁôţë ţëŕṁïñàľš đô ñôţ šüþþôŕţ šëššïôñ ħïšţôŕÿ ôŕ ŕëšüṁë ÿëţ. !!]
+
+settings-keybinding-action-rename-selected-entry = [!! Ŕëñàṁë Šëľëçţëđ Ëñţŕÿ !!]
+
+settings-keybinding-action-chat-effort-backward = [!! Çÿçľë Çħàţ Ëƒƒôŕţ Bàçķŵàŕđ !!]
+
+worktree-preparing = [!! Þŕëþàŕïñĝ ŵôŕķţŕëë… !!]
+
+chat-queued-until-worktree-ready = [!! Šţàŕţïñĝ ŵħëñ ŵôŕķţŕëë ïš ŕëàđÿ !!]
+
+chat-delivery-unconfirmed = [!! Đëľïṽëŕÿ üñçôñƒïŕṁëđ !!]
+
+chat-delivery-unconfirmed-retry = [!! Çħëçķ ţħë çôñṽëŕšàţïôñ þëƒôŕë ŕëţŕÿïñĝ; ţħïš ṁëššàĝë ṁàÿ àľŕëàđÿ ħàṽë þëëñ đëľïṽëŕëđ. !!]
+
+chat-answer-pending-delivery = [!! Þëñđïñĝ đëľïṽëŕÿ !!]
+
+input-recommended-by = [!! Ŕëçôṁṁëñđëđ þÿ { $agent } !!]
+
+input-drawer-waiting = [!! { $agent } ïš ŵàïţïñĝ ƒôŕ ÿôü !!]
+
+input-drawer-asks-working = [!! { $agent } àšķš ŵħïľë ïţ ŵôŕķš !!]
+
+input-drawer-wants-command = [!! { $agent } ŵàñţš ţô ŕüñ à çôṁṁàñđ !!]
+
+input-drawer-wants-tool = [!! { $agent } ŵàñţš ţô üšë { $tool } !!]
+
+input-drawer-blocked = [!! { $agent } ŵàš þľôçķëđ !!]
+
+input-drawer-review = [!! Ŕëṽïëŵ !!]
+
+input-choose-any = [!! Çħôôšë àñÿ !!]
+
+launched-agent-stopped-app-closed = [!! Šţôþþëđ ŵħëñ ţħë àþþ çľôšëđ !!]
+
+model-picker-type-to-search-hint = [!! ţÿþë ţô šëàŕçħ !!]
+
+model-picker-providers-heading = [!! Þŕôṽïđëŕ !!]
+
+composer-model = [!! Ṁôđëľ !!]
+
+composer-effort = [!! Ëƒƒôŕţ !!]
+
+composer-effort-lower = [!! Ŀôŵëŕ ëƒƒôŕţ !!]
+
+composer-effort-raise = [!! Ŕàïšë ëƒƒôŕţ !!]
+
+reasoning-effort-unspecified = [!! Üñšþëçïƒïëđ !!]
+
+settings-ai-thinking-unavailable = [!! Ţħïš ṁôđëľ đôëš ñôţ ëẋþôšë çôñƒïĝüŕàþľë ţħïñķïñĝ ľëṽëľš. !!]
+
+chat-message-tokens-not-reported = [!! Ñôţ ŕëþôŕţëđ !!]
+
+chat-time-today = [!! Ţôđàÿ { $time } !!]
+
+chat-time-yesterday = [!! Ÿëšţëŕđàÿ { $time } !!]
+
+chat-permission-fallback = [!! { $mode } ïšñ'ţ àṽàïľàþľë ƒôŕ { $model } ôñ ţħïš àççôüñţ. !!]
+
+chat-permission-fallback-asks = [!! { $provider } ŵïľľ àšķ þëƒôŕë ïţ àçţš. !!]
+
+chat-permission-fallback-uses = [!! { $provider } ïš üšïñĝ { $mode } ïñšţëàđ. !!]
+
+chat-steer-hold-waiting = [!! { $provider } çàñ'ţ ţàķë à šţëëŕ ÿëţ. !!]
+
+chat-steer-hold-waiting-detail = [!! Ÿôüŕ ṁëššàĝë ŵïľľ šţëëŕ ôñçë ïţ çàñ, ôŕ šëñđ àƒţëŕ ţħïš ţüŕñ. !!]
+
+chat-steer-refused = [!! Çôüľđñ'ţ šţëëŕ. !!]
+
+chat-steer-refused-detail = [!! { $provider } ŕëţüŕñëđ àñ ëŕŕôŕ. Çħëçķ ţħë çôñṽëŕšàţïôñ þëƒôŕë ÿôü ŕëţŕÿ. !!]
+chat-reconnecting = [!! Ŕëçôññëçţïñĝ ţô { $provider }. !!]
+chat-reconnecting-held = [!! Ÿôüŕ ṁëššàĝë ŵïľľ šëñđ ŵħëñ ïţ'š þàçķ. !!]
+chat-reconnecting-retry = [!! Ţŕÿ àĝàïñ ïñ à ṁôṁëñţ. !!]
+chat-reconnecting-slow = [!! Ţàķïñĝ ľôñĝëŕ ţħàñ üšüàľ, šţàŕţïñĝ à ƒŕëšħ çôññëçţïôñ. !!]
+chat-reconnect-failed = [!! Çôüľđñ'ţ ŕëçôññëçţ ţô { $provider }. !!]
+chat-reconnect-try-again = [!! Ţŕÿ àĝàïñ !!]
+
+chat-steered = [!! Šţëëŕëđ !!]
+
+chat-steer-not-read = [!! Ñôţ ŕëàđ !!]
+
+chat-steer-send-again = [!! Šëñđ !!]
+chat-notice-details = [!! Đëţàïľš !!]
+chat-notice-copy-details = [!! Çôþÿ đëţàïľš !!]
+chat-notice-show-more = [!! Šħôŵ ṁôŕë !!]
+chat-notice-show-less = [!! Šħôŵ ľëšš !!]
+chat-notice-level-progress = [!! Ïñ þŕôĝŕëšš !!]
+chat-notice-level-success = [!! Đôñë !!]
+chat-notice-level-warning = [!! Ŵàŕñïñĝ !!]
+chat-notice-level-error = [!! Ëŕŕôŕ !!]
+chat-notice-jobs-finished = [!! { $count } þàçķĝŕôüñđ ĵôþš ƒïñïšħëđ !!]
+
+chat-send-failed = [!! Çàñ’ţ šëñđ ţô ţħïš çħàţ. Ţŕÿ šëñđïñĝ àĝàïñ. !!]
+
+chat-send-failed-draft-restored = [!! Çàñ’ţ šëñđ ţô ţħïš çħàţ. Ÿôüŕ ṁëššàĝë ïš šţïľľ ïñ ţħë çôṁþôšëŕ. !!]
+
+chat-open-in-new-tab = [!! Ôþëñ ïñ ñëŵ ţàþ !!]
+
+chat-open-in-split-tab = [!! Ôþëñ ïñ šþľïţ ţàþ !!]
+
+chat-open-in-split-view = [!! Ôþëñ ïñ šþľïţ ṽïëŵ !!]
+
+chat-fork-new-session = [!! Bŕàñçħ ïñ ñëŵ çħàţ !!]
+
+chat-fork-new-worktree = [!! Bŕàñçħ ïñ ñëŵ ŵôŕķţŕëë !!]
+
+chat-fork-from-here = [!! Bŕàñçħ ïñ ñëŵ çħàţ !!]
+
+chat-fork-unavailable = [!! /fork ïš ñôţ àṽàïľàþľë ƒôŕ ţħïš þŕôṽïđëŕ. !!]
+
+chat-fork-no-session = [!! /fork ñëëđš àñ àçţïṽë þŕôṽïđëŕ šëššïôñ. Šëñđ à ṁëššàĝë ƒïŕšţ, ţħëñ ţŕÿ àĝàïñ. !!]
+
+chat-fork-worktree-unsupported = [!! /fork worktree ïš ñôţ àṽàïľàþľë ƒôŕ ţħïš þŕôṽïđëŕ. !!]
+
+chat-fork-worktree-cut-unavailable = [!! Fôŕķïñĝ ţô à ñëŵ ŵôŕķţŕëë ƒŕôṁ ţħïš ṁëššàĝë ïšñ'ţ àṽàïľàþľë ƒôŕ ţħïš çôñṽëŕšàţïôñ. Fôŕķ ƒŕôṁ ţħë ľàţëšţ ṁëššàĝë, ôŕ ƒôŕķ ţô à ñëŵ çħàţ šëššïôñ ïñšţëàđ. !!]
+
+chat-fork-failed = [!! Çôüľđ ñôţ ƒôŕķ ţħïš çôñṽëŕšàţïôñ. !!]
+
+chat-fork-cut-unavailable = [!! Bŕàñçħïñĝ ƒŕôṁ ţħïš ŕëþľÿ ïšñ'ţ àṽàïľàþľë ƒôŕ ţħïš çôñṽëŕšàţïôñ. Bŕàñçħ ƒŕôṁ ţħë ľàţëšţ ŕëþľÿ ïñšţëàđ. !!]
+
+chat-fork-missing-conversation = [!! /fork ñëëđš à šàṽëđ çôñṽëŕšàţïôñ. Šëñđ à ṁëššàĝë ƒïŕšţ, ţħëñ ţŕÿ àĝàïñ. !!]
+
+file-preview-edit-unavailable-long-line = [!! Ëđïţïñĝ üñàṽàïľàþľë ƒôŕ ľïñëš ôṽëŕ 128 ĶïB !!]
+
+notification-codex-thread-archive-started = [!! Àŕçħïṽïñĝ Codex ţħŕëàđš ƒŕôṁ đëľëţëđ ŵôŕķţŕëëš… !!]
+
+notification-codex-thread-archive-done =
+    { $count ->
+        [one] [!! Àŕçħïṽëđ { $count } Codex ţħŕëàđ ƒŕôṁ đëľëţëđ ŵôŕķţŕëëš !!]
+       *[other] [!! Àŕçħïṽëđ { $count } Codex ţħŕëàđš ƒŕôṁ đëľëţëđ ŵôŕķţŕëëš !!]
+    }
+
+notification-codex-thread-archive-failed = [!! Šôṁë Codex ţħŕëàđš ŵëŕë ñôţ àŕçħïṽëđ !!]
+
+notification-installing-update = [!! Ïñšţàľľïñĝ üþđàţë. Ţħë àþþ ŵïľľ ŕëšţàŕţ ôñçë çôṁþľëţëđ. !!]
+notification-update-installed = [!! Üþđàţë ïñšţàľľëđ. Ŕëšţàŕţïñĝ !!]
+notification-update-installed-after-typing = [!! Üþđàţë ïñšţàľľëđ. Ŕëšţàŕţïñĝ ŵħëñ ýôü šţôþ ţýþïñĝ !!]
+
+worktree-delete-agent-working = [!! Àñ àĝëñţ ïš šţïľľ ŵôŕķïñĝ ħëŕë !!]
+
+worktree-delete-all-action = [!! Đëľëţë Àľľ !!]
+
+worktree-delete-body = [!! Ïţš ƒôľđëŕ ïš ŕëṁôṽëđ ƒŕôṁ đïšķ. !!]
+
+worktree-delete-body-loses-work = [!! Ïţš ƒôľđëŕ ïš ŕëṁôṽëđ ƒŕôṁ đïšķ, àľôñĝ ŵïţħ ŵôŕķ ţħàţ ëẋïšţš ñôŵħëŕë ëľšë. !!]
+
+worktree-delete-branch-too = [!! Đëľëţë þŕàñçħ ţôô !!]
+
+worktree-delete-branches-too = [!! Đëľëţë þŕàñçħëš ţôô !!]
+
+worktree-delete-child-count =
+    { $count ->
+        [one] [!! 1 ŵôŕķţŕëë !!]
+       *[other] [!! { $count } ŵôŕķţŕëëš !!]
+    }
+
+worktree-delete-child-no-upstream = [!! { $name } ħàš ñô üþšţŕëàṁ, šô üñþüšħëđ çôṁṁïţš ṁàÿ þë ľôšţ !!]
+
+worktree-delete-child-uncommitted = [!! { $name } ħàš üñçôṁṁïţţëđ çħàñĝëš !!]
+
+worktree-delete-child-uninspectable = [!! { $name } çôüľđ ñôţ þë çħëçķëđ: { $error } !!]
+
+worktree-delete-child-unpushed =
+    { $count ->
+        [one] [!! { $name } ħàš 1 çôṁṁïţ ñôţ þüšħëđ !!]
+       *[other] [!! { $name } ħàš { $count } çôṁṁïţš ñôţ þüšħëđ !!]
+    }
+
+worktree-delete-confirm-title = [!! Đëľëţë ţħïš ŵôŕķţŕëë? !!]
+
+worktree-delete-has-uncommitted = [!! Üñçôṁṁïţţëđ çħàñĝëš !!]
+
+worktree-delete-no-upstream = [!! Ñô üþšţŕëàṁ, šô üñþüšħëđ çôṁṁïţš ṁàÿ þë ľôšţ !!]
+
+worktree-delete-open-sessions =
+    { $count ->
+        [one] [!! Çľôšëš 1 ôþëñ šëššïôñ !!]
+       *[other] [!! Çľôšëš { $count } ôþëñ šëššïôñš !!]
+    }
+
+worktree-delete-parent-body = [!! Ţħë þàŕëñţ àñđ ëṽëŕÿ ŵôŕķţŕëë ïñšïđë ïţ àŕë ŕëṁôṽëđ ƒŕôṁ đïšķ. !!]
+
+worktree-delete-parent-confirm-title = [!! Đëľëţë ţħïš ŵôŕķţŕëë àñđ ïţš çħïľđŕëñ? !!]
+
+worktree-delete-parent-uninspectable = [!! Ţħë ƒôľđëŕ çôüľđ ñôţ þë çħëçķëđ: { $error } !!]
+
+worktree-delete-uncommitted =
+    { $count ->
+        [one] [!! 1 üñçôṁṁïţţëđ çħàñĝë !!]
+       *[other] [!! { $count } üñçôṁṁïţţëđ çħàñĝëš !!]
+    }
+
+worktree-delete-uninspectable = [!! Çôüľđ ñôţ þë çħëçķëđ: { $error } !!]
+
+worktree-delete-unpushed =
+    { $count ->
+        [one] [!! 1 çôṁṁïţ ñôţ þüšħëđ !!]
+       *[other] [!! { $count } çôṁṁïţš ñôţ þüšħëđ !!]
+    }
+
+worktree-delete-unrecognized-entries = [!! Ţħë ƒôľđëŕ àľšô ħôľđš ïţëṁš ţħë àþþ đïđñ'ţ çŕëàţë: { $items } !!]
+
+toast-retired-codex-models-title = [!! Ŕëţïŕëđ Codex ṁôđëľš ŕëṁôṽëđ !!]
+
+toast-retired-codex-models-message = [!! GPT-5.3 Codex, GPT-5.3 Codex Spark, GPT-5.4, àñđ GPT-5.4 Mini àŕë ñô ľôñĝëŕ àṽàïľàþľë. Ÿôüŕ šàṽëđ šëľëçţïôñš ƒôŕ ţħëšë ṁôđëľš ñôŵ üšë ïñħëŕïţëđ ŕôüţïñĝ ôŕ þŕôṽïđëŕ đëƒàüľţš. Ŕëṽïëŵ Ŕôüţïñĝ, Àüţôṁàţïôñš, àñđ ŵôŕķšþàçë ÀÏ šëţüþ šëţţïñĝš ţô çħôôšë ŕëþľàçëṁëñţš. !!]
+
+toast-delete-shared-worktree-failed = [!! Fàïľëđ ţô đëľëţë ŵôŕķţŕëë !!]
+
+toast-shared-worktree-not-found = [!! Šħàŕëđ ŵôŕķţŕëë ñôţ ƒôüñđ. !!]
+
+toast-file-picker-failed = [!! Çôüľđ ñôţ ôþëñ ţħë ƒïľë þïçķëŕ: { $error } !!]
+
+reasoning-effort-auto-short = [!! Àüţô !!]
+
+reasoning-effort-minimal-short = [!! Ṁïñ !!]
+
+reasoning-effort-low-short = [!! Ŀôŵ !!]
+
+reasoning-effort-medium-short = [!! Ṁëđ !!]
+
+reasoning-effort-high-short = [!! Ħïĝħ !!]
+
+reasoning-effort-extra-high-short = [!! ẊĦ !!]
+
+reasoning-effort-max-short = [!! Ṁàẋ !!]
+
+reasoning-effort-ultra-short = [!! Üľţ !!]
+
+theme-set-as-default-tooltip = [!! Šëţ àš đëƒàüľţ ţħëṁë !!]
+
+theme-restore-builtin-default = [!! Ŕëšţôŕë þüïľţ-ïñ !!]
+
+sidebar-rename-feature-label = [!! Ŕëñàṁë ƒëàţüŕë ľàþëľ… !!]
+
+sidebar-rename-branch = [!! Ŕëñàṁë þŕàñçħ… !!]
+
+palette-command-archive-codex-threads-for-deleted-worktrees = [!! Àŕçħïṽë Codex ţħŕëàđš ƒôŕ đëľëţëđ ŵôŕķţŕëëš !!]
+
+workspace-delete-confirm-title = [!! Đëľëţë “{ $name }”? !!]
+
+workspace-delete-description = [!! Ïţš ţàþš, ţëŕṁïñàľ šëššïôñš àñđ šàṽëđ ľàÿôüţ àŕë ŕëṁôṽëđ. Þŕôĵëçţš àñđ ţħëïŕ ƒïľëš šţàÿ. !!]
+
+workspace-delete-description-with-contents = [!! Ïţš ţàþš, ţëŕṁïñàľ šëššïôñš àñđ šàṽëđ ľàÿôüţ àŕë ŕëṁôṽëđ, àñđ šô ïš ëṽëŕÿţħïñĝ þëľôŵ. !!]
+
+workspace-delete-project-leaves-app = [!! ľëàṽëš ţħë àþþ !!]
+
+workspace-delete-shared-worktrees =
+    { $count ->
+        [one] [!! { $count } šħàŕëđ ŵôŕķţŕëë ïš đëľëţëđ !!]
+       *[other] [!! { $count } šħàŕëđ ŵôŕķţŕëëš àŕë đëľëţëđ !!]
+    }
+
+workspace-delete-shared-worktrees-unknown = [!! Ïţš šħàŕëđ ŵôŕķţŕëëš àŕë đëľëţëđ ţôô !!]
+
+chat-pill-card-open-worktree = [!! Ôþëñ ŵôŕķţŕëë !!]
+
+chat-pill-card-setup-script = [!! Šëţüþ šçŕïþţ !!]
+
+chat-pill-card-run-script = [!! Ŕüñ šçŕïþţ !!]
+
+chat-pill-card-teardown-script = [!! Ţëàŕđôŵñ šçŕïþţ !!]
+
+chat-pill-card-worktree = [!! Ŵôŕķţŕëë !!]
+
+chat-pill-card-running = [!! Ŕüññïñĝ !!]
+
+chat-pill-card-running-for = [!! Ŕüññïñĝ { $time } !!]
+
+chat-pill-card-not-running = [!! Ñôţ ŕüññïñĝ !!]
+chat-pill-card-skill-from = [!! { $source } šķïľľ !!]
+chat-pill-card-click-preview = [!! Çľïçķ ţô þŕëṽïëŵ !!]
+chat-pill-card-click-show-in-files = [!! Çľïçķ ţô šħôŵ ïñ Fïľëš !!]
+chat-pill-card-click-open-skill = [!! Çľïçķ ţô ôþëñ ŠĶÏĿĿ.ṁđ !!]
+chat-pill-card-click-open-agent = [!! Çľïçķ ţô ôþëñ ïţš çħàţ !!]
+chat-pill-card-click-open = [!! Çľïçķ ţô ôþëñ !!]
+chat-pill-card-cmd-click-open-in = [!! ⌘-çľïçķ ţô çħôôšë àñ àþþ !!]
+chat-pill-card-cmd-click-browser = [!! ⌘-çľïçķ ţô ôþëñ ïñ ÿôüŕ þŕôŵšëŕ !!]
+chat-pill-card-copy-path = [!! Çôþÿ þàţħ !!]
+chat-pill-card-copy-link = [!! Çôþÿ ľïñķ !!]
+chat-pill-card-edited = [!! Ëđïţëđ ïñ ţħïš çħàţ !!]
+chat-pill-card-changed-inside = { $count ->
+    [one] [!! 1 çħàñĝëđ ïñ ţħïš çħàţ !!]
+   *[other] [!! { $count } çħàñĝëđ ïñ ţħïš çħàţ !!]
+}
+chat-pill-card-missing = [!! Ñôţ ïñ ţħïš ŵôŕķţŕëë !!]
+chat-pill-card-more-sections = { $count ->
+    [one] [!! 1 ṁôŕë šëçţïôñ !!]
+   *[other] [!! { $count } ṁôŕë šëçţïôñš !!]
+}
+chat-pill-card-expects = [!! Ëẋþëçţš { $argument } !!]
+chat-pill-card-agent-done = [!! Đôñë ïñ { $time } !!]
+chat-pill-card-agent-failed = [!! Fàïľëđ àƒţëŕ { $time } !!]
+chat-pill-card-waiting-answer = [!! Ŵàïţïñĝ ƒôŕ ÿôüŕ àñšŵëŕ !!]
+chat-pill-card-exited = [!! Ëẋïţëđ { $code }, { $time } !!]
+chat-pill-card-uncommitted = [!! { $count } üñçôṁṁïţţëđ !!]
+chat-pill-card-failing-checks = { $count ->
+    [one] [!! #{ $number } ħàš 1 ƒàïľïñĝ çħëçķ: { $names } !!]
+   *[other] [!! #{ $number } ħàš { $count } ƒàïľïñĝ çħëçķš: { $names } !!]
+}
+
+chat-mention-section-sessions = [!! Àĝëñţš !!]
+
+chat-mention-section-worktrees = [!! Ŵôŕķţŕëëš !!]
+
+chat-mention-section-scripts-terminals = [!! Šçŕïþţš & ţëŕṁïñàľš !!]
+
+chat-mention-section-files = [!! Fïľëš !!]
+
+chat-lock-checking = [!! Fïñđïñĝ ţħë þŕôçëšš ţħàţ ħôľđš ţħïš ţħŕëàđ… !!]
+
+chat-lock-owner = [!! Ħëľđ þÿ !!]
+
+chat-lock-unknown = [!! Çôüľđ ñôţ ïđëñţïƒÿ à üñïʠüë ľôçàľ Codex þŕôçëšš ħôľđïñĝ ţħïš ţħŕëàđ. !!]
+
+chat-lock-release = [!! Šţôþ þŕôçëšš àñđ ŕëľëàšë !!]
+
+chat-lock-confirm-warning = [!! Šţôþþïñĝ ţħïš þŕôçëšš ïñţëŕŕüþţš ëṽëŕÿ çôñṽëŕšàţïôñ ïţ ôŵñš, ïñçľüđïñĝ ŵôŕķ ïñ àñôţħëŕ àþþ. !!]
+
+chat-lock-confirm = [!! Šţôþ þŕôçëšš !!]
+
+chat-lock-cancel = [!! Çàñçëľ !!]
+
+chat-lock-releasing = [!! Šţôþþïñĝ ţħë þŕôçëšš àñđ çħëçķïñĝ ţħë ľôçķ… !!]
+
+chat-lock-released = [!! Ţħë þŕôçëšš ŕëľëàšëđ ţħïš ţħŕëàđ. Ÿôü çàñ ŕëţŕÿ ÿôüŕ ṁëššàĝë. !!]
+
+chat-lock-release-failed = [!! Çôüľđ ñôţ ŕëľëàšë ţħë ţħŕëàđ. Ţħë ôŵñëŕ ṁàÿ ħàṽë çħàñĝëđ ôŕ ṁàÿ šţïľľ þë ŕüññïñĝ. !!]
+
+chat-lock-recheck = [!! Çħëçķ ôŵñëŕ àĝàïñ !!]
+chat-artifact-loading = [!! Ŀôàđïñĝ àŕţïƒàçţ… !!]
+chat-artifact-unavailable = [!! Ţħïš àŕţïƒàçţ ïš ñôţ àṽàïľàþľë ïñ ţħïš çôñṽëŕšàţïôñ. !!]
+chat-artifact-sandboxed = [!! Šàñđþôẋëđ þàĝë !!]
+chat-artifact-stopped = [!! Šţôþþëđ · Ŕëľôàđ ţô ŕüñ ïţ àĝàïñ !!]
+chat-artifact-release-hint = [!! Ïñţëŕàçţïñĝ · Ëšç ţô ŕëľëàšë !!]
+chat-artifact-copy-source = [!! Çôþÿ šôüŕçë !!]
+chat-artifact-reload = [!! Ŕëľôàđ !!]
+chat-artifact-expand = [!! Ëẋþàñđ !!]
+chat-artifact-collapse = [!! Çľôšë (Ëšç) !!]
+chat-artifact-save-html = [!! Šàṽë àš HŢṀĿ ƒïľë !!]
+chat-artifact-open-in-browser = [!! Ôþëñ ïñ þŕôŵšëŕ !!]
+chat-artifact-open-in-browser-confirm = [!! Ôþëñ ţħïš àŕţïƒàçţ ïñ ÿôüŕ þŕôŵšëŕ? !!]
+chat-artifact-open-in-browser-detail = [!! Ïţš çôđë ŕüñš ôüţšïđë ţħë àþþ'š šàñđþôẋ ţħëŕë, ŵħëŕë ïţ çàñ ŕëàçħ ţħë ïñţëŕñëţ. Ôþëñ ïţ ôñľÿ ïƒ ÿôü ţŕüšţ ŵħàţ ṁàđë ïţ. !!]
+chat-artifact-open-link = [!! Ôþëñ ţħïš ľïñķ ïñ ÿôüŕ þŕôŵšëŕ? !!]
+chat-artifact-open-link-open = [!! Ôþëñ !!]
+chat-artifact-open-link-cancel = [!! Çàñçëľ !!]
+usage-reset-count = { $count ->
+    [one] [!! ľïṁïţ ŕëšëţ !!]
+   *[other] [!! ľïṁïţ ŕëšëţš !!]
+}
+usage-reset-next-expires = [!! Ñëẋţ ôñë ëẋþïŕëš ïñ { $duration } !!]
+usage-reset-slide = [!! Šľïđë ţô ŕëšëţ { $window } !!]
+usage-reset-working = [!! Ŕëšëţţïñĝ… !!]
+usage-reset-done = [!! Ľïṁïţš ŕëšëţ !!]
+usage-reset-nothing = [!! Ñôţħïñĝ ţô ŕëšëţ ŕïĝħţ ñôŵ !!]
+usage-reset-already = [!! Ţħàţ ŕëšëţ ŵàš àľŕëàđÿ üšëđ !!]
+usage-reset-failed = [!! Çôüľđñ’ţ ŕëšëţ. Ţŕÿ àĝàïñ ľàţëŕ !!]
+usage-reset-busy = [!! Šţïľľ üþđàţïñĝ. Šľïđë àĝàïñ ïñ à ṁôṁëñţ !!]
+usage-reset-unavailable = [!! Ñô ŕëšëţ àṽàïľàƀľë !!]
+usage-credits = [!! Çŕëđïţš !!]
+usage-credits-unlimited = [!! Üñľïṁïţëđ !!]
+usage-account-resets = { $count ->
+    [one] [!! 1 ŕëšëţ !!]
+   *[other] [!! { $count } ŕëšëţš !!]
+}
+usage-account-credits = [!! { $amount } çŕëđïţš !!]
+usage-account-ring-window = [!! { $account } { $window } !!]
+usage-account-window-left = [!! { $window } { $percent }% !!]
+usage-graph-account-left = [!! { $account } { $window } ľëƒţ !!]
+usage-graph-now = [!! Ñôŵ !!]
+usage-accounts-on-gauge = [!! Ôñ ţħë ĝàüĝë !!]
+usage-accounts-sign-in = [!! Šïĝñ ïñ !!]
+usage-accounts-signing-in = [!! Šïĝñïñĝ ïñ… !!]
+usage-accounts-single = { $count ->
+    [one] [!! { $providers } ħàš ôñë àççôüñţ. !!]
+   *[other] [!! { $providers } ħàṽë ôñë àççôüñţ ëàçħ. !!]
+}
+usage-account-empty-title = [!! Ñô üšàĝë ôñ { $account } ÿëţ !!]
+usage-account-empty-body = [!! Ŕëàđïñĝš àþþëàŕ àƒţëŕ ţħïš þŕôƒïľë’š ƒïŕšţ šëššïôñ. !!]
+usage-account-signed-out-title = [!! { $account } ïšñ’ţ šïĝñëđ ïñ !!]
+usage-account-signed-out-body = [!! Šïĝñ ïñ ƒŕôṁ à ñëŵ { $provider } ţàƀ ţħàţ üšëš ţħïš þŕôƒïľë. !!]
+usage-account-back = [!! Ɓàçķ ţô { $account } !!]
+usage-graph-legend-you = [!! Ÿôü !!]
+usage-graph-legend-even = [!! Ëṽëñ þàçë !!]
+usage-graph-legend-projection = [!! Þŕôĵëçţïôñ !!]
+usage-graph-legend-estimated = [!! Ëšţïṁàţëđ !!]
+usage-graph-estimated = [!! Ëšţïṁàţëđ ƒŕôṁ àçţïṽïţÿ ôñ ţħïš Ṁàç !!]

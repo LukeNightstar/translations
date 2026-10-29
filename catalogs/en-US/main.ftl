@@ -80,8 +80,6 @@ setup-loading-always-run-in-background = Always run setup in background for this
 chat-timeline-jump-to-bottom = ↓ Jump to bottom
 chat-agent-message-label = From an agent
 chat-team-message-label = Team message
-chat-agent-message-from = From
-chat-team-message-from = Team message from
 terminal-starting = Starting terminal...
 terminal-show-output = Show output
 terminal-start-failed = Failed to start terminal
@@ -769,6 +767,55 @@ browser-consent-description = { $asked_by } asked to run sc browser { $spelling 
 browser-back = Back
 browser-forward = Forward
 browser-reload = Reload
+browser-stop = Stop
+browser-home = Home
+browser-start-tab-title = Start Page
+browser-address-placeholder = Search servers or enter an address
+browser-start-running = Running
+browser-start-show-less = Show less
+browser-start-recent = Recently visited
+browser-start-also-running = Also running
+browser-start-more = { $count } more
+browser-start-stopped = Stopped
+browser-start-starting = Starting
+browser-start-clock = { $elapsed }
+browser-start-run-script = Run script
+browser-start-run-script-named = Run { $script }
+browser-start-stop-script = Stop { $script }
+browser-start-clear = Clear
+browser-start-run = Start Run
+browser-start-this-worktree = This worktree
+browser-start-pull-request = Pull request
+browser-start-merge-request = Merge request
+browser-start-repository = Repository
+browser-nothing-title = { $host } isn’t running
+browser-nothing-lede = This page opens here when the server starts.
+browser-nothing-starting = This page opens when it’s ready.
+browser-starting-title = Starting { $host }
+browser-stage-starting = Starting
+browser-stage-up = Server up
+browser-stage-ready = Page ready
+browser-nothing-retried = { $count ->
+    [one] Checked again. No answer yet.
+   *[other] Checked { $count } times. No answer yet.
+}
+browser-loading-title = Loading { $host }
+browser-loading-lede = The server is up and building the page.
+browser-failed-title = { $host } didn’t load
+browser-failed-lede = Its server is listening, but this page didn’t load.
+browser-open-over-http = Open over http
+browser-unreachable-title = Can’t reach { $host }
+browser-unreachable-lede = Check the address or your connection.
+browser-try-again = Try again
+browser-tip-running-lead = Is the dev server running?
+browser-tip-running-body = Nothing has answered on port { $port } after a few tries. Check the run script or terminal for an error.
+browser-tip-moved-lead = It may have moved.
+browser-tip-moved-body = Dev servers often take the next free port when { $port } is busy. Anything that started in your worktrees appears below.
+browser-tip-ipv4-lead = Try 127.0.0.1.
+browser-tip-ipv4-body = Some servers listen on IPv4 only while localhost resolves to IPv6 first.
+browser-tip-ipv4-open = Open { $address }
+browser-tip-knocking-lead = Still nothing.
+browser-tip-knocking-body = Port { $port } hasn’t answered. Check the server’s terminal for an error.
 browser-annotate-element = Annotate element
 browser-choose-annotation-destination = Choose annotation destination
 browser-current-chats = Current chats
@@ -777,6 +824,62 @@ browser-clear-annotations = Clear annotations
 browser-copy-url = Copy URL
 browser-open-external = Open External
 browser-inspect = Inspect
+browser-emulation-dark = Dark
+browser-emulation-light = Light
+browser-emulation-user-agent = Custom user agent
+browser-emulation-print = Print
+browser-emulation-reduced-motion = Reduced motion
+browser-emulation-routes = { $count ->
+    [one] { $count } mocked request
+   *[other] { $count } mocked requests
+}
+browser-reset-emulation = Clear the agent's page overrides
+browser-color-scheme-view-light = View this page in light mode
+browser-color-scheme-view-dark = View this page in dark mode
+browser-color-scheme-showing-light = Showing this page in light mode. Click to follow the app
+browser-color-scheme-showing-dark = Showing this page in dark mode. Click to follow the app
+browser-picking-hint = Select an element to send to a chat
+browser-served-stopped = stopped
+browser-served-starting = starting
+browser-served-branch = Branch
+browser-served-process = Process
+browser-served-port = Port
+browser-served-restart = Restart server
+browser-served-start = Start server
+browser-served-terminal = Show terminal
+browser-app-debugger = Debugger
+browser-app-open = Open
+browser-app-split = Open in split
+browser-app-copy = Copy URL
+browser-app-restart = Restart server
+browser-app-terminal = Show terminal
+browser-app-origin-run-server = Started by { $run } with { $server }
+browser-app-origin-run = Started by { $run }
+browser-app-origin-server-folder = { $server } in { $folder }
+browser-app-also-on = Also on
+browser-app-moved = { $port } is { $branch }’s. This worktree’s is on { $own }.
+browser-recent-moved = now :{ $port }
+browser-errors-heading = { $count ->
+    [one] 1 error on this page
+   *[other] { $count } errors on this page
+}
+browser-errors-more = and { $count } more
+browser-errors-send = Send to chat
+browser-errors-copy = Copy
+browser-errors-sent-to = Sent to
+browser-errors-new-chat-with = New { $provider } chat
+browser-more-actions = More
+browser-agent-unknown = An agent
+browser-agent-reading = reading the page
+browser-agent-navigating = navigating
+browser-agent-clicking = clicking
+browser-agent-typing = typing
+browser-agent-scrolling = scrolling
+browser-agent-capturing = taking a screenshot
+browser-agent-running-script = running a script
+browser-agent-switching-color-scheme = switching the color scheme
+browser-agent-working = working
+browser-agent-back-to-chat = Back to chat
 picker-no-results = No results
 palette-search-files = Search files in this worktree...
 palette-no-matching-files = No matching files
@@ -822,15 +925,61 @@ action-reset = Reset
 project-pinned = Pinned
 project-no-worktrees-found = No worktrees found
 project-loading-merge-options = Loading merge options
-update-whats-new = What's in this update
-update-cli-pill = { $count ->
-    [one] 1 CLI update
-   *[other] { $count } CLI updates
+update-ready-title = Update ready
+update-ready-restart = Restart
+update-restart-eyebrow = Version { $version }
+update-restart-title = Restart to update?
+update-restart-body-agents = { $count ->
+    [one] Restart when the agent finishes, or now to stop it. Your tabs reopen either way.
+   *[other] Restart when the agents finish, or now to stop them. Your tabs reopen either way.
 }
-update-cli-popover-title = Provider CLI updates
-update-cli-popover-note = Running sessions won't be interrupted.
+update-restart-body-commands = { $count ->
+    [one] This command stops when the app restarts. Its terminal reopens after.
+   *[other] These commands stop when the app restarts. Their terminals reopen after.
+}
+update-restart-body-done = Everything finished. Your tabs reopen after the restart.
+update-restart-now = Restart Now
+update-restart-not-now = Not Now
+update-restart-when-done = Restart When Done
+update-restart-restart = Restart
+update-restart-row-running = running for { $elapsed }
+update-restart-row-running-now = running
+update-restart-row-needs-input = waiting for your answer
+update-restart-open = Open
+update-restart-answer = Answer
+update-wait-pill = { $count ->
+    [one] After 1 agent
+   *[other] After { $count } agents
+}
+update-wait-restarting = Restarting
+update-wait-title = { $count ->
+    [one] Restarting after 1 agent
+   *[other] Restarting after { $count } agents
+}
+update-wait-dont-wait = Don't wait
+chat-stopped-for-update = Stopped for the update to { $version }
+chat-continue-after-update = Continue
+release-notes-section-new = New
+release-notes-section-fixes = Fixed
+release-notes-section-faster = Faster
+release-notes-section-improved = Improved
+update-cli-title = Updates
+update-cli-note = Running sessions aren't interrupted. New sessions use the new version.
+update-cli-failed-count = { $count } didn't finish
 update-cli-action-update = Update
-update-cli-state-failed = Update failed
+update-cli-action-update-all = Update all
+update-cli-action-retry = Retry
+update-cli-action-skip = Skip
+update-cli-action-skip-all = Skip all
+update-cli-action-retry-all = Retry all
+update-cli-action-fix-in-chat = Fix in chat
+update-cli-action-run-in-terminal = Run in Terminal
+update-cli-terminal-local-only = Select a local worktree to update this CLI in a terminal.
+update-cli-action-details = Details
+update-cli-action-copy-output = Copy output
+update-cli-failed-permission = Needs admin permission
+update-cli-failed-timeout = Timed out after 5 min
+update-cli-failed-outdated = Still { $version } after updating
 update-cli-manual-hint = Manual update
 sidebar-add-project-to-start = Add a project to get started
 sidebar-search-project-worktrees-placeholder = Search worktrees in { $project }
@@ -842,13 +991,22 @@ workspace-no-matching-branches = No matching branches
 workspace-rename-current-branch = Rename current branch
 common-recently-used = Recently used
 workspace-all-branches = All branches
+workspace-branch-picker-search-placeholder = Search branches
 workspace-loading-branches = Loading branches…
 workspace-no-local-branches = No local branches
 workspace-open-diff = Open diff
+workspace-view-html = View
+workspace-view-in-browser = View in browser
 workspace-open-file = Open file
 workspace-no-custom-commands = No custom commands configured.
 workspace-no-commands-match = No commands match your search.
 workspace-new-command = New command
+command-picker-runs-in-chat = Runs in this chat
+command-picker-runs-in-new-tab = Runs in a new tab
+command-picker-always-new-tab = Always opens a new tab
+command-picker-alt-new-tab = ⌘ new tab
+command-picker-alt-this-chat = ⌘ this chat
+command-picker-edit = Edit in Settings
 workspace-new-tab = New tab
 workspace-empty-view-heading = Choose a tool to get started
 workspace-your-default = Your default
@@ -872,16 +1030,20 @@ add-project-quick-start = Quick start new project
 add-project-tooltip = Add project
 clone-location-dialog-title = Clone Location
 clone-repository-action = Clone repository
-clone-repository-url = Repository URL
+clone-description = Paste a repository's address.
 close-tab-action = Close Tab
-close-tab-description = This tab has work in progress. Closing it will stop the agent.
-close-tab-title = Close “{ $tab_title }”?
-close-tab-keep-launched-agents = Keep them open as tabs
-close-tab-launched-agents-description = { $count ->
-    [one] An agent launched from this tab is still working. Closing the tab stops it.
-   *[other] { $count } agents launched from this tab are still working. Closing the tab stops them.
+close-tab-and-stop-action = Close and Stop
+close-tab-confirm-title = Close this tab?
+close-tab-more-children = +{ $count } more
+close-tab-stop-launched-agents = { $count ->
+    [one] Stop the launched agent
+   *[other] Stop all launched agents
 }
-common-back-arrow = ← Back
+close-tab-running-description = Its agent is still working and will stop.
+close-tab-working-children = { $count ->
+    [one] An agent it launched is still working.
+   *[other] { $count } agents it launched are still working.
+}
 common-browse = Browse
 common-browse-ellipsis = Browse…
 common-cancel = Cancel
@@ -890,7 +1052,6 @@ common-close = Close
 common-completed = Completed
 common-confirm-save = Confirm Save
 common-continue = Continue
-common-continue-arrow = Continue →
 common-copy = Copy
 common-create = Create
 common-delete = Delete
@@ -902,7 +1063,6 @@ common-dont-show-again = Don’t show this again
 common-experimental = Experimental
 common-fix = Fix
 common-less = Less
-common-location = Location
 common-name = Name
 common-ok = Ok
 common-okay = Okay
@@ -964,30 +1124,50 @@ notification-undo-dismissal = Undo
 notification-view-open = Open
 notification-view-ready = Ready
 notification-view-running = Running
-onboarding-chat-ui = Chat UI
-onboarding-chat-ui-description = Rendered messages with inline diffs and markdown
-onboarding-chat-view-description = Both work with any AI — change anytime in Settings
-onboarding-choose-permissions = Choose how agents request approval
-onboarding-permissions-description = Applies to every supported provider — change anytime in Settings
-onboarding-provider-defaults = Provider defaults
-onboarding-provider-defaults-description = Start each agent in the mode its own CLI uses by default
-onboarding-bypass-full-access-description = Skip approval prompts in trusted repositories; agents run tools without asking, and Codex also runs without its sandbox
-onboarding-choose-chat-view = Choose your chat view
-onboarding-choose-default-harness = Choose your default harness — change anytime in Settings
-onboarding-choose-left-sidebar = Choose your left sidebar
-onboarding-compact-sidebar-description = Feature labels; git details on hover.
-onboarding-detailed-sidebar-description = Branch rows; stats at a glance.
-onboarding-get-started-arrow = Get Started →
-onboarding-install-harness = Install a harness to get started
 onboarding-install-link = Install ↗
-onboarding-looking-for-harnesses = Looking for installed harnesses
-onboarding-more-harnesses = + { $count } more harnesses
-onboarding-new-default = New default
-onboarding-no-matching-models = No matching models
-onboarding-search-models = Search models...
-onboarding-sidebar-description = Switch layouts anytime in Settings → Appearance.
+common-back = Back
+common-hide = Hide
+onboarding-bypass-codex-note = Codex also runs without its sandbox.
+onboarding-bypass-trusted-note = Use this only in repositories you trust.
+onboarding-chat = Chat
+onboarding-sidebar-title = Choose your sidebar
+onboarding-compact-description = Feature names. Git details on hover.
+onboarding-detailed-description = Branch rows with stats at a glance.
+onboarding-get-started = Get started
+onboarding-splash-welcome = Welcome, { $name }
+onboarding-permissions-title = Agent permissions
+onboarding-permissions-subtitle = What agents can do without asking.
+onboarding-supervised = Supervised
+onboarding-supervised-summary = Agents follow their CLI's approval prompts.
+onboarding-full-access-summary = Agents run commands and edit files without asking.
+onboarding-surface-title = Chat or terminal?
+onboarding-surface-subtitle = How new conversations open.
+onboarding-chat-summary = Rich replies with inline diffs.
+onboarding-terminal-summary = The agent's own command line.
+onboarding-sidebar-subtitle = How your worktrees are listed.
+onboarding-finish = Finish
+onboarding-set-up-later = Set up later
+onboarding-skip-for-now = Skip for now
+onboarding-agent-title = Choose your agent
+onboarding-agents-on-device =
+    { $count ->
+        [one] One is ready on this device.
+       *[other] { $count } are ready on this device.
+    }
+onboarding-looking-on-device = Looking for agents on this device
+onboarding-install-agent = Install an agent
+onboarding-agent-ready = { $name } is ready
+onboarding-more-agents = More
+onboarding-fewer-agents = Fewer
+onboarding-watching-for-agents = Watching for agents
+onboarding-already-installed = Already installed one?
+onboarding-already-installed-tip = We look for agents on your shell's PATH. If yours is somewhere else, add its folder to your PATH. Click to look again now.
+onboarding-preview-prompt = Fix the flaky login test
+onboarding-preview-reply = Fixed. The test now waits for the button.
+welcome-add-project-subtitle = Add a project to start your first agent.
+welcome-setup-summary = New chats use { $harness } with { $model }.
+welcome-change-in-settings = Change in Settings
 onboarding-terminal = Terminal
-onboarding-terminal-description = Run the agent's CLI in a terminal pane
 project-modal-display-name = Display name
 project-modal-rename-title = Rename Project
 project-modal-rename-feature-label = Rename feature label
@@ -997,6 +1177,7 @@ project-risk-create-anyway = Create Anyway
 project-risk-enable-and-continue = Enable and Continue
 project-risk-enable-non-git-description = This folder is not a Git repository. Non-Git projects are experimental; file trees load lazily, and you can disable this later in Experimental settings. Existing plain-folder projects remain visible if you disable it.
 project-risk-enable-non-git-title = Enable Experimental Non-Git Projects?
+project-risk-creates-git = creates .git
 project-welcome-configure-project = Configure your project
 project-welcome-configure-project-description = Open project settings from the … menu or the Settings page.
 project-welcome-create-worktrees = Create worktrees
@@ -1008,7 +1189,6 @@ project-welcome-lets-build = Let’s build
 project-welcome-tips-intro = A few tips to get you started:
 quick-start-description = { $app_name } will create a new folder and git repo for you.
 quick-start-location-dialog-title = Project Location
-quick-start-template = Template
 quick-start-template-empty = Empty
 quick-start-template-node = Node
 quick-start-template-python = Python
@@ -1096,6 +1276,9 @@ section-value-running = Running
 section-value-stopped = Stopped
 section-value-working = Working
 toast-remove-from-app = Remove from { $app_name }
+toast-browser-automation-disabled-title = An agent tried to use the browser
+toast-browser-automation-disabled = Browser automation is off, so the agent's command was refused. Turn it on in Settings › Experimental to let agents read and control your browser tabs.
+toast-open-experimental-settings = Open Settings
 validation-name-required = Name is required
 welcome-clone-from-url = Clone from URL
 welcome-clone-from-url-description = Clone a remote repo
@@ -1110,8 +1293,7 @@ welcome-bitbucket-cli-description = Pull requests and checks on Bitbucket Cloud.
 welcome-open-project = Open project
 welcome-open-project-description = Add an existing repo
 welcome-quick-start = Quick start
-welcome-quick-start-description = New project from template
-whats-new-release-count = { $count } releases
+welcome-quick-start-from-template = Start from a template
 whats-new-title = What's New
 workspace-add-repositories-ellipsis = Add Repositories…
 workspace-ai-quick = Quick
@@ -1120,8 +1302,6 @@ workspace-ai-setup = AI Setup
 workspace-ai-thorough = Thorough
 workspace-ai-thorough-description = Launches an AI agent to analyze repos and write context files.
 workspace-choose-icon = Choose icon
-workspace-delete-title = Delete Workspace
-workspace-delete-exclusive-projects = It will also remove these projects from the app: { $projects }.
 workspace-individual-projects = Individual Projects
 workspace-individual-projects-description = Work in separate repositories with independent worktrees.
 workspace-individual-projects-detail = Best for single-repo changes, maintenance work, and unrelated tasks.
@@ -1149,7 +1329,6 @@ worktree-create-in-background = Create in background
 worktree-create-refresh-branches = Fetch remote branches
 worktree-create-refresh-failed = Fetch failed: { $error }
 worktree-create-return = Create ↵
-worktree-delete-title = Delete Worktree
 worktree-in-workspace = In workspace
 worktree-no-matching-branches = No matching branches
 worktree-not-installed = Not installed
@@ -1180,13 +1359,12 @@ settings-category-notifications = Notifications
 settings-category-command-palette = Command Palette
 settings-category-privacy = Privacy
 settings-category-worktrees = Worktrees
-settings-category-mobile = Mobile
 settings-category-general-description = Core app behavior and shortcuts.
 settings-category-agents-description = Provider availability, approvals, and session behavior.
 settings-category-routing-description = Choose the provider, profile, model, effort, and launch behavior for agent actions.
 settings-category-profiles-description = Create and edit reusable local CLI profiles.
 settings-category-commands-description = Custom commands and prompt templates with global/workspace/project scoping.
-settings-category-experimental-description = Preview unfinished features, including shared context workspaces, non-Git projects, agent orchestration, automations, and headless Review dispatch.
+settings-category-experimental-description = Preview unfinished features, including shared context workspaces, non-Git projects, automations, and headless Review dispatch.
 settings-category-keyboard-shortcuts-description = Browse, search, and customize keyboard shortcuts.
 settings-category-appearance-description = Visual preferences and UI presentation.
 settings-category-terminal-description = Terminal appearance, streaming, and scrollback behavior.
@@ -1194,6 +1372,7 @@ settings-category-notifications-description = Alert behavior and sound customiza
 settings-category-command-palette-description = Choose which sources appear in the command palette.
 settings-category-privacy-description = Anonymous usage telemetry controls.
 settings-category-worktrees-description = Defaults for worktree lifecycle actions.
+settings-category-devices = Devices
 settings-category-mobile-description = Pair this Mac with the super.engineering mobile app.
 settings-mobile-access-label = Mobile access
 settings-mobile-access-detail-off = Mobile access is off. Your Mac is not accepting phone connections.
@@ -1233,6 +1412,8 @@ settings-mobile-status-stopping = Stopping…
 settings-mobile-status-failed = Needs attention
 settings-mobile-status-optional = Optional
 settings-mobile-status-unavailable = Unavailable
+settings-mobile-status-not-checked = Not checked
+settings-mobile-connection-not-checked = Checked once mobile access is running.
 settings-mobile-pair-label = Pair a phone
 settings-mobile-pair-description = Generate a secure, single-use pairing code using the current local-network and optional Tailscale addresses.
 settings-mobile-pair-action = Generate pairing code
@@ -1445,6 +1626,10 @@ settings-updates-ready = Update ready: { $version }
 settings-updates-check-failed = Update check failed: { $error }
 toast-update-apply-failed-title = Could not apply update
 toast-update-apply-failed = Could not apply the update: { $error }
+toast-update-previous-launch-failed-title = Update did not finish starting
+toast-update-previous-launch-failed = The last launch of this update closed before its window appeared. If problems continue, see { $url }
+toast-update-rolled-back-title = Update rolled back
+toast-update-rolled-back = The update to { $version } closed before it finished starting, so super.engineering went back to the previous version. The next nightly will be offered automatically.
 settings-updates-downloading-version = Downloading update { $version }...
 settings-updates-installing-version = Installing update { $version }...
 settings-updates-description = Check for new super.engineering releases. Downloads stay staged until you restart.
@@ -1453,6 +1638,7 @@ settings-updates-channel-description = Nightly is currently the only release tra
 settings-updates-current-version-label = Current version
 settings-updates-installed = Installed
 settings-updates-status-label = Update status
+settings-updates-package-managed = Updates are managed by your package manager
 settings-ai-inherited = Inherited
 settings-ai-search-models-placeholder = Search models...
 settings-ai-search-providers-placeholder = Search providers...
@@ -1624,12 +1810,6 @@ settings-remote-probe-home = Home
 settings-remote-probe-shell = Shell
 settings-remote-probe-temp = Temp
 settings-remote-probe-git = Git
-settings-remote-key-install-confirm-title = Install a dedicated SSH key on { $host }?
-settings-remote-key-install-confirm-body = { $app_name } will: generate a new key at { $key_path } (no passphrase), add its public key to ~/.ssh/authorized_keys on { $host } (you may be asked for your password once), and add one Include line to ~/.ssh/config pointing at an app-managed file. You can remove all of this later with “Remove SSH key.”
-settings-remote-key-install-confirm-action = Install key
-settings-remote-key-remove-confirm-title = Remove dedicated SSH key from { $host }?
-settings-remote-key-remove-confirm-body = { $app_name } will first remove this key from ~/.ssh/authorized_keys on { $host }, then delete the local keypair at { $key_path } and its block in ~/.ssh/super.engineering_config. If remote cleanup cannot authenticate, the local credential will be preserved so you can retry safely.
-settings-remote-key-remove-confirm-action = Remove SSH key
 settings-remote-removing-ssh-key = Removing…
 settings-remote-remove-ssh-key = Remove SSH key
 settings-remote-invalid-target-config-preview = Enter a valid SSH target to preview its configuration.
@@ -1645,6 +1825,19 @@ settings-remote-gitlab-cli-label = GitLab CLI on host
 settings-remote-gitlab-cli-description = For GitLab merge requests, an authenticated `glab` on the host enables the agent-driven flow; otherwise the composer and this Mac's `glab` are used.
 settings-remote-bitbucket-cli-label = Bitbucket CLI on host
 settings-remote-bitbucket-cli-description = For Bitbucket pull requests, an authenticated `bkt` with a usable Cloud context on the host enables the agent-driven flow; otherwise the composer and this Mac's `bkt` are used.
+settings-remote-key-install-action = Install Key
+settings-remote-key-install-authorize = Authorize it on { $host }
+settings-remote-key-install-body = { $app_name } will make a dedicated SSH key for this workspace.
+settings-remote-key-install-create = Create a key, no passphrase
+settings-remote-key-install-include = Add one Include line
+settings-remote-key-install-title = Install a key on { $host }?
+settings-remote-key-install-undo-note = Remove SSH key undoes all three.
+settings-remote-key-remove-action = Remove Key
+settings-remote-key-remove-body = The workspace connects with your other SSH keys afterwards.
+settings-remote-key-remove-delete = Delete the local key
+settings-remote-key-remove-include = Remove the Include line
+settings-remote-key-remove-revoke = Revoke it on { $host }
+settings-remote-key-remove-title = Remove the key from { $host }?
 settings-cancel = Cancel
 settings-refresh = Refresh
 settings-fun = Fun
@@ -1660,12 +1853,12 @@ settings-experimental-remote-workspaces-label = Remote workspaces
 settings-experimental-remote-workspaces-description = Create workspaces that live on a remote machine over SSH. Existing remote workspaces keep working when disabled.
 settings-experimental-non-git-projects-label = Non-Git projects
 settings-experimental-non-git-projects-description = Allow adding folders without Git metadata. Existing plain-folder projects stay visible if this is disabled.
-settings-experimental-agent-orchestration-label = Agent orchestration
-settings-experimental-agent-orchestration-description = Make super.engineering orchestration CLI commands available to agents. Each use still requires an explicit matching request from you.
 settings-experimental-automations-label = Automations
 settings-experimental-automations-description = Create scheduled and event-driven automations. Early preview, not fully tested yet.
 settings-experimental-browser-automation-label = Browser automation
 settings-experimental-browser-automation-description = Allow agents to use browser control commands. Browser actions still require workspace permission.
+settings-experimental-chat-artifacts-label = Chat artifacts
+settings-experimental-chat-artifacts-description = Let agents publish HTML pages that render live in the chat. Pages run offline in a sandbox.
 settings-experimental-auto-compact-label = Auto-compact Claude Code on context window limit
 settings-experimental-auto-compact-description = When a Claude Code turn fails because the model's context window is exceeded, automatically run /compact and resubmit your last message. Useful for non-1M-context backends (e.g. GLM5.1) where Claude Code's CLAUDE_CODE_AUTO_COMPACT_WINDOW does not fire under -p mode.
 settings-experimental-review-label = Review
@@ -1718,10 +1911,10 @@ settings-diagnostics-status-label = Diagnostics status
 settings-privacy-telemetry-heading = Telemetry
 settings-privacy-share-label = Share anonymous usage data
 settings-privacy-share-description = Helps us understand how super.engineering is used and prioritize improvements. No personal data, project data, or file contents ever leave your machine.
-settings-privacy-what-we-send-description = A random per-install ID, random app-session ID, app version, update channel, macOS version, session start/end timestamps and duration, and a daily-active event on launch or the first later app focus/input per UTC day. Turning this off stops telemetry without a final opt-out event. The install ID stays on your device and is reused if you turn telemetry back on; session state is deleted.
+settings-privacy-what-we-send-description = A random per-install ID, random app-session ID, app version, update channel, operating system name and version, CPU architecture, session start/end timestamps and duration, and a daily-active event on launch or the first later app focus/input per UTC day. Turning this off stops telemetry without a final opt-out event. The install ID stays on your device and is reused if you turn telemetry back on; session state is deleted.
 settings-privacy-what-we-never-send-description = Your name, email, hostname, working directories, project names, file paths, branch names, command inputs, clipboard contents, or any code. GeoIP enrichment is disabled on every event.
 settings-privacy-ip-data-capture-description = We set $geoip_disable: true on every event so PostHog skips country/city enrichment. Our PostHog project is also configured to discard client IP addresses before storage — see Docs for how that works on their side.
-settings-privacy-update-checks-description = Separate from telemetry, release builds check releases.super.engineering hourly for updates. The first successful check of each UTC day carries an anonymous marker used to count active installs in aggregate. It contains no identifier and nothing per-install is stored on our servers; the app keeps only a local day marker (~/.super.engineering/update_ping_day) so it sends the marker once per day. Not affected by the toggle above.
+settings-privacy-update-checks-description = Separate from telemetry, release builds check releases.super.engineering hourly for updates. The first successful check of each UTC day carries an anonymous marker used to count active installs in aggregate. It contains no identifier and nothing per-install is stored on our servers; the app keeps only a local day marker (~/.super.engineering/update_ping_day) so it sends the marker once per day. Every check also sends the app's CPU architecture (ARM or Intel), so the count can be split by architecture. Not affected by the toggle above.
 settings-privacy-install-id-location = Your install ID lives at ~/.super.engineering/install_id — delete it any time to reset.
 settings-privacy-install-id-disclosure = How your install ID is generated
 settings-privacy-events-disclosure = How events are sent
@@ -1825,6 +2018,8 @@ settings-search-entry-general-behavior-keyboard-shortcuts-label = Keyboard short
 settings-search-entry-general-behavior-keyboard-shortcuts-description = Open and customize keybindings.
 settings-search-entry-general-behavior-enhance-prompt-label = Enhance prompt
 settings-search-entry-general-behavior-enhance-prompt-description = Show the Enhance prompt action in the chat composer and command palette.
+settings-search-entry-general-behavior-link-previews-label = Show link previews
+settings-search-entry-general-behavior-link-previews-description = Fetch a website's title, summary and image when you hover a link. The site sees your IP address.
 settings-search-entry-general-behavior-show-cmd-number-hints-on-cmd-hold-label = Show Cmd+number hints on Cmd hold
 settings-search-entry-general-behavior-show-cmd-number-hints-on-cmd-hold-description = Hold Command for 0.5 seconds to show numbered shortcuts for worktrees or tabs.
 settings-search-entry-general-behavior-use-cmd-number-to-switch-tabs-label = Use Cmd+number to switch tabs
@@ -1840,7 +2035,7 @@ settings-search-entry-general-behavior-inactive-browser-timeout-description = Un
 settings-search-entry-general-behavior-open-git-links-in-the-in-app-browser-label = Open git links in the in-app browser
 settings-search-entry-general-behavior-open-git-links-in-the-in-app-browser-description = Open PR, CI, and forge links from Git action buttons, the checks panel, the sidebar, the command palette, and top-bar pull-request links in the app's browser. Off by default. Requires “Open links in the in-app browser” to also be enabled. Hold Cmd while clicking to invert the combined setting.
 settings-search-entry-general-behavior-open-browser-links-in-a-new-split-view-label = Open browser links in a new split view
-settings-search-entry-general-behavior-open-browser-links-in-a-new-split-view-description = Open in-app browser links in a dedicated split view beside your tabs, reused for every link, instead of a full tab.
+settings-search-entry-general-behavior-open-browser-links-in-a-new-split-view-description = Open in-app browser links in a split view beside the view they came from, reused for later links from that view, instead of a full tab.
 settings-search-entry-general-open-in-apps-open-in-apps-label = Open In apps
 settings-search-entry-general-open-in-apps-open-in-apps-description = Choose which of your installed apps appear in the Open In picker, and their order.
 settings-search-entry-general-open-in-apps-custom-app-label = Custom app
@@ -1905,6 +2100,8 @@ settings-search-entry-appearance-layout-visible-worktrees-per-project-label = Vi
 settings-search-entry-appearance-layout-visible-worktrees-per-project-description = Limit long project lists in the left sidebar.
 settings-search-entry-appearance-layout-sidebar-commit-status-label = Sidebar commit status
 settings-search-entry-appearance-layout-sidebar-commit-status-description = Show local commit and push status before review request and update status in sidebar rows.
+settings-search-entry-appearance-layout-orchestrated-worktrees-label = Orchestrated worktrees
+settings-search-entry-appearance-layout-orchestrated-worktrees-description = Choose how worktrees a chat sent work to open under it in the sidebar.
 settings-search-entry-appearance-layout-default-right-panel-layout-label = Default right panel layout
 settings-search-entry-appearance-layout-default-right-panel-layout-description = Choose the default layout for new workspaces: stacked panes or scrollable.
 settings-search-entry-appearance-layout-auto-hide-sidebars-label = Auto-hide sidebars
@@ -1947,16 +2144,31 @@ settings-conversation-cost-scope-all-open = All open windows
 settings-conversation-cost-scope-lifetime = Lifetime history
 conversation-cost-title = Conversation cost
 conversation-cost-tooltip = { $scope } cost
-conversation-cost-all-conversations = All conversations
 conversation-cost-last-seven-days = Last 7 days
 conversation-cost-last-thirty-days = Last 30 days
 conversation-cost-last-ninety-days = Last 90 days
-conversation-cost-workspace-tabs = Tabs in this workspace
 conversation-cost-unpriced-summary = { $tokens } tokens unpriced ({ $models })
 conversation-cost-unknown-model = unknown model
-conversation-cost-rates-source = Rates: models.dev, updated { $date }
 conversation-cost-estimate-note = Estimated API-equivalent value, not a bill. Agent-reported figures and standard-rate estimates; subscription usage is valued at the same rates. Any unpriced usage shown above is excluded from the total.
 conversation-cost-remote-note = Remote workspaces show only the current conversation. Terminal-session cost is unavailable until remote history is supported. Costs are estimates, not billing data.
+cost-popover-this-conversation = This conversation
+cost-popover-this-worktree = This worktree
+cost-popover-this-workspace = This workspace
+cost-popover-tab-count = { $count ->
+    [one] { $count } tab
+   *[other] { $count } tabs
+}
+cost-popover-range-week = 7D
+cost-popover-range-month = 30D
+cost-popover-range-quarter = 90D
+cost-popover-range-all = All
+cost-popover-all-time = All time
+cost-popover-daily-average = Daily average
+cost-popover-monthly-average = Monthly average
+cost-popover-today = Today
+cost-popover-all-time-undated = All time, including undated usage
+cost-popover-estimate = Estimated at API rates
+cost-popover-rates-source = Rates from models.dev, updated { $date }.
 settings-search-entry-notifications-delivery-system-notifications-label = System notifications
 settings-search-entry-notifications-delivery-system-notifications-description = Default behavior for macOS notifications across task completion and approval/input prompts.
 settings-search-entry-notifications-delivery-persistent-alerts-label = Persistent alerts
@@ -1973,8 +2185,6 @@ settings-notification-queue-on-open-keep = Keep
 settings-notification-queue-on-open-reset = Reset
 settings-notification-queue-next-item-newer = Newer
 settings-notification-queue-next-item-older = Older
-settings-search-entry-notifications-delivery-timeline-notifications-label = Timeline notifications
-settings-search-entry-notifications-delivery-timeline-notifications-description = Choose how many notification events to retain. Higher values use more memory and disk space.
 settings-search-entry-notifications-per-type-overrides-task-complete-delivery-label = Task complete delivery
 settings-search-entry-notifications-per-type-overrides-task-complete-delivery-description = Controls when macOS notifications appear for completed or errored runs.
 settings-search-entry-notifications-per-type-overrides-task-complete-sound-label = Task complete sound
@@ -2001,14 +2211,16 @@ settings-search-entry-palette-sources-show-breadcrumbs-label = Show breadcrumbs
 settings-search-entry-palette-sources-show-breadcrumbs-description = Render the workspace/project breadcrumb under tab and worktree rows.
 settings-search-entry-privacy-telemetry-share-anonymous-usage-data-label = Share anonymous usage data
 settings-search-entry-privacy-telemetry-share-anonymous-usage-data-description = Helps us understand how super.engineering is used and prioritize improvements.
+settings-search-entry-experimental-feature-flags-workspace-mentions-label = Workspace mentions
+settings-search-entry-experimental-feature-flags-workspace-mentions-description = Mention scripts, terminals, worktrees, chats, and agents with @ in chat.
 settings-search-entry-experimental-feature-flags-shared-context-workspaces-label = Shared context workspaces
 settings-search-entry-experimental-feature-flags-shared-context-workspaces-description = Allow selecting parent folders that expand into child repositories for shared context workspaces.
 settings-search-entry-experimental-feature-flags-remote-workspaces-label = Remote workspaces
 settings-search-entry-experimental-feature-flags-remote-workspaces-description = Create workspaces that live on a remote machine over SSH. Existing remote workspaces keep working when disabled.
 settings-search-entry-experimental-feature-flags-non-git-projects-label = Non-Git projects
 settings-search-entry-experimental-feature-flags-non-git-projects-description = Allow adding folders without Git metadata.
-settings-search-entry-experimental-feature-flags-agent-orchestration-label = Agent orchestration
-settings-search-entry-experimental-feature-flags-agent-orchestration-description = Make orchestration commands available to agents. Each use still requires an explicit matching request from you.
+settings-search-entry-general-behavior-agent-orchestration-label = Agent orchestration
+settings-search-entry-general-behavior-agent-orchestration-description = Make orchestration commands available to agents. Each use still requires an explicit matching request from you.
 settings-search-entry-experimental-feature-flags-automations-label = Automations
 settings-search-entry-experimental-feature-flags-automations-description = Create scheduled and event-driven automations. Early preview, not fully tested yet.
 settings-search-entry-experimental-feature-flags-browser-automation-label = Browser automation
@@ -2134,66 +2346,6 @@ scripts-setup = Setup
 scripts-setup-description = Runs when a new worktree is created.
 scripts-teardown = Teardown
 scripts-teardown-description = Runs when a worktree is deleted.
-welcome-phrase-frictionless-engineering = Frictionless agentic engineering
-welcome-phrase-future = Welcome to the future
-welcome-phrase-zero-resistance = Zero resistance, infinite potential
-welcome-phrase-room-temperature = A room-temperature superconductor
-welcome-phrase-electrons = Where electrons flow without friction
-welcome-phrase-cooper-pairs = Cooper pairs dancing at 300K
-welcome-phrase-meissner-effect = The Meissner effect is beautiful
-welcome-phrase-flux-quantization = Flux quantization in progress
-welcome-phrase-resistance-futile = Resistance is futile (literally)
-welcome-phrase-bcs-theory = BCS theory was just the beginning
-welcome-phrase-critical-temperature = Critical temperature: room temp
-welcome-phrase-first-neural-net = The first neural net was built in 1958
-welcome-phrase-gpt = GPT stands for Generative Pre-trained Transformer
-welcome-phrase-attention = Attention is all you need (2017)
-welcome-phrase-alphago = AlphaGo beat Lee Sedol 4-1 in 2016
-welcome-phrase-eliza = ELIZA (1966) was the first chatbot
-welcome-phrase-ai-dartmouth = The term AI was coined at Dartmouth, 1956
-welcome-phrase-perceptron = A perceptron has exactly one layer
-welcome-phrase-backpropagation = Backpropagation was popularized in 1986
-welcome-phrase-imagenet = ImageNet has 14 million labeled images
-welcome-phrase-deep-blue = Deep Blue beat Kasparov in 1997
-welcome-phrase-gpt2 = GPT-2 was deemed too dangerous to release
-welcome-phrase-transformers = Transformers replaced RNNs almost overnight
-welcome-phrase-bitter-lesson = The bitter lesson: compute wins
-welcome-phrase-mnist = MNIST is the hello world of ML
-welcome-phrase-dropout = Dropout was invented to prevent overfitting
-welcome-phrase-batch-norm = Batch norm made deep networks trainable
-welcome-phrase-resnets = ResNets skip connections changed everything
-welcome-phrase-gans = GANs: two networks in a trench coat
-welcome-phrase-chinese-room = The Chinese Room argues syntax isnt semantics
-welcome-phrase-moores-law = Moores Law kept AI scaling on track
-welcome-phrase-reinforcement-learning = Reinforcement learning taught itself to walk
-welcome-phrase-word2vec = Word2Vec: king minus man plus woman equals queen
-welcome-phrase-lstm = LSTM gates solved the vanishing gradient
-welcome-phrase-turing-test = The Turing test was proposed in 1950
-welcome-phrase-alphafold = AlphaFold solved protein folding in 2020
-welcome-phrase-self-attention = Self-attention runs in O(n squared) time
-welcome-phrase-lora = LoRA fine-tunes with 0.1% of parameters
-welcome-phrase-chinchilla = Chinchilla showed we were undertrained
-welcome-phrase-mixture-experts = Mixture of experts: not every neuron fires
-welcome-phrase-tokenizers = Tokenizers turn words into numbers
-welcome-phrase-temperature = Temperature controls randomness in sampling
-welcome-phrase-softmax = The softmax function sums to one
-welcome-phrase-convnets = Convnets were inspired by the visual cortex
-welcome-phrase-ai-winters = AI winters happened twice: 1974 and 1987
-welcome-phrase-gradient-descent = Gradient descent: just follow the slope down
-welcome-phrase-relu = ReLU: if negative, zero. Thats it.
-welcome-phrase-embeddings = Embeddings put meaning into geometry
-welcome-phrase-rlhf = RLHF taught models to be helpful
-welcome-phrase-diffusion = Diffusion models learn to denoise
-welcome-phrase-alexnet = One GPU trained AlexNet in 2012
-welcome-phrase-context-windows = Context windows keep getting longer
-welcome-phrase-weights = Weights are just very organized numbers
-welcome-phrase-loss-function = The loss function is the only truth
-welcome-phrase-synthetic-data = Synthetic data is training the next generation
-welcome-phrase-scaling-laws = Scaling laws predict performance from compute
-welcome-phrase-sparse-attention = Sparse attention makes long contexts possible
-welcome-phrase-kv-cache = KV cache trades memory for speed
-welcome-phrase-speculative-decoding = Speculative decoding: guess then verify
-welcome-phrase-quantization = Quantization: less precision, same vibes
 
 markdown-collapse = Collapse
 markdown-show-more = Show more
@@ -2345,16 +2497,22 @@ settings-left-sidebar-layout-compact = Compact
 settings-left-sidebar-layout-detailed = Detailed
 settings-preview-sidebar-cards = Show preview cards in settings
 settings-preview-hover-position = Fix hover popover position
-settings-preview-two-hours-ago = 2h ago
-settings-preview-one-day-ago = 1d ago
-settings-preview-two-hours = 2h
-settings-preview-one-day = 1d
+settings-preview-flaky-login = Fix the flaky login test
+settings-preview-billing-tables = Rename the billing tables
+settings-preview-dark-mode = Add a dark mode toggle
+settings-preview-search-index = Speed up search indexing
 settings-pinned-tab-compact-description = Collapse inactive pinned tabs to their icons.
 settings-pinned-tab-full-width-description = Keep pinned tab labels visible at their normal width.
 settings-sidebar-label-description = Description
 settings-sidebar-label-branch-name = Branch name
 settings-sidebar-label-description-description = Use generated or renamed feature descriptions.
 settings-sidebar-label-branch-description = Show the git branch name in this layout.
+settings-orchestrated-worktrees-auto = Auto
+settings-orchestrated-worktrees-auto-description = Open while an agent there is working or needs you.
+settings-orchestrated-worktrees-expanded = Expanded
+settings-orchestrated-worktrees-expanded-description = Always open.
+settings-orchestrated-worktrees-collapsed = Collapsed
+settings-orchestrated-worktrees-collapsed-description = Always folded until you open one.
 settings-right-panel-stacked-panes = Stacked panes
 settings-right-panel-scrollable = Scrollable
 settings-notification-delivery-always = Always
@@ -2482,15 +2640,12 @@ settings-ai-fast = Fast
 settings-ai-thorough = Thorough
 settings-ai-session = Session
 settings-font-size-example = e.g. { $size }
-settings-ai-provider-disabled = Disabled — enable on the Providers section.
 settings-ai-all-buckets-cli-default = All buckets use the CLI default model.
 settings-ai-inheriting-parent-scope = Inheriting from parent scope.
 settings-ai-customized = Customized
 settings-ai-cli-default-models = CLI default models
 settings-ai-configuration = Configuration
 settings-ai-configuration-description = Models, visibility, advanced pins, and launch flags.
-settings-ai-advanced-setup = Advanced setup
-settings-ai-advanced-setup-description = Executable and shared launch flags for this provider.
 settings-ai-model-routing = Model routing
 settings-ai-model-routing-description = Choose default models, profiles, and thinking levels, or customize them for specific actions.
 settings-ai-manage-routing = Open routing
@@ -2527,6 +2682,15 @@ settings-ai-mixed = Mixed
 settings-ai-current-chat = Current chat
 settings-ai-provider-toggle-description = Show this provider in the New Tab menu and Chat UI.
 settings-ai-provider-last-enabled-description = { $description } At least one provider must remain enabled.
+settings-ai-provider-status-chat-terminal = Chat and terminal
+settings-ai-provider-status-terminal = Terminal
+settings-ai-provider-status-disabled = Disabled
+settings-ai-provider-disabled-detail = Turn on { $provider } to configure its models and launch options.
+settings-ai-provider-section-models = Models
+settings-ai-provider-section-chat = Chat
+settings-ai-provider-section-runtime = Runtime
+settings-ai-provider-profiles-description = Accounts and config homes for this provider.
+settings-ai-provider-manage-profiles = Manage profiles
 settings-ai-provider-antigravity-description = Enable Antigravity as a terminal provider (requires Antigravity CLI `agy` installed).
 settings-ai-provider-hermes-description = Enable Hermes as a terminal provider (requires Hermes Agent `hermes` installed).
 settings-ai-provider-qwen-description = Enable Qwen Code as a terminal provider (requires Qwen Code CLI `qwen` installed).
@@ -2684,11 +2848,9 @@ settings-keybinding-action-rename-feature-label = Rename Feature Label
 
 plan-executing = Executing
 plan-executing-plan = Executing Plan
-chat-steered = Steered
 chat-fast-mode-with-rate = Fast mode: 1.5x faster, uses { $rate } credits.
 chat-fast-mode = Fast mode
 chat-fast = Fast
-chat-argument-hint = Argument hint: { $hint }
 chat-queued-until-setup-finishes = Queued until setup finishes
 worktree-preparing = Preparing worktree…
 chat-queued-until-worktree-ready = Starting when worktree is ready
@@ -2700,7 +2862,6 @@ chat-pasted-text = Pasted text
 chat-code-review-count = Code review ({ $count })
 chat-system-instructions = System instructions
 action-review = Review
-subagent-tool-result-unavailable = Tool result unavailable
 subagent-preparing-transcript = Preparing transcript…
 common-read-only = Read-only
 subagent-loading-transcript = Loading subagent transcript…
@@ -2708,7 +2869,6 @@ subagent-transcript-unavailable = Transcript unavailable
 action-back = Back
 action-forward = Forward
 subagent-no-transcript = No transcript recorded yet.
-subagent-jump-to-latest = Jump to latest
 action-confirm = Confirm
 changes-no-changes = No changes
 changes-commits = Commits
@@ -2741,14 +2901,19 @@ shared-context-repositories = Repositories
 shared-context-add-missing-project = Add missing project
 common-running = Running
 shared-context-add-run-script = Add run script...
+run-picker-running = Running
+run-picker-running-for = Running for { $elapsed }
 shared-parent-git-repo-count = { $count ->
 [one] 1 repo
 *[other] { $count } repos
 }
 shared-parent-git-all-repos = All · { $repos }
+shared-parent-git-pill-label = { $action } in { $targets }
 shared-parent-git-menu-tooltip = Git actions for child repos
 shared-parent-git-unavailable-title = Couldn't open these repos
 shared-context-choose-projects-to-run = Choose projects to run
+shared-context-run-count = Runs { $selected } of { $total }
+shared-context-run-none = None
 workspace-choose-what-to-launch = Choose what to launch…
 icon-picker-tab-symbols = Symbols
 icon-picker-tab-icons = Icons
@@ -2772,19 +2937,39 @@ review-findings-triage-hint = Mark each finding Should fix or Dismiss
 chat-assignment = Assignment
 chat-plan = Plan
 approval-allow = Allow
-approval-allow-for-session = Allow for Session
 approval-deny = Deny
-approval-needed = Approval needed
 approval-needs-access = Needs access to
 approval-show-input = Show full input
 approval-hide-input = Hide full input
 input-requested = Input requested
 action-submit = Submit
 action-next = Next
-input-needed = Input needed
-input-progress = { $current }/{ $total }
-input-progress-auto-resolve = { $current }/{ $total } · may auto-resolve in { $seconds }s
 input-sensitive-answer = Sensitive answer · omitted from the transcript summary
+input-question-position = { $current } of { $total }
+input-auto-resolves = resolves on its own in { $seconds }s
+input-skip = Skip
+input-send = Submit
+input-answer-hidden = Answer hidden
+input-skipped = Skipped
+input-asked = { $count ->
+    [one] Asked a question
+   *[other] Asked { $count } questions
+}
+input-asked-you = { $count ->
+    [one] Asked you a question
+   *[other] Asked you { $count } questions
+}
+input-type-answer = Type your answer…
+input-something-else = Something else…
+input-recommended = Recommended
+input-recommended-by = Recommended by { $agent }
+input-drawer-waiting = { $agent } is waiting for you
+input-drawer-asks-working = { $agent } asks while it works
+input-drawer-wants-command = { $agent } wants to run a command
+input-drawer-wants-tool = { $agent } wants to use { $tool }
+input-drawer-blocked = { $agent } was blocked
+input-drawer-review = Review
+input-choose-any = Choose any
 plan-run-in-new-chat = Run in new chat
 auth-open-terminal-to-sign-in = Open terminal to sign in
 custom-actions-empty = Your custom actions will appear here.
@@ -2792,24 +2977,79 @@ custom-actions-configure = Configure actions in Settings
 custom-actions-show-more = + { $count } more
 custom-actions-customize = Customize actions
 custom-actions-untitled = Untitled
-subagent-state-running = Running
 subagent-state-completed = Completed
 subagent-state-failed = Failed
-launched-agent-needs-input = Needs input
-launched-agent-closed = Closed
-launched-agent-idle = Idle
-launch-group-agents = { $count ->
+subagent-state-interrupted = Stopped
+subagent-state-working = Working
+agent-row-unknown = a subagent
+agent-row-count = { $count ->
     [one] 1 agent
    *[other] { $count } agents
 }
+agent-row-id-tooltip = Agent ID { $id }
+agent-row-show-all = Show all
+agent-row-unnamed-wait = its agents
+# A closed agent whose run the app quitting cut off.
+launched-agent-stopped-app-closed = Stopped when the app closed
+subagent-type-general = General
+subagent-type-explore = Explore
+subagent-type-plan = Plan
+subagent-type-explorer = Explorer
+subagent-type-awaiter = Awaiter
+subagent-type-status-line = Status line
+subagent-type-guide = Guide
+subagent-type-fork = Fork
+launched-agent-needs-input = Needs input
+launched-agent-not-started = Not started
+launched-agent-answer = Answer
+launched-agent-activity-command = Running a command
+launched-agent-activity-reading = Reading files
+launched-agent-activity-editing = Editing
+launched-agent-activity-writing = Writing a file
+launched-agent-activity-searching = Searching
+launched-agent-activity-browsing = Browsing
+launched-agent-activity-web-search = Searching the web
+subagent-dock-title = Subagent
+subagent-dock-title-typed = { $type } subagent
+subagent-dock-detail = Read-only. Reports back to { $parent } when it finishes.
+subagent-dock-back = Back to chat
+subagent-dock-detail-done = Read-only. Reported back to { $parent }.
+subagent-dock-detail-interrupted = Read-only. Stopped with { $parent }.
+subagent-header-of = Subagent of
+subagent-status-done = Done in { $time }
+subagent-status-failed = Failed after { $time }
+subagent-status-interrupted = Stopped after { $time }
+subagent-back-tooltip = Back to { $parent }
+chat-worktree-card-creating = Creating worktree…
+chat-worktree-card-working = Agent running
+chat-worktree-card-deleted = Deleted
+chat-worktree-card-deleting = Deleting…
+chat-worktree-card-recreating = Recreating…
+chat-worktree-card-recreated = Recreated
+chat-turn-group-agents-count = { $count ->
+    [one] 1 agent
+   *[other] { $count } agents
+}
+chat-turn-group-subagents-count = { $count ->
+    [one] 1 subagent
+   *[other] { $count } subagents
+}
+chat-turn-group-worktrees-count = { $count ->
+    [one] 1 worktree
+   *[other] { $count } worktrees
+}
+chat-turn-group-new = { $count } new
+chat-turn-group-deleted = { $count } deleted
+chat-turn-group-recreated = { $count } recreated
 launch-card-working = { $count } running
 launch-card-needs-input = { $count ->
     [one] 1 needs input
    *[other] { $count } need input
 }
 launch-card-failed = { $count } failed
-launch-card-done = { $count } done
-subagent-earlier-rows-not-shown = … { $count } earlier rows not shown
+launch-card-stopped = { $count } stopped
+launch-card-not-started = { $count } not started
+launch-card-finished = { $count } finished
 model-picker-type-to-search = Type to search models
 model-picker-type-to-search-hint = type to search
 model-picker-providers-heading = Provider
@@ -2831,12 +3071,9 @@ context-input = Input
 context-cache-read = Cache read
 context-cache-write = Cache write
 context-output = Output
-chat-message-input-tokens = Input tokens
-chat-message-output-tokens = Output tokens
 chat-message-tokens-not-reported = Not reported
 context-total-io = Total I/O
 context-input-effective = Input effective
-input-submitted = Input submitted
 profile-cli-default = CLI default
 review-no-active-comments = No active review comments.
 permission-tools = Tools
@@ -2889,22 +3126,68 @@ chat-changes = Changes
 common-working = Working…
 chat-thinking = Thinking
 chat-thinking-in-progress = Thinking…
+chat-waiting-for-answer = Waiting for your answer
+chat-waiting-for-approval = Waiting for approval
 chat-thinking-count = Thinking ({ $count })
 chat-thinking-summary = Thinking · { $summary }
 # Live duration is a separate RunTimerView entity, so this prefix cannot take a Fluent placeable.
 chat-working-for = Working for
+# Under the answer a chat waits after while agents it launched still work, e.g. "Opus 5.5 continues when it reports back".
+chat-agent-wait-caption = { $count ->
+    [one] { $model } continues when it reports back
+   *[other] { $model } continues when they report back
+}
 chat-worked-for = Worked for { $duration }
+# A centred timestamp where a conversation picks up after a gap.
+chat-time-today = Today { $time }
+chat-time-yesterday = Yesterday { $time }
+# A provider started in another permission mode than requested, e.g. "Auto isn't available for Haiku 4.5 on this account."
+chat-permission-fallback = { $mode } isn't available for { $model } on this account.
+chat-permission-fallback-asks = { $provider } will ask before it acts.
+chat-permission-fallback-uses = { $provider } is using { $mode } instead.
+chat-steer-hold-waiting = { $provider } can't take a steer yet.
+chat-steer-hold-waiting-detail = Your message will steer once it can, or send after this turn.
+chat-steer-refused = Couldn't steer.
+chat-steer-refused-detail = { $provider } returned an error. Check the conversation before you retry.
+# A note above the composer while the chat's provider connection is replaced, e.g. "Reconnecting to Claude."
+chat-reconnecting = Reconnecting to { $provider }.
+chat-reconnecting-held = Your message will send when it's back.
+chat-reconnecting-retry = Try again in a moment.
+chat-reconnecting-slow = Taking longer than usual, starting a fresh connection.
+chat-reconnect-failed = Couldn't reconnect to { $provider }.
+chat-reconnect-try-again = Try again
 chat-worked = Worked
-chat-interrupted = Interrupted
-chat-interrupted-after = Interrupted after { $duration }
+chat-you-stopped = You stopped
+chat-you-stopped-after = You stopped after { $duration }
+chat-agent-stopped = { $name } stopped it
+chat-agent-stopped-after = { $name } stopped after { $duration }
+chat-agent-steered = { $name } steered
+chat-steered = Steered
+chat-steer-waiting = Waiting to be read
+# A steer whose turn ended before the agent read it.
+chat-steer-not-read = Not read
+# Sends a never-read steer again, as a new message.
+chat-steer-send-again = Send
+chat-notice-details = Details
+chat-notice-copy-details = Copy details
+chat-notice-show-more = Show more
+chat-notice-show-less = Show less
+chat-notice-level-progress = In progress
+chat-notice-level-success = Done
+chat-notice-level-warning = Warning
+chat-notice-level-error = Error
+chat-notice-jobs-finished = { $count } background jobs finished
+chat-context-compacted = Context compacted
+chat-context-compacted-tokens = { $before } → { $after } tokens
+chat-context-compacted-tooltip-title = The agent now works from a summary
+chat-context-compacted-tooltip-body = Its earlier context was summarized to make room. The messages stay here for you; the agent reads its summary instead.
+chat-context-compacted-of-window = of { $window }
 chat-send-failed = Can’t send to this chat. Try sending again.
 chat-send-failed-draft-restored = Can’t send to this chat. Your message is still in the composer.
 plan-proposed = PLAN PROPOSED
 plan-changes-requested = PLAN CHANGES REQUESTED
 plan-ready = PLAN READY
-input-permission-response = Permission response
 approval-approve-action = Approve action?
-subagent-view-single = View subagent
 tool-action-read = Read
 tool-action-wrote = Wrote
 tool-action-ran = Ran
@@ -2914,6 +3197,10 @@ tool-action-dispatched = Dispatched
 tool-action-updated = Updated
 tool-action-asked = Asked
 tool-action-called = Called
+tool-action-messaged = Messaged
+tool-action-waited-for = Waited for
+tool-action-resumed = Resumed
+tool-action-closed = Closed
 tool-result-lines = { $count ->
     [one] 1 line
    *[other] { $count } lines
@@ -2930,14 +3217,15 @@ chat-open-in-new-chat = Open in new chat
 chat-open-in-new-tab = Open in new tab
 chat-open-in-split-tab = Open in split tab
 chat-open-in-split-view = Open in split view
-chat-fork-new-session = Fork to new chat session
-chat-fork-new-worktree = Fork to new worktree
-chat-fork-from-here = Fork from here
+chat-fork-new-session = Branch in new chat
+chat-fork-new-worktree = Branch in new worktree
+chat-fork-from-here = Branch in new chat
 chat-fork-unavailable = /fork is not available for this provider.
 chat-fork-no-session = /fork needs an active provider session. Send a message first, then try again.
 chat-fork-worktree-unsupported = /fork worktree is not available for this provider.
 chat-fork-worktree-cut-unavailable = Forking to a new worktree from this message isn't available for this conversation. Fork from the latest message, or fork to a new chat session instead.
 chat-fork-failed = Could not fork this conversation.
+chat-fork-cut-unavailable = Branching from this reply isn't available for this conversation. Branch from the latest reply instead.
 chat-fork-missing-conversation = /fork needs a saved conversation. Send a message first, then try again.
 chat-recovery-context-available = Recent context from the previous conversation is available in this chat.
 review-stage-in-chat = Stage in chat
@@ -2972,6 +3260,10 @@ git-updating = Updating…
 git-updated = Updated
 git-update-failed = Update failed
 git-update-branch = Update branch
+git-update-branch-from-target = { $count ->
+    [one] Bring in 1 commit from { $target }
+   *[other] Bring in { $count } commits from { $target }
+}
 shared-context-select-runnable-projects = Select runnable projects
 shared-context-run-selected-projects = Run selected projects
 shared-context-stop-selected-projects = Stop selected projects
@@ -3006,6 +3298,10 @@ tool-run-part-dispatched = { $count ->
     [one] Ran 1 agent task
    *[other] Ran { $count } agent tasks
 }
+tool-run-part-messaged = { $count ->
+    [one] Messaged 1 agent
+   *[other] Messaged { $count } agents
+}
 tool-run-part-updated = { $count ->
     [one] Updated todos
    *[other] Updated todos { $count } times
@@ -3026,7 +3322,6 @@ chat-files-changed-count = { $count ->
 }
 chat-files-expand-all = Expand all files
 chat-files-collapse-all = Collapse all files
-subagent-view-count = View subagents ({ $count })
 git-uncommitted-change-count = Uncommitted changes: { $count }
 git-unpushed-commit-count = Unpushed commits: { $count }
 settings-ai-action-model-pins-set = Action-specific model pins set: { $count }
@@ -3069,6 +3364,8 @@ notification-codex-thread-archive-done =
 notification-codex-thread-archive-failed = Some Codex threads were not archived
 notification-pasting-image = Pasting image…
 notification-installing-update = Installing update. The app will restart once completed.
+notification-update-installed = Update installed. Restarting
+notification-update-installed-after-typing = Update installed. Restarting when you stop typing
 notification-status-running = Running
 notification-status-working = Working
 notification-status-task-complete = Task complete
@@ -3083,7 +3380,7 @@ workspace-review-request-state-changed = { $kind } state changed; action is no l
 workspace-remote-forge-cli-not-authenticated-hint = Tip: { $cli } on the host isn't authenticated — run `{ $cli } auth login` there to create a { $kind } with the agent.
 workspace-remote-forge-cli-missing-hint = Tip: install { $cli } on the host and run `{ $cli } auth login` to create a { $kind } with the agent.
 workspace-review-request-url-copied = Copied { $kind } URL
-workspace-review-request-url-unavailable = No review request URL available
+workspace-review-request-none-yet = This branch has no { $kind } yet
 worktree-context-placeholder = Describe what you want the agent to work on…
 worktree-filter-branches-placeholder = Filter branches…
 worktree-label-placeholder = Feature label
@@ -3115,6 +3412,43 @@ worktree-bitbucket-auth-required = Could not load pull requests: Bitbucket CLI (
 worktree-bitbucket-no-context = Could not load pull requests: { $error }
 worktree-bitbucket-load-error = Could not load pull requests: { $error }
 worktree-review-request-load-error = Could not load review requests: { $error }
+worktree-delete-agent-working = An agent is still working here
+worktree-delete-all-action = Delete All
+worktree-delete-body = Its folder is removed from disk.
+worktree-delete-body-loses-work = Its folder is removed from disk, along with work that exists nowhere else.
+worktree-delete-branch-too = Delete branch too
+worktree-delete-branches-too = Delete branches too
+worktree-delete-child-count = { $count ->
+    [one] 1 worktree
+   *[other] { $count } worktrees
+}
+worktree-delete-child-no-upstream = { $name } has no upstream, so unpushed commits may be lost
+worktree-delete-child-uncommitted = { $name } has uncommitted changes
+worktree-delete-child-uninspectable = { $name } could not be checked: { $error }
+worktree-delete-child-unpushed = { $count ->
+    [one] { $name } has 1 commit not pushed
+   *[other] { $name } has { $count } commits not pushed
+}
+worktree-delete-confirm-title = Delete this worktree?
+worktree-delete-has-uncommitted = Uncommitted changes
+worktree-delete-no-upstream = No upstream, so unpushed commits may be lost
+worktree-delete-open-sessions = { $count ->
+    [one] Closes 1 open session
+   *[other] Closes { $count } open sessions
+}
+worktree-delete-parent-body = The parent and every worktree inside it are removed from disk.
+worktree-delete-parent-confirm-title = Delete this worktree and its children?
+worktree-delete-parent-uninspectable = The folder could not be checked: { $error }
+worktree-delete-uncommitted = { $count ->
+    [one] 1 uncommitted change
+   *[other] { $count } uncommitted changes
+}
+worktree-delete-uninspectable = Could not be checked: { $error }
+worktree-delete-unpushed = { $count ->
+    [one] 1 commit not pushed
+   *[other] { $count } commits not pushed
+}
+worktree-delete-unrecognized-entries = The folder also holds items the app didn't create: { $items }
 right-panel-switch-stacked = Switch to stacked terminal
 right-panel-switch-bottom = Switch to bottom terminal
 right-panel-switch-side-by-side = Switch to side by side terminal
@@ -3236,6 +3570,8 @@ toast-initialize-git-first = Initialize Git first
 toast-plain-folders-no-worktrees = Plain folders do not support worktrees.
 toast-git-unavailable = Git unavailable
 toast-git-unavailable-project = Git is unavailable for this project.
+toast-inotify-watch-limit = File watching limit reached
+toast-inotify-watch-limit-message = Linux ran out of file watches (fs.inotify.max_user_watches), so some changes may appear late or not at all until you raise the limit: sudo sysctl fs.inotify.max_user_watches=524288
 toast-project-loading = Project loading
 toast-try-again-moment = Try again in a moment.
 toast-app-cli-required = { $app_name } CLI required
@@ -3364,8 +3700,14 @@ run-stop-script = Stop run script
 run-rerun-workspace = Re-run workspace
 workspace-close-tab = Close tab
 workspace-launched-agents-header = Launched agents
+workspace-created-worktrees-header = Created worktrees
+created-worktrees-summary = { $count ->
+    [one] 1 created worktree
+   *[other] { $count } created worktrees
+}
 workspace-launched-by = Launched by { $tab_title }
 workspace-open-launched-tab = Open as tab
+workspace-attached-back = Back to { $tab_title }
 notification-launched-agent-title = { $title } · from { $parent }
 launched-agents-summary = { $state ->
     [permission] { $count ->
@@ -3388,6 +3730,8 @@ launched-agents-summary = { $state ->
 workspace-toggle-terminal = Toggle Terminal
 workspace-choose-open-app = Choose open app
 workspace-new-tab-with-provider = New tab with provider
+workspace-add-split-pane = Split pane
+workspace-add-split-view = Split view
 workspace-choose-app = Choose app
 
 theme-copy-from-dark = Copy from Dark
@@ -3433,6 +3777,7 @@ git-action-checks = Checks
 git-action-commit-and-push = Commit and push
 git-action-commit = Commit
 git-action-push = Push
+git-action-pull-and-push = Pull and push
 git-action-pull = Pull
 git-action-resolve = Resolve
 git-action-fix = Fix
@@ -3456,6 +3801,7 @@ git-action-creating = Creating
 git-action-committing-and-pushing = Committing and pushing
 git-action-committing = Committing
 git-action-pushing = Pushing
+git-action-pulling-and-pushing = Pulling and pushing
 git-action-resolving = Resolving
 git-action-fixing = Fixing
 git-action-investigating = Investigating
@@ -3508,6 +3854,26 @@ git-status-no-review-open = No { $kind } open
 git-status-unpushed-count = Unpushed: { $count }
 git-status-behind-target = Behind { $target }: { $count }
 git-status-working-tree-clean = Working tree clean
+status-card-checks-passed = { $count } passed
+status-card-branch = Branch
+status-card-up-to-date = Up to date with { $target }
+status-card-review-not-requested = Not requested
+status-card-conflicts-explainer = { $target } changed lines this branch also changes.
+status-card-merged-into = Merged into { $target }
+status-card-worktree = Worktree
+status-card-clean = Clean
+status-card-unpushed = Unpushed
+status-card-delete-discards = Delete discards these with the worktree.
+status-card-commit-count =
+    { $count ->
+        [one] { $count } commit
+       *[other] { $count } commits
+    }
+status-card-file-count =
+    { $count ->
+        [one] { $count } file
+       *[other] { $count } files
+    }
 
 git-merge-strategy-squash = Squash and merge
 git-merge-strategy-merge = Create a merge commit
@@ -3635,6 +4001,20 @@ right-panel-show-gitignored-files = Show gitignored files
 right-panel-hide-gitignored-files = Hide gitignored files
 workspace-hold-command-for-chat-ui = Hold ⌘ for Chat UI
 workspace-hold-command-for-terminal = Hold ⌘ for Terminal
+tool-picker-no-matches = No matches
+tool-picker-as-terminal = Terminal
+tool-picker-as-chat = Chat
+tool-picker-open-as-terminal = Open as terminal
+tool-picker-open-as-chat = Open in chat
+workspace-delete-confirm-title = Delete “{ $name }”?
+workspace-delete-description = Its tabs, terminal sessions and saved layout are removed. Projects and their files stay.
+workspace-delete-description-with-contents = Its tabs, terminal sessions and saved layout are removed, and so is everything below.
+workspace-delete-project-leaves-app = leaves the app
+workspace-delete-shared-worktrees = { $count ->
+    [one] { $count } shared worktree is deleted
+   *[other] { $count } shared worktrees are deleted
+}
+workspace-delete-shared-worktrees-unknown = Its shared worktrees are deleted too
 pr-checks-failed = Checks failed
 pr-checks-failing-count =
     { $count ->
@@ -3652,6 +4032,38 @@ pr-checks-pending-count =
         [one] { $count } check pending
        *[other] { $count } checks pending
     }
+hover-card-needs-answer = Needs your answer
+hover-card-no-review-request =
+    { $forge ->
+        [gitlab] No merge request
+       *[other] No pull request
+    }
+hover-card-checks-running = Checks running, { $passed } of { $total }
+hover-card-more-running = { $count } more running
+hover-card-stopping = Stopping
+hover-card-main-checkout = Main checkout
+hover-card-main-checkouts = Main checkouts
+hover-card-add-repo = Add repo
+hover-card-add-repo-count = +{ $count }
+hover-card-find-repo = Find a repo
+hover-card-checking-repos = Checking repos
+hover-card-all-merged = All merged
+hover-card-repos-merged = { $count } merged
+hover-card-more-repos = { $count } more
+hover-card-run-repos = { $count ->
+    [0] Run
+   *[other] Run { $count }
+}
+hover-card-stop-repos = { $count ->
+    [0] Stop
+   *[other] Stop { $count }
+}
+hover-card-run-select-repos = Select repos to run
+hover-card-run-selected-repos = Run the selected repos
+hover-card-stop-selected-repos = Stop the selected repos
+hover-card-checking-status = Checking status
+hover-card-nothing-to-commit = Nothing to commit or push
+hover-card-unpushed-commits = { $count } unpushed
 icon-picker-emoji-tooltip = Emoji: { $glyph }
 icon-picker-named-icon-tooltip =
     { $name ->
@@ -3700,6 +4112,61 @@ file-tree-symlink-target = Symlink → { $target }
 
 common-collapse = Collapse
 chat-show-more-lines = Show { $count } more lines
+chat-pill-card-skill = Skill
+chat-pill-card-agent = Agent
+chat-pill-card-command = Command
+chat-pill-card-lines = { $count ->
+    [one] 1 line
+   *[other] { $count } lines
+}
+chat-pill-card-items = { $count ->
+    [one] 1 item
+   *[other] { $count } items
+}
+chat-pill-card-modified = Modified { $time }
+chat-pill-card-open-agent = Open agent
+chat-pill-card-open-worktree = Open worktree
+chat-pill-card-setup-script = Setup script
+chat-pill-card-run-script = Run script
+chat-pill-card-teardown-script = Teardown script
+chat-pill-card-worktree = Worktree
+chat-pill-card-running = Running
+chat-pill-card-running-for = Running { $time }
+chat-pill-card-not-running = Not running
+chat-pill-card-skill-from = { $source } skill
+chat-pill-card-click-preview = Click to preview
+chat-pill-card-click-show-in-files = Click to show in Files
+chat-pill-card-click-open-skill = Click to open SKILL.md
+chat-pill-card-click-open-agent = Click to open its chat
+chat-pill-card-click-open = Click to open
+chat-pill-card-cmd-click-open-in = ⌘-click to choose an app
+chat-pill-card-cmd-click-browser = ⌘-click to open in your browser
+chat-pill-card-copy-path = Copy path
+chat-pill-card-copy-link = Copy link
+chat-pill-card-edited = Edited in this chat
+chat-pill-card-changed-inside = { $count ->
+    [one] 1 changed in this chat
+   *[other] { $count } changed in this chat
+}
+chat-pill-card-missing = Not in this worktree
+chat-pill-card-more-sections = { $count ->
+    [one] 1 more section
+   *[other] { $count } more sections
+}
+chat-pill-card-expects = Expects { $argument }
+chat-pill-card-agent-done = Done in { $time }
+chat-pill-card-agent-failed = Failed after { $time }
+chat-pill-card-waiting-answer = Waiting for your answer
+chat-pill-card-exited = Exited { $code }, { $time }
+chat-pill-card-uncommitted = { $count } uncommitted
+chat-pill-card-failing-checks = { $count ->
+    [one] #{ $number } has 1 failing check: { $names }
+   *[other] #{ $number } has { $count } failing checks: { $names }
+}
+chat-mention-section-sessions = Agents
+chat-mention-section-worktrees = Worktrees
+chat-mention-section-scripts-terminals = Scripts & terminals
+chat-mention-section-files = Files
 review-conversations-summary = Conversations · { $total } total · { $resolved } resolved
 review-file-conversations-summary = { $file } · { $total } total · { $resolved } resolved
 review-add-comment-line = Add a comment on line { $line }
@@ -3708,9 +4175,9 @@ review-add-comment-extend-hint = Shift-click a line to extend
 chat-queued-waiting-for-answer = waiting for your answer above
 chat-show-full-plan = Show full plan
 
-usage-meter-tooltip = { $provider } · { $percent } left this { $window } window
 usage-meter-unavailable = Usage not available for { $provider }
 usage-meter-signed-out = Not signed in
+usage-meter-api-key = Your API key works as usual. Provider limits may apply.
 usage-meter-stale = Refresh failed — showing cached data
 usage-meter-error = Couldn't load usage
 usage-meter-loading = Loading usage…
@@ -3722,15 +4189,49 @@ usage-meter-window-daily = Daily
 usage-meter-window-weekly = Weekly
 usage-meter-window-monthly = Monthly
 usage-meter-window-other = Other
-usage-meter-other-accounts = Other accounts
 usage-meter-all-providers = All providers
-usage-meter-refresh = Refresh
 usage-meter-percent-left = { $percent }% left
 usage-meter-no-account = No account selected
 usage-meter-now = now
 usage-meter-default-account = Default
+usage-popover-runs-out = Runs out { $time }, resets { $reset }
+usage-popover-runs-out-then-credits = Runs out { $time }, then credits
+usage-popover-using-credits = Using credits
+usage-api-key = API key
+usage-api-key-week = estimated this week
+usage-api-key-today = { $amount } today
+usage-api-key-counting-since = Counting since { $day }
+usage-api-key-note = From sessions on this Mac. Provider limits may apply.
+usage-api-key-partial-note = Earlier days are left out: this Mac started recording which sign-in each session used on { $day }.
+usage-api-key-unavailable = Spending isn’t available for { $provider } yet
+usage-api-key-unavailable-note = Your API key works as usual. Provider limits may apply.
+usage-api-key-billing = View provider billing
+usage-popover-resets-at = Resets { $time }
+usage-popover-window-left = { $window } left
+usage-popover-updating = Updating…
+usage-popover-retry = Try again
+usage-popover-accounts = Accounts
+usage-popover-in-use = In use
+usage-popover-unused = { $count } unused
+usage-graph-on-pace = On pace
+usage-graph-in-reserve = { $percent }% in reserve
+usage-graph-behind = { $percent }% behind pace
+usage-graph-runs-out = Runs out { $time }
+usage-graph-lasts = Lasts until reset
+usage-graph-collecting = The graph fills in as readings arrive
+usage-instrument-gauge = Gauge
+usage-instrument-graph = Graph
+usage-popover-no-other-limits = No other limits
+usage-popover-no-data = No usage yet from { $providers }
+usage-popover-more = More
+usage-popover-less = Less
 tool-verb-ran = Ran
 tool-verb-running = Running
+tool-verb-messaging = Messaging
+tool-verb-dispatching = Dispatching
+tool-verb-waiting-for = Waiting for
+tool-verb-resuming = Resuming
+tool-verb-closing = Closing
 tool-verb-read = Read
 tool-verb-reading = Reading
 tool-verb-searched = Searched
@@ -3806,3 +4307,60 @@ chat-lock-releasing = Stopping the process and checking the lock…
 chat-lock-released = The process released this thread. You can retry your message.
 chat-lock-release-failed = Could not release the thread. The owner may have changed or may still be running.
 chat-lock-recheck = Check owner again
+chat-artifact-loading = Loading artifact…
+chat-artifact-unavailable = This artifact is not available in this conversation.
+chat-artifact-sandboxed = Sandboxed page
+chat-artifact-stopped = Stopped · Reload to run it again
+chat-artifact-release-hint = Interacting · Esc to release
+chat-artifact-copy-source = Copy source
+chat-artifact-reload = Reload
+chat-artifact-expand = Expand
+chat-artifact-collapse = Close (Esc)
+chat-artifact-save-html = Save as HTML file
+chat-artifact-open-in-browser = Open in browser
+chat-artifact-open-in-browser-confirm = Open this artifact in your browser?
+chat-artifact-open-in-browser-detail = Its code runs outside the app's sandbox there, where it can reach the internet. Open it only if you trust what made it.
+chat-artifact-open-link = Open this link in your browser?
+chat-artifact-open-link-open = Open
+chat-artifact-open-link-cancel = Cancel
+usage-reset-count = { $count ->
+    [one] limit reset
+   *[other] limit resets
+}
+usage-reset-next-expires = Next one expires in { $duration }
+usage-reset-slide = Slide to reset { $window }
+usage-reset-working = Resetting…
+usage-reset-done = Limits reset
+usage-reset-nothing = Nothing to reset right now
+usage-reset-already = That reset was already used
+usage-reset-failed = Couldn’t reset. Try again later
+usage-reset-busy = Still updating. Slide again in a moment
+usage-reset-unavailable = No reset available
+usage-credits = Credits
+usage-credits-unlimited = Unlimited
+usage-account-resets = { $count ->
+    [one] 1 reset
+   *[other] { $count } resets
+}
+usage-account-credits = { $amount } credits
+usage-account-ring-window = { $account } { $window }
+usage-account-window-left = { $window } { $percent }%
+usage-graph-account-left = { $account } { $window } left
+usage-graph-now = Now
+usage-accounts-on-gauge = On the gauge
+usage-accounts-sign-in = Sign in
+usage-accounts-signing-in = Signing in…
+usage-accounts-single = { $count ->
+    [one] { $providers } has one account.
+   *[other] { $providers } have one account each.
+}
+usage-account-empty-title = No usage on { $account } yet
+usage-account-empty-body = Readings appear after this profile’s first session.
+usage-account-signed-out-title = { $account } isn’t signed in
+usage-account-signed-out-body = Sign in from a new { $provider } tab that uses this profile.
+usage-account-back = Back to { $account }
+usage-graph-legend-you = You
+usage-graph-legend-even = Even pace
+usage-graph-legend-projection = Projection
+usage-graph-legend-estimated = Estimated
+usage-graph-estimated = Estimated from activity on this Mac
