@@ -2655,9 +2655,9 @@ toast-ssh-key-installed = SSH 키 설치됨
 toast-ssh-key-install-failed = SSH 키 설치 실패
 
 chat-composer-placeholder-active = 메시지 입력…
-chat-composer-placeholder-focus-fallback = 입력하려면 채팅에 포커스하세요
-chat-composer-placeholder-focus-shortcut = { $shortcut } 키를 눌러 채팅창으로 돌아오기
-chat-composer-placeholder-inactive-pane = 채팅에 포커스하려면 클릭
+chat-composer-placeholder-focus-fallback = 입력하려면 채팅창을 선택하세요
+chat-composer-placeholder-focus-shortcut = { $shortcut } 키를 눌러 입력
+chat-composer-placeholder-inactive-pane = 클릭하여 입력
 chat-steer-shortcut-hint = { $shortcut } 키로 바로 보내기
 chat-enhance-prompt = 프롬프트 개선
 chat-enhance-prompt-completed = 프롬프트 개선 완료
