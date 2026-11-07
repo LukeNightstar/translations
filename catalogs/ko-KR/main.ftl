@@ -1881,7 +1881,7 @@ settings-ai-reset-to-inherited = 상속 값으로 재설정
 settings-ai-system-instructions-placeholder = 시스템 지침…
 settings-ai-user-message-placeholder = 사용자 메시지…
 settings-ai-launch-flags-description = 이 제공자를 실행할 때마다 사용되며, 가장 먼저 추가됩니다.
-settings-ai-launch-flags-placeholders = { $placeholders }를 사용하면 실행할 때마다 워크트리, 브랜치 또는 프로젝트 이름을 넣을 수 있습니다.
+settings-ai-launch-flags-placeholders = { $placeholders } 변수를 사용하면 실행할 때마다 워크트리, 브랜치 또는 프로젝트 이름을 넣을 수 있습니다.
 settings-ai-profile-definitions = 프로필 정의
 settings-ai-global-default = 전역 기본값
 settings-ai-workspace-override = 워크스페이스 재정의
@@ -3310,7 +3310,7 @@ settings-orchestrated-worktrees-expanded = 펼침
 settings-orchestrated-worktrees-expanded-description = 항상 펼쳐 둡니다.
 settings-search-entry-appearance-layout-orchestrated-worktrees-description = 채팅이 작업을 맡긴 워크트리를 사이드바의 해당 채팅 아래에 펼칠지 접을지 선택합니다.
 settings-search-entry-appearance-layout-orchestrated-worktrees-label = 오케스트레이션 워크트리
-settings-search-entry-general-behavior-link-previews-description = 링크 위에 포인터를 올리면 사이트의 제목, 요약, 이미지를 가져옵니다. 사이트에 사용자의 IP 주소가 공개됩니다.
+settings-search-entry-general-behavior-link-previews-description = 링크된 사이트의 아이콘을 표시하고, 포인터를 올리면 제목, 요약, 이미지도 표시합니다. 포인터를 올리면 사이트에 IP 주소가 공개됩니다. 아이콘은 Google에서 가져오므로 Google에 사이트 이름이 전달되며, 로컬 링크는 해당 주소에서 직접 가져옵니다.
 settings-search-entry-general-behavior-link-previews-label = 링크 미리보기 표시
 shared-parent-git-pill-label = { $targets }에서 { $action }
 status-card-branch = 브랜치
@@ -3667,7 +3667,7 @@ chat-waiting-on-agents = 에이전트 { $count }개 대기 중…
 
 chat-shell-mode = 셸 명령
 
-chat-shell-mode-detail = 이 작업 공간에서 실행합니다. 결과에서 '채팅에 추가'를 눌러 에이전트에게 보여 주세요.
+chat-shell-mode-detail = 이 워크스페이스에서 실행합니다. 결과에서 '채팅에 추가'를 눌러 에이전트에게 보여 주세요.
 
 chat-shell-add-to-chat = 채팅에 추가
 
@@ -3701,15 +3701,15 @@ chat-shell-open-refused = 실행하지 않고는 터미널에서 열 수 없습�
 
 chat-shell-start-failed = 명령을 실행할 수 없습니다: { $error }
 
-chat-files-changed-diff-unavailable = 이 차이는 더 이상 사용할 수 없습니다.
+chat-files-changed-diff-unavailable = 이 diff는 더 이상 볼 수 없습니다.
 
 chat-files-changed-diff-no-lines = 이 파일의 이름이나 권한만 변경되었습니다.
 
-chat-files-changed-diff-binary = 바이너리 파일에는 표시할 줄 단위 차이가 없습니다.
+chat-files-changed-diff-binary = 바이너리 파일에는 표시할 줄 단위 diff가 없습니다.
 
 chat-files-changed-diff-not-utf8 = 이 파일은 UTF-8 텍스트가 아니므로 줄을 표시할 수 없습니다.
 
-chat-files-changed-diff-too-large = 이 차이는 너무 커서 여기에 표시할 수 없습니다.
+chat-files-changed-diff-too-large = 이 diff는 너무 커서 여기에 표시할 수 없습니다.
 
 chat-files-changed-binary = 바이너리
 
@@ -4009,7 +4009,7 @@ usage-details-runs-out = 이 속도라면 { $time }에 소진될 수 있습니�
 
 usage-details-lasts = 이 속도라면 초기화될 때까지 사용할 수 있습니다
 
-usage-details-used-up = { $window }을(를) 모두 사용했습니다. { $time }에 다시 사용 가능합니다
+usage-details-used-up = { $window } 한도를 모두 사용했습니다. { $time }에 다시 사용할 수 있습니다
 
 usage-details-estimate = 이 기간이 시작된 이후의 평균 사용량을 바탕으로 한 추정입니다. 사용량에 따라 변하지만 초기화 시간은 변하지 않습니다.
 
@@ -4194,7 +4194,7 @@ issue-report-destination = { $repo }의 공개 이슈
 
 issue-report-signed-out = 여기서 제출하려면 GitHub CLI에 로그인하세요
 
-issue-report-match-open = #{ $number }이(가) 이미 열려 있습니다
+issue-report-match-open = #{ $number } 이슈가 이미 열려 있습니다
 
 issue-report-match-votes = #{ $number }에 { $count }표
 
